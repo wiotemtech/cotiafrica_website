@@ -67,7 +67,7 @@
 
 
 <div class="section-join">
-    <h1 id="heading-join">Join Our Tallent Community</h1>
+    <h1 id="heading-join">Join Our Talent Community</h1>
     <p  style="color: black; font-size: 18px;" >
         Together, let's break barriers and shatter glass ceilings. <br>
         Become part of our vibrant network of women who are redefining the future of tech.

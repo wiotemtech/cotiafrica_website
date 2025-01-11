@@ -12,7 +12,7 @@
         <div class="col-md-6" >
             <h3 style="font-size: 18px;" class="text-center">Get in Touch</h3>
             <p><strong>Address:</strong> Maruzi Road,Lira City</p>
-            <p><strong>Phone:</strong> +256-779-512-100</p>
+            <p><strong>Phone:</strong> +256-779-512-100 / +256-759-512-100</p>
             <p><strong>Email:</strong>info@codetoinnivateafrica.com</p>
 
             <h5 style="font-size: 16px  ;">Follow Us</h5>

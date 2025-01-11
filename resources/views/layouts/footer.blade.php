@@ -24,8 +24,8 @@
             <div class="col-md-3 mb-4">
                 <h5>Contact Us</h5>
                 <ul class="list-unstyled">
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@cotiafrica.com" class="text-white">info@codetoinnovateafrica.com</a></li>
-                    <li><i class="fas fa-phone"></i> +256-779-512-100</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@cotiafrica.com" class="text-white">infor@cotiafrica.com</a></li>
+                    <li><i class="fas fa-phone"></i> +256-779-512-100 / +256-759-512-100</li>
                     <li><i class="fas fa-map-marker-alt"></i>Maruzi Road,
                         Lira City, Uganda</li>
                 </ul>
