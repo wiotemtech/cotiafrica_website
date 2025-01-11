@@ -2,10 +2,10 @@
     <div class="row bg-app">
 <div class="  marquee-text col-md-12" >
     <p class="text-center text-white" style="margin-top: 5px;"> <marquee behavior="0" direction="left">
-        <span>Adress:Maruzi-Road Lira-City</span>
-        <span>Tel:+256-779-512-100</span>
+        <span>Address:Maruzi-Road Lira-City</span>
+        <span>Tel:+256-779-512-100 / +256-759-512-100</span>
         <span>Office-Time:8am-5pm</span>
-        <span>Email:info@codetoinnovateafrica.com</span>
+        <span>Email:infor@cotiafrica.com</span>
 
    </marquee> </p>
 </div>

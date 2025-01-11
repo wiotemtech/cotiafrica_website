@@ -425,37 +425,28 @@
             <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <div class="col-6 col-md-3 col-lg-2 mb-3">
+                        <div class="justify-content-center">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
                                 <img src="{{ asset('assets/images/maros.jpg') }}" alt="partner 1" class="partner-logo img-fluid">
                             </div>
-                            <div class="col-6 col-md-3 col-lg-2 mb-3">
-                                <img src="{{ asset('assets/images/capsci.jpg') }}" alt="partner 2" class="partner-logo img-fluid">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-2 mb-3">
-                                <img src="{{ asset('assets/images/maros.jpg') }}" alt="partner 3" class="partner-logo img-fluid">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-2 mb-3">
-                                <img src="{{ asset('assets/images/cdc.jpg') }}" alt="partner 4" class="partner-logo img-fluid">
-                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="">
+                            <img src="{{ asset('assets/images/capsci.jpg') }}" alt="partner 2" class="partner-logo img-fluid">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-6 col-md-3 col-lg-2 mb-3">
-                                <img src="{{ asset('assets/images/capsci.jpg') }}" alt="partner 5" class="partner-logo img-fluid">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-2 mb-3">
-                                <img src="{{ asset('assets/images/maros.jpg') }}" alt="partner 6" class="partner-logo img-fluid">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-2 mb-3">
-                                <img src="{{ asset('assets/images/cdc.jpg') }}" alt="partner 7" class="partner-logo img-fluid">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-2 mb-3">
-                                <img src="{{ asset('assets/images/capsci.jpg') }}" alt="partner 8" class="partner-logo img-fluid">
-                            </div>
+                        <div class="">
+                            <img src="{{ asset('assets/images/maros.jpg') }}" alt="partner 2" class="partner-logo img-fluid">
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="{{ asset('assets/images/cdc.jpg') }}" alt="partner 2" class="partner-logo img-fluid">
+                        </div>
+                    </div>                            
                 </div>
 
                 {{-- <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
@@ -475,7 +466,7 @@
 
     <section class="partner-section">
         <div class="container">
-            <h1>Partner with Our Tallent Community!</h1>
+            <h1>Partner with Our Talent Community!</h1>
             <p>Join a network of skilled professionals and innovators!
                 Our talent community connects expertise with opportunity,
                 fostering partnerships that drive success. Collaborate with
