@@ -69,3 +69,57 @@ window.onload = function() {
         "retina_detect": true
     });
 }
+
+// Card Animation Script
+const cards = document.querySelectorAll('.card-item');
+let currentIndex = 0;
+
+function showNextCard() {
+    cards[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % cards.length;
+    cards[currentIndex].classList.add('active');
+}
+
+setInterval(showNextCard, 3000);;
+
+function toggleContent() {
+    var content = document.querySelector('.extra-content');
+    var button = document.getElementById('readMoreBtn');
+    
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        button.innerHTML = "Read Less";
+    } else {
+        content.style.display = "none";
+        button.innerHTML = "Read More";
+    }
+}
+
+
+// Adding the scroll animation functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.tttyd-program-card');
+
+    const handleScroll = () => {
+        cards.forEach(card => {
+            const cardPosition = card.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (cardPosition < windowHeight - 100) {
+                card.classList.add('visible');
+            }
+        });
+    }
+
+    // Initial scroll check
+    handleScroll();
+    
+    // Scroll event listener
+    window.addEventListener('scroll', handleScroll);
+});
+
+
+AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true, // Animation happens only once
+});

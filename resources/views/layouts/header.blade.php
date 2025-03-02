@@ -2,7 +2,7 @@
     <div class="row bg-app">
 <div class="  marquee-text col-md-12" >
     <p class="text-center text-white" style="margin-top: 5px;"> <marquee behavior="0" direction="left">
-        <span>Address:Maruzi-Road Lira-City</span>
+        <span>Address:UTC-Lira</span>
         <span>Tel:+256-779-512-100 / +256-759-512-100</span>
         <span>Office-Time:8am-5pm</span>
         <span>Email:infor@cotiafrica.com</span>
@@ -15,7 +15,7 @@
     <div class="container d-flex justify-content-between align-items-center py-3">
         <a href="{{ route('home') }}" class="d-flex align-items-center text-decoration-none">
             <img src="{{ asset('assets/images/logo.png') }}" width="40" class="mr-2" alt="Logo">
-            <span class="font-weight-bold text-app">COTIAFRICA</span>
+            <span class="font-weight-bold text-app">COTI-AFRICA</span>
         </a>
 
         <!-- For larger devices -->
