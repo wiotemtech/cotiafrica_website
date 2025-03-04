@@ -175,6 +175,12 @@ span a{
     border-radius: 8px;
 }
 
+@media (min-width:768px) {
+    .large-screen-home-heading{
+        padding-top:100px
+    }
+}
+
 @media (max-width: 768px) {
     .landing-container {
         flex-direction: column;

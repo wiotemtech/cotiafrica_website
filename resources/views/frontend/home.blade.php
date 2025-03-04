@@ -4,7 +4,7 @@
 <div id="particles-js"></div>
 
 <div style="margin-bottom: 88px" class="landing-container">
-    <div class="landing-left">
+    <div class="landing-left large-screen-home-heading">
         <h2 style="color:#1E88E5;  font-family: 'Poppins', sans-serif; "> CodeToInnovate <span style="color: white" >Africa</span> </h2>
         <p>Innovating the Future With <span style="color: #1E88E5;">Advanced Software Solutions.</span></p>
         <a href="#" class="btn-1">Get Started</a>
