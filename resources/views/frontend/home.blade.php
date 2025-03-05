@@ -199,7 +199,7 @@
                 <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
                     <img src="{{ asset('assets/images/a.jpg') }}" class="img-fluid" alt="Learn Programming">
                     <div class="card-body">
-                        <h5 class="card-title-1">Learn Programming</h5>
+                        <h5 class="card-title-1">School of Software Engineering</h5>
                         <p class="card-text-1">Our tailored programming courses offer a practical path to mastery. From beginner to advanced, learn key languages like Python, JavaScript, and PHP through real-world projects and develop essential problem-solving skills</p>
                         <a href="{{ route('programming') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                     </div>
@@ -209,7 +209,7 @@
                 <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
                     <img src="{{ asset('assets/images/intern.jpg') }}" class="img-fluid" alt="Corporate ICT Training">
                     <div class="card-body">
-                        <h5 class="card-title-1">Internship</h5>
+                        <h5 class="card-title-1">Internship Program</h5>
                         <p class="card-text-1">Our internships provide a unique opportunity to learn, grow, and contribute. Immerse yourself in a dynamic environment, work alongside experienced professionals, and gain practical knowledge that will shape your future</p>
                         <a href="{{ route('ict-training') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                     </div>

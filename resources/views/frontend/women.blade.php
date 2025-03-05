@@ -3,45 +3,37 @@
 
 @section('content')
 
-<div class="landing-page">
-    <img src="{{ asset('assets/images/rr.jpg') }}" alt="Web Development" class="landing-image">
-    <div class="overlay">
-        <h1>The Rise Of Women In Tech</h1>
+<!-- Internship Section -->
+<div style="background-image: url('{{ asset('assets/images/we2.jpg') }}');" class="internship-section ">
+    <!-- Overlay -->
+    <div class="overlay"></div>
 
+    <!-- Text -->
+    <div class="internship-text">
+        <h1>A Community for Women in Technology.</h1>
+        <p>Join a network of driven women, develop essential tech skills, and make a real impact through hands-on experience. Apply now and start shaping the future of technology</p>
+        <a href="#apply-now">Apply Now</a>
     </div>
 </div>
 
-<section class="photo-text-section1" style="background-color: #e8f0ff;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
 
-                <img src="{{ asset('assets/images/rr.jpg') }}" alt="" style="width: 100%; height:300px;" >
 
-            </div>
-            <div class="col-md-6 text-content" style="margin-top: 16px;">
-                <h2 style="font-size: 25px; color: #1e88e5;" >About The Programm</h2>
-                <p style="font-size: 18px; color:black;text-align:justify;">
-                We recognize the significance of diversity in driving innovation and growth in the
-                 tech industry. Our Women in Tech initiative aims to bridge the gender gap by
-                 providing a supportive ecosystem for women to thrive. Through mentorship programs,
-                  networking events, and specialized training, we empower women to overcome
-                  obstacles and achieve their full potential.
-</p>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- About Section -->
+    <section class="about" data-aos="fade-up">
+        <h2 style="font-size:30px;font-weight:bold; font-family: 'poppins',sasarif; color:  #1e88e5;">Why Women in Tech?</h2>
+        <p style="font-size: 22px;font-family:'poppins',sansarif">Women in technology are underrepresented, yet their contributions <br>are vital for shaping the future. With the right support, women can lead innovations in all aspects of the tech industry.</p>
+    </section>
+
+
+
+   
 
 
 <!-- Women in Tech Section -->
 <section id="women-in-tech">
     <div class="container">
-        <h2>Empowering Women in Tech</h2>
-        <p>Women have played a pivotal role in the technology sector, breaking barriers and leading
-             innovations that shape our world. <br>From coding to leadership, their contributions are
-             invaluable. Our initiative aims to support, educate, and inspire <br>women to thrive in
-             tech careers, fostering a more diverse and inclusive industry.</p>
+        <h2>Creating Pathways for Women in Technology.</h2>
+        <p>"Women are pivotal to technological advancement, driving innovation and shaping <br> our digital world. Our initiative empowers women to  thrive in tech by providing<br> educational resources, supportive communities, and mentorship opportunities</p>
         <div class="row">
             <div class="col-md-4">
                 <i class="fas fa-laptop-code icon"></i>
@@ -64,20 +56,79 @@
 
 
 
-
-
-<div class="section-join">
-    <h1 id="heading-join">Join Our Talent Community</h1>
-    <p  style="color: black; font-size: 18px;" >
-        Together, let's break barriers and shatter glass ceilings. <br>
-        Become part of our vibrant network of women who are redefining the future of tech.
-
-   </p>
-    <!--<a href="contact.html" id="enroll-btn">Enroll Now</a>-->
-    <a style=" text-decoration: none; padding-right: 10px; display: inline-flex; align-items: center; "
-                            class="ok ms-lg-0" href="{{ route('ict-training') }}">
-                            Learn More<i class="fa fa-arrow-right arrow-icon-1"></i></a>
+<div class="container py-5">
+    <h2 class="text-center mb-4">What Students Say About Us</h2>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card p-3">
+                <div class="testimonial-header">
+                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <div>
+                        <h5>Bussines</h5>
+                        <p class="mb-1"><strong>Mercy Ruth</strong></p>
+                    </div>
+                </div>
+                <p class="mt-2">This training gave me the confidence I desperately needed. I feel empowered to take on new challenges now. I really appreciate the support.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card p-3">
+                <div class="testimonial-header">
+                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <div>
+                        <h5>Teacher</h5>
+                        <p class="mb-1"><strong>Akello Lucy</strong></p>
+                    </div>
+                </div>
+                <p class="mt-2">I was lost about my career path, but this training helped me see clear possibilities. It opened my eyes to new opportunities. Thank you for the guidance!</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card p-3">
+                <div class="testimonial-header">
+                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <div>
+                        <h5>Student</h5>
+                        <p class="mb-1"><strong>Nalubega Ruth</strong></p>
+                    </div>
+                </div>
+                <p class="mt-2">The instructors were amazing, and the other trainees were so supportive. It felt like a real community. I learned so much, and I'm grateful for the experience.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card p-3">
+                <div class="testimonial-header">
+                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <div>
+                        <h5>Accountant</h5>
+                        <p class="mb-1"><strong>Dolly Atukunda</strong></p>
+                    </div>
+                </div>
+                <p class="mt-2">came in feeling so unsure, but the training was incredibly practical. I'm leaving with actual skills I can use! Thank you.</p>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+
+
+
+<section class="partner-section ">
+    <div class="container">
+        <h1 class="animate-heading">Your ideas can change the world</h1>
+        <p class="animate-paragraph">Tech needs your voice. We empower women to thrive in tech through online classes,<br> mentorship, and community. Join us to innovate and shape the future.</p>
+
+        <a class="btn-join-talent" href="{{ route('contactus') }}">
+            join us in tech <i id="arrow" class="fa fa-arrow-right arrow"></i>
+        </a>
+    </div>
+</section>
+
+
+
+
 
 
 
