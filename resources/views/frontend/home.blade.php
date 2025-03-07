@@ -199,7 +199,7 @@
                 <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
                     <img src="{{ asset('assets/images/a.jpg') }}" class="img-fluid" alt="Learn Programming">
                     <div class="card-body">
-                        <h5 class="card-title-1">School of Software Engineering</h5>
+                        <h5 class="card-title-1">School of Engineering</h5>
                         <p class="card-text-1">Our tailored programming courses offer a practical path to mastery. From beginner to advanced, learn key languages like Python, JavaScript, and PHP through real-world projects and develop essential problem-solving skills</p>
                         <a href="{{ route('programming') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                     </div>

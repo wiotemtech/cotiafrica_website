@@ -25,9 +25,9 @@ class="custom-footer">
                                                                                                             <div class="col-md-3">
                                                                                                                 <h5 class="custom-footer-header">Contact Us</h5>
                                                                                                                 <ul class="list-unstyled custom-footer-contact">
-                                                                                                                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@cotiafrica.com" class="text-white">info@cotiafrica.com</a></li>
+                                                                                                                    <li><i class="fas fa-envelope"></i> <a href="mailto:solutions@cotiafrica.com" class="text-white">solutions@cotiafrica.com</a></li>
                                                                                                                     <li><i class="fas fa-phone"></i> +256-779-512-100 / +256-759-512-100</li>
-                                                                                                                    <li><i class="fas fa-map-marker-alt"></i> Technology Innovation Surport Centre (TISC) UTC Lira</li>
+                                                                                                                    <li><i class="fas fa-map-marker-alt"></i> Technology Innovation Support Centre (TISC) UTC Lira</li>
                                                                                                                 </ul>
                                                                                                             </div>
                                                                                             

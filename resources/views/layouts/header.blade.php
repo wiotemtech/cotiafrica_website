@@ -5,7 +5,7 @@
         <span>Address:UTC-Lira</span>
         <span>Tel:+256-779-512-100 / +256-759-512-100</span>
         <span>Office-Time:8am-5pm</span>
-        <span>Email:infor@cotiafrica.com</span>
+        <span>Email:solutions@cotiafrica.com</span>
 
    </marquee> </p>
 </div>

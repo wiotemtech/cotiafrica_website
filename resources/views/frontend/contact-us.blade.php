@@ -24,9 +24,9 @@ background-image: url('{{ asset('assets/images/test.png') }}');
         <!-- Left Section: Get in Touch -->
         <div class="col-md-6 animate">
             <h3 class="text-center fw-bold">Get in Touch</h3>
-            <p><strong>Address:</strong> Maruzi Road, Lira City</p>
+            <p><strong>Address:</strong>Technology Innovation Support Centre(TISC) UTC- Lira</p>
             <p><strong>Phone:</strong> +256-779-512-100 / +256-759-512-100</p>
-            <p><strong>Email:</strong> info@codetoinnovateafrica.com</p>
+            <p><strong>Email:</strong>solutions@cotiafrica.com</p>
 
             <h5 class="fw-bold mt-3">Follow Us</h5>
             <div class="social-icons mt-3">
