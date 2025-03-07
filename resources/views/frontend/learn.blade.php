@@ -44,7 +44,7 @@
                         <div class="card-body">
                             <h5 class="card-title-1">Front-end Development</h5>
                             <p class="card-text-1">Front-end engineering creates engaging web experiences by translating designs into interactive interfaces. Mastering HTML, CSS, and JavaScript ensures responsiveness and optimal performance across devices. Engineers focus on user experience, leveraging frameworks to build intuitive applications. They bridge design and functionality, shaping impactful online experiences.</p>
-                            <a href="{{ route('programming') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
+                            <a href="{{ route('frontend') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                             <p class="card-text-1">
 
                                 Back-end engineering builds the server-side foundation of web applications, handling crucial tasks like database management, API development, and server infrastructure. Engineers utilize languages such as Python or Node.js to ensure data integrity and optimize application performance, crafting the robust systems that power seamless front-end experiences.</p>
-                            <a href="{{ route('ict-training') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
+                            <a href="{{ route('backend') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         <div class="card-body">
                             <h5 class="card-title-1">Mobile App Development</h5>
                             <p class="card-text-1">Mobile app development involves creating software for smartphones and tablets, encompassing both native (iOS/Android) and cross-platform approaches, where developers design user interfaces, implement functionalities, and optimize performance across diverse devices, followed by rigorous testing, debugging, and deployment to app stores.</p>
-                            <a href="{{ route('women-in tech') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
+                            <a href="{{ route('mobileApp-development') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -227,69 +227,8 @@
 
     
 
-<!--COURSE OUTLINE SECTION-
-<section id="ercdv-course-outline-section">
-    <div class="ercdv-container">
-        <h2 class="ercdv-section-title" style="font-size: 25px;">Course Outline</h2>
-
-        <div class="ercdv-course-content">
-            <!-- Card 1 --
-<div class="ercdv-card">
-    <ul class="ercdv-course-outline">
-        <li>Understand the fundamentals of deploying front-end projects on various platforms, ensuring a smooth launch process.</li>
-        <li>Implement real-time updates and dynamic features in your applications using websockets for instant communication.</li>
-        <li>Build mobile-responsive websites that adjust effortlessly across devices, offering a flawless user experience on all screens.</li>
-        <li>Get hands-on experience with powerful front-end libraries like Vue.js and React to create modern and feature-rich web applications.</li>
-    </ul>
-</div>
-
-<!-- Card 2 --
-<div class="ercdv-card">
-    <ul class="ercdv-course-outline">
-        <li>Master the process of interacting with APIs to retrieve data from back-end servers and display it within your apps.</li>
-        <li>Learn to follow coding standards and participate in peer code reviews, ensuring that your codebase is clean and maintainable.</li>
-        <li>Boost your site’s efficiency by minimizing load times and refining overall performance to enhance user engagement.</li>
-        <li>Build confidence for front-end job applications by creating a diverse project portfolio and polishing interview skills.</li>
-    </ul>
-</div>
 
 
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--ADMISSION SECTION--
-<section class="admission-requirements-section">
-    <div class="container">
-        <div class="admission-card">
-            <h2>Admission Criteria
-            </h2>
-            <ul>
-                <li>
-                    <strong>Background of Education:</strong>
-                    High school diploma or equivalent, foundation in mathematics and computer science
-                </li>
-                <li>
-                    <strong>English Language Proficiency:</strong>
-                    English is the mode of teaching.
-                </li>
-                <li>
-                    <strong>Admission Fee:</strong>
-                    Application fee: $10 (non-refundable), Tuition fee: $22 (per month).
-                </li>
-            </ul>
-        </div>
-
-        <!-- Small Card for Course Duration --
-        <div class="small-card">
-            <h4>Course Duration</h4>
-            <p style="font-size: 18px;">12 Months</p>
-        </div>
-    </div>
-</section>
-
--->
 
 
 <section class="partner-section mt-3">

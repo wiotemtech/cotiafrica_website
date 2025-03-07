@@ -33,6 +33,9 @@ Route::controller(Controller::class)->group(function(){
     Route::get('/programming','program')->name('programming');
     Route::get('/ict-training','coperate')->name('ict-training');
     Route::get('/women-in tech','tech')->name('women-in tech');
+    Route::get('/frontend','fronts')->name('frontend');
+    Route::get('/backend','backends')->name('backend');
+    Route::get('/mobileApp-development','mobileApp2')->name('mobileApp-development');
 
 
 

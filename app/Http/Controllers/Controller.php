@@ -30,6 +30,18 @@ class Controller extends BaseController
         return view ('frontend.cloude');
     }
 
+    public function fronts(){
+        return view('frontend.front');
+    }
+
+    public function backends(){
+        return view('frontend.backend');
+    }
+
+    public function mobileApp2(){
+        return view('frontend.mobileApp2');
+    }
+
     public function artificial(){
         return view ('frontend.ai');
     }

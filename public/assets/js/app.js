@@ -123,3 +123,20 @@ AOS.init({
     duration: 1000, // Animation duration in ms
     once: true, // Animation happens only once
 });
+
+
+
+function revealCards() {
+    const cards = document.querySelectorAll(".ercdv-card");
+    const windowHeight = window.innerHeight;
+
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if (cardTop < windowHeight - 50) {
+            card.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealCards);
+window.addEventListener("load", revealCards);
