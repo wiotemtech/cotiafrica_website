@@ -38,6 +38,19 @@ class Controller extends BaseController
         return view('frontend.backend');
     }
 
+    public function software2(){
+        return view('frontend.softIntern');
+    }
+
+
+    public function dataA(){
+        return view('frontend.dataAnalysis');
+    }
+
+    public function cyberS(){
+        return view('frontend.cyber');
+    }
+
     public function mobileApp2(){
         return view('frontend.mobileApp2');
     }
