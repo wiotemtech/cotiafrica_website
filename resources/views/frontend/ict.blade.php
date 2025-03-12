@@ -12,7 +12,7 @@
     <div class="internship-text">
         <h1 class="intern-h">Kickstart Your Career with Our Internship Program</h1>
         <p class="intern-p">Gain hands-on experience, develop key skills, and work on real-world projects. Apply today and take the first step toward your professional future!</p>
-        <a class="btn-1" href="#apply-now">Apply Now</a>
+        <a class="btn-1" href="https://docs.google.com/forms/d/e/1FAIpQLSdy_uIywrsqinOgqRpBgYFWz65de5ysU-b1vCJKIk667cNtsQ/formResponse">Apply Now</a>
     </div>
 </div>
 
@@ -51,7 +51,7 @@ Our internship program offers a valuable, hands-on experience across various tec
                     <div class="card-body">
                         <h5 class="card-title-1">Software Development Intern</h5>
                         <p class="card-text-1">Our software internship program is your chance to jump from learning theory to real-world practice. You'll work on actual projects, side-by-side with experienced developers, gaining hands-on experience in coding, debugging, and more. It's a structured program designed to bridge the gap between education and a software career, offering mentorship, training, and valuable industry insights.</p>
-                        <a href="{{ route('programming') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
+                        <a href="{{ route('software-intern') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                     </div>
                 </div>
             </div>
@@ -59,9 +59,9 @@ Our internship program offers a valuable, hands-on experience across various tec
                 <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
                     <img src="{{ asset('assets/images/digital.jpg') }}" class="img-fluid" alt="Corporate ICT Training">
                     <div class="card-body">
-                        <h5 class="card-title-1">Digital Marketing Intern</h5>
-                        <p class="card-text-1">Our Digital Marketing Internship is your entry point into the fast-paced world of online promotion. You'll get hands-on experience with real marketing campaigns, learning how to use social media, create engaging content, analyze data, and understand how to reach online audiences. You'll work alongside experienced marketers, gaining practical skills in areas like SEO, content creation, and social media management</p>
-                        <a href="{{ route('ict-training') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
+                        <h5 class="card-title-1">Data Analytics intern</h5>
+                        <p class="card-text-1">Our Data Analytics Internship is your entry point into the dynamic world of data-driven decision making. You'll gain hands-on experience with real-world datasets, learning how to extract insights, build visualizations, and deliver actionable recommendations. You'll work alongside experienced analysts, gaining practical skills in areas like data cleaning, statistical analysis, and data visualization.</p>
+                        <a href="{{ route('data-analysis') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                     </div>
                 </div>
             </div>
@@ -69,9 +69,9 @@ Our internship program offers a valuable, hands-on experience across various tec
                 <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
                     <img src="{{ asset('assets/images/gg.avif') }}" class="img-fluid" alt="Women in Tech">
                     <div class="card-body">
-                        <h5 class="card-title-1"> Graphics Design Intern</h5>
-                        <p class="card-text-1">A Graphics Design Internship offers a creative launchpad, where you'll translate concepts into visual masterpieces. You'll gain hands-on experience with design software, working on real projects that span branding, marketing materials, and digital assets. 1  You'll collaborate with experienced designers, refining your skills in layout, typography, and color theory.</p>
-                        <a href="{{ route('women-in tech') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
+                        <h5 class="card-title-1"> Cybersecurity intern</h5>
+                        <p class="card-text-1">A Cybersecurity Internship offers a critical launchpad, where you'll translate security concepts into robust defenses. You'll gain hands-on experience with security tools and platforms, working on real-world scenarios that span threat analysis, vulnerability assessments, and incident response. You'll collaborate with experienced security professionals, refining your skills in network security.</p>
+                        <a href="{{ route('cyber-security') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
                     </div>
                 </div>
             </div>
@@ -233,7 +233,7 @@ Our internship program offers a valuable, hands-on experience across various tec
         <h1 class="animate-heading">Gain real-world skills,Apply for our internship today!</h1>
         <p class="animate-paragraph">Make a real impact with our dynamic internship. You'll contribute to meaningful <br> projects and gain industry insights. Apply now to launch your career.</p>
 
-        <a class="btn-join-talent" href="{{ route('contactus') }}">
+        <a class="btn-join-talent" href="https://docs.google.com/forms/d/e/1FAIpQLSdy_uIywrsqinOgqRpBgYFWz65de5ysU-b1vCJKIk667cNtsQ/formResponse">
             Apply Now <i id="arrow" class="fa fa-arrow-right arrow"></i>
         </a>
     </div>

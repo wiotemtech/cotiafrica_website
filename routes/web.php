@@ -36,8 +36,9 @@ Route::controller(Controller::class)->group(function(){
     Route::get('/frontend','fronts')->name('frontend');
     Route::get('/backend','backends')->name('backend');
     Route::get('/mobileApp-development','mobileApp2')->name('mobileApp-development');
-
-
+    Route::get('/software-intern','software2')->name('software-intern');
+    Route::get('/data-analysis','dataA')->name('data-analysis');
+    Route::get('/cyber-security','cyberS')->name('cyber-security');
 
 
 

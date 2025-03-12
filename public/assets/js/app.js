@@ -140,3 +140,22 @@ function revealCards() {
 
 window.addEventListener("scroll", revealCards);
 window.addEventListener("load", revealCards);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Stop the blinking cursor after typing is finished
+    const typedText = document.getElementById('typedText');
+    typedText.addEventListener('animationend', () => {
+      typedText.classList.add('finished');
+    });

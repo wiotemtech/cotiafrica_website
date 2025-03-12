@@ -1580,6 +1580,12 @@ span a{
 
 
  /*---------End styles for Contact us section----------------- */
+
+
+
+
+
+
 /*----------------Start stlyes for learn programming---------*/
 
 .hero {
@@ -1718,15 +1724,15 @@ span a{
     border-radius: 10px;
 }
 .tttyd-program-card-1 {
-    opacity: 0; /* Initially hidden */
+    opacity: 0; 
     transition: opacity 1s ease-out;
 }
 .tttyd-program-card-1.visible {
-    opacity: 1; /* Visible when scrolled into view */
+    opacity: 1; 
 }
 @media (max-width: 768px) {
     .photo-text-section1 img {
-        max-height: 200px; /* Reduce height on small screens */
+        max-height: 200px; 
     }
 }
 
@@ -1763,8 +1769,8 @@ span a{
 }
 
 .testimonial-card:hover {
-    background-color: #f0f8ff; /* Light blue background on hover */
-    transform: translateY(-5px); /* Slight lift on hover */
+    background-color: #f0f8ff; 
+    transform: translateY(-5px); 
 }
 
 .testimonial-img {
@@ -1861,15 +1867,14 @@ span a{
 
 
 
- /* Section Styling */
+/*---------------------------------start style for internship section------------------------*/
 
 
  .internship-section {
     position: relative;
     margin-top: 104px;
     width: 100%;
-    height: 400px; /* Adjust the height based on your needs */
-    background-image: url('/intern.jpg'); /* Replace with your image URL */
+    height: 400px; 
     background-size: cover;
     background-position: center;
     color: white;
@@ -1881,7 +1886,7 @@ span a{
     animation: fadeIn 2s ease-in-out forwards;
 }
 
-/* Fade-in Animation */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -1891,17 +1896,15 @@ span a{
     }
 }
 
-/* Overlay Styling */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(30, 136, 229, 0.613); /* Dark overlay with 50% opacity */
+    background-color: rgba(30, 136, 229, 0.613); 
 }
 
-/* Text Container Styling */
 .internship-text {
     z-index: 2;
     padding: 20px;
@@ -1911,7 +1914,6 @@ span a{
     animation: slideUp 1s ease-out 0.5s forwards;
 }
 
-/* Slide-up Animation for Text */
 @keyframes slideUp {
     0% {
         opacity: 0;
@@ -1923,9 +1925,6 @@ span a{
     }
 }
 
-/* Heading Styling */
-
-
 
 .internship-text h1 {
     font-size: 35px;
@@ -1933,17 +1932,15 @@ span a{
     font-family: 'poppins',sans-serif;
     margin-bottom: 20px;
     line-height: 1.3;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for better visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
     letter-spacing: 1px;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover Effect for Heading */
 .internship-text h1:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05); 
 }
 
-/* Paragraph Styling */
 .internship-text p {
     font-size: 20px;
     font-family: 'poppins',sans-serif;
@@ -1953,7 +1950,6 @@ span a{
     letter-spacing: 0.5px;
 }
 
-/* Button Styling */
 .internship-text a {
     display: inline-block;
     margin-top: 20px;
@@ -1970,7 +1966,6 @@ span a{
     animation: slideUpButton 1s ease-out 1s forwards;
 }
 
-/* Slide-up Animation for Button */
 @keyframes slideUpButton {
     0% {
         opacity: 0;
@@ -1987,43 +1982,44 @@ span a{
     transform: translateY(-3px);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .internship-text h1 {
-        font-size: 30px; /* Slightly smaller text on medium devices */
+        font-size: 30px;
         margin-bottom: 15px;
         padding-top: 45px;
     }
 
     .internship-text p {
-        font-size: 16px; /* Adjusted font size for better readability */
-        padding: 0 20px; /* Added more padding for readability */
+        font-size: 16px; 
+        padding: 0 20px; 
     }
 
     .internship-text a {
         font-size: 16px;
-        padding: 10px 25px; /* Adjusted padding for smaller screens */
+        padding: 10px 25px; 
     }
 }
 
 @media (max-width: 480px) {
     .internship-text h1 {
-        font-size: 26px; /* Further reduced font size for small devices */
-        margin-bottom: 10px;
+        font-size: 26px; 
     }
 
     .internship-text p {
-        font-size: 14px; /* Smaller font for paragraphs */
-        padding: 0 15px; /* Adjusted padding for smaller screens */
+        font-size: 14px; 
+        padding: 0 15px; 
     }
 
     .internship-text a {
         font-size: 14px;
-        padding: 8px 20px; /* Smaller button for mobile */
+        padding: 8px 20px; 
     }
 }
 
 
+
+
+/*-----------------------------------end styles for internship section-----------------------*/
 
 
 
@@ -2050,7 +2046,7 @@ span a{
         }
       
 
-        /* Media Queries for Responsiveness */
+       
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -2071,7 +2067,6 @@ span a{
             }
         }
 
-        /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -2091,8 +2086,8 @@ span a{
 .section {
     margin-top: 100px;
     width: 100%;
-    height: 50vh; /* Set to 50vh */
-    min-height: 50vh; /* Ensures minimum height on smaller screens */
+    height: 50vh; 
+    min-height: 50vh; 
     background-color: black;
     display: flex;
     justify-content: center;
@@ -2108,22 +2103,22 @@ span a{
    
     font-weight: bolder;
     font-family: 'poppins',sans-serif;
-    font-size: 900px; /* Scalable font size */
+    font-size: 900px; 
     font-weight: bold;
 }
 @media (max-width: 768px) {
     .section {
-        height: auto; /* Allow height to be auto on smaller screens */
+        height: auto; 
     }
     h1 {
-        font-size: 13vw; /* Adjust font size for smaller screens */
+        font-size: 13vw; 
         padding-right: 30px;
     }
 }
 
 .circle {
     position: absolute;
-    width: 15vw; /* Scaling based on viewport width */
+    width: 15vw;
     height: 15vw;
     border-radius: 50%;
     background: linear-gradient(45deg, #352222, #ff7300, #FFC107);
@@ -2171,7 +2166,7 @@ span a{
 
 /*-------------------------------------start styles for the table section------------*/
 .program-section {
-    font-family: Arial, sans-serif;
+   
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
@@ -2180,11 +2175,10 @@ span a{
     min-height: 50vh;
     padding: 20px;
     margin: 0;
-    opacity: 0; /* Initially invisible */
-    animation: fadeIn 1.5s forwards; /* Animation for fade-in */
+    opacity: 0; 
+    animation: fadeIn 1.5s forwards; 
   }
 
-  /* Keyframes for fade-in animation */
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -2194,7 +2188,6 @@ span a{
     }
   }
 
-  /* Style for the heading */
   .program-section h1 {
     font-size: 30px;
     font-family: 'poppins',sans-serif;
@@ -2202,10 +2195,9 @@ span a{
     color: #007BFF;
     margin-bottom: 20px;
     text-align: center;
-    animation: slideInFromTop 1s ease-out; /* Slide-in animation */
+    animation: slideInFromTop 1s ease-out; 
   }
 
-  /* Keyframes for slide-in from top animation */
   @keyframes slideInFromTop {
     0% {
       transform: translateY(-50px);
@@ -2217,7 +2209,6 @@ span a{
     }
   }
 
-  /* Style for the table */
   .program-section table {
     border-collapse: collapse;
     width: 100%;
@@ -2226,11 +2217,10 @@ span a{
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    opacity: 0; /* Initially invisible */
-    animation: fadeInTable 1s 0.5s forwards; /* Delay table fade-in */
-  }
+    opacity: 0; 
+    animation: fadeInTable 1s 0.5s forwards;}
 
-  /* Keyframes for fade-in table animation */
+  
   @keyframes fadeInTable {
     0% {
       opacity: 0;
@@ -2244,11 +2234,11 @@ span a{
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease; 
   }
 
   .program-section th {
-    background-color: #007BFF;
+    background-color: #1E88E5;
     color: white;
   }
 
@@ -2256,15 +2246,14 @@ span a{
     background-color: #f9f9f9;
   }
 
-  /* Hover effects */
   .program-section tr:hover {
     background-color: #f1f1f1;
-    transform: translateY(-3px); /* Hover lift effect */
+    transform: translateY(-3px); 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  /* Responsive Design */
+
   @media screen and (max-width: 768px) {
     .program-section h1 {
       font-size: 20px;
@@ -2300,6 +2289,599 @@ span a{
 
 
 
+
+/*---------------------------------start styles for software interns-----------------------*/
+
+
+.software-intern-section {  
+    background-size: cover;
+    background-position: center;
+    height: 90vh; 
+    display: flex;
+    padding-top: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column; 
+    padding: 40px; 
+    
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+  }
+
+  .typed-text {
+    font-size: 3.5vw;
+    color: white;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro-paragraph {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    font-family: 'poppins',sans-serif;
+    line-height: 1.5;
+    z-index: 1;
+    word-wrap: break-word;
+    padding: 10px;
+    border: 1px solid #fff; 
+    border-radius: 15px; 
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ctx-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+    color: #1E88E5;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .ctx-button:hover {
+    color: white;
+    background-color:#1E88E5 ;
+  }
+
+  @media (max-width: 1200px) {
+    .typed-text {
+      font-size: 6vw; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .typed-text {
+      font-size: 5vw; 
+    }
+  }
+
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .typed-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0px solid;
+    width: 0;
+    animation: typing 9s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .typed-text.finished {
+    border-right: 2px solid transparent; 
+  }
+
+/*--------------------------------end style for software interns-----------------------*/
+
+
+
+
+
+/*--------------------------------start style for internship section------------------*/
+
+.internship-section-2 {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 1, 56);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; 
+    width: 100%;
+    
+    max-height: 350px;
+}
+
+.internship-section-2 p {
+    font-size: 25px; 
+    color:white;
+    text-align: center;
+    line-height: 1.4; 
+    max-width: 100%; 
+}
+
+@media (max-width: 768px) {
+    .internship-section-2 {
+        width: 90%;
+        padding: 20px 15px; 
+    }
+
+    .internship-section-2 h2 {
+        font-size: 1.8em; 
+    }
+
+    .internship-section-2 p {
+        font-size: 1em;
+    }
+}
+
+
+/*--------------------------------end style for internship section------------------*/
+
+
+
+
+
+
+
+
+
+/*--------------------------------start style for eligibllity------------------------*/
+
+ .eligibility-section {
+    background-size: cover;
+    background-position: center;
+    margin: 50px auto;
+    padding: 40px 15px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.5s ease-out; 
+}
+
+.eligibility-section h2 {
+    font-size: 30px;
+    font-family: 'poppins',sans-serif;
+    margin-bottom: 15px;
+    font-weight: bold;
+    animation: slideDown 1.2s ease-out; 
+}
+
+.eligibility-list {
+    list-style-type: none;
+    padding: 10px; 
+    font-size: 1.1em; 
+    color: #f9f9f9;
+    max-width: 900px;
+    margin: 15px auto; 
+    border: 1px solid white; 
+    border-radius: 8px;
+    line-height: 1.5; 
+    text-align: left;
+}
+
+.eligibility-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px; 
+    opacity: 0; 
+    transform: translateY(30px); 
+    animation: fadeInUp 1.5s ease-out forwards; 
+}
+
+.eligibility-list li:nth-child(1) {
+    animation-delay: 0.2s; 
+}
+
+.eligibility-list li:nth-child(2) {
+    animation-delay: 0.4s; 
+}
+.eligibility-list li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.eligibility-list li:nth-child(4) {
+    animation-delay: 0.8s; 
+}
+
+.eligibility-list li:nth-child(5) {
+    animation-delay: 1s; 
+}
+
+.eligibility-list li:nth-child(6) {
+    animation-delay: 1.2s; 
+}
+
+.eligibility-list li i {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 1.1em;
+    color: white;
+}
+
+.eligibility-section p {
+    font-size: 1.1em;
+    color: #f9f9f9;
+    max-width: 800px;
+    margin: 15px auto; 
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px; 
+    animation: fadeInUp 1.5s ease-out;
+}
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px); 
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .eligibility-section {
+        width: 95%;
+        padding: 30px 10px; 
+    }
+
+    .eligibility-section h2 {
+        font-size: 2em; 
+    }
+
+    .eligibility-list {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 20px; 
+    }
+}
+
+
+
+
+/*--------------------------------end style for eligibilty-------------------------*/
+
+
+
+
+
+/*--------------------------start style for qualifications--------------------*/
+
+ .qualifications-section {
+    width: 100%;
+    margin: 50px auto;
+    margin-top: -60px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.qualifications-section h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'poppins',sans-serif;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.qualification-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeIn 1s 0.5s forwards; 
+}
+
+.qualification-card {
+    display: flex;
+    flex-direction: row; 
+    width: 48%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 1s ease forwards; 
+}
+
+.qualification-card-image {
+    flex: 1;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.qualification-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.qualification-card-content {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+.qualification-card h2 {
+    margin-top: 0;
+    font-family: 'poppins',sans-serif;
+
+    font-size: 30px;
+    color:#1E88E5;
+}
+
+.qualification-card ul {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'poppins',sans-serif;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.qualification-card button {
+    padding: 10px 20px;
+    background-color: #4287f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.qualification-card button:hover {
+    background-color: #365f9f;
+}
+
+/* Card hover animation */
+.qualification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .qualification-cards-container {
+        justify-content: center;
+    }
+
+    .qualification-card {
+        width: 100%; 
+        flex-direction: column;}
+
+    .qualification-card-image {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .qualification-card-content {
+        text-align: center; 
+    }
+}
+
+/*---------------------------------------end tyle for qulaifications----------------------*/
+
+
+
+
+/*-------------------------------start style for learning outcome today----------------*/
+     
+        .learning-outcomes-section-3 {
+            display: flex;
+        
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(1, 1, 56);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            width: 100%;
+            height: 450px; 
+        }
+
+        .learning-outcomes-left-3 {
+            flex: 1;
+            margin-right: 30px;
+            padding-left: 40px;
+        }
+
+        .learning-outcomes-right-3 {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            height: 100%;
+        }
+
+        .learning-outcomes-left-3 h1 {
+            font-size: 30px;
+            font-family: 'poppins',sans-serif;
+            color: white;
+            margin-bottom: 30px;
+        
+            
+            padding-left: 55px; 
+            padding-top: 8px;
+        }
+
+        .outcome-card-3 {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            padding-left: 20px; 
+            width: 100%; 
+            max-width: 700px; 
+            margin: 0 auto; 
+        }
+
+        .outcome-card-3:hover {
+            transform: translateY(-10px);
+        }
+
+        .outcome-card-3 ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .outcome-card-3 ul li {
+            font-size: 1em;
+            color: black;
+            font-family: 'poppins',sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .learning-outcomes-right-3 img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 0; 
+            margin-right: 0; 
+        }
+
+ 
+        @media (max-width: 768px) {
+            .learning-outcomes-section-3 {
+                flex-direction: column;
+                align-items: center;
+                height: auto; 
+            }
+
+            .learning-outcomes-left-3 {
+                margin-right: 0;
+                text-align: center;
+                padding-left: 0; 
+            }
+
+            .learning-outcomes-left-3 h1 {
+                font-size: 2em; 
+                padding-left: 0;
+            }
+
+            .outcome-card-3 {
+                width: 90%; 
+                padding-left: 15px;
+            }
+
+            .learning-outcomes-right-3 img {
+                height: 250px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .learning-outcomes-section-3 {
+                margin: 20px auto; 
+            }
+
+            .outcome-card-3 {
+                padding-left: 10px; 
+            }
+
+            .learning-outcomes-left-3 h1 {
+                font-size: 1.8em;
+            }
+        }
+
+
+/*--------------------------------end style for learning outcome today----------------*/
 
 
 
