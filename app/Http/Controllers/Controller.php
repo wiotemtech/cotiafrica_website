@@ -55,8 +55,8 @@ class Controller extends BaseController
         return view('frontend.mobileApp2');
     }
 
-    public function artificial(){
-        return view ('frontend.ai');
+    public function dataAnalysis(){
+        return view ('frontend.data');
     }
     
     public function mobile(){

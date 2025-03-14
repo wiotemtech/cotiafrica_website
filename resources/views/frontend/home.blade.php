@@ -7,7 +7,7 @@
     <div class="landing-left large-screen-home-heading">
         <h2 style="color:#1E88E5;  font-family: 'Poppins', sans-serif; "> CodeToInnovate <span style="color: white" >Africa</span> </h2>
         <p>Innovating the Future With <span style="color: #1E88E5;">Advanced Software Solutions.</span></p>
-        <a href="#" class="btn-1">Get Started</a>
+        <a href="{{ route('contactus') }}" class="btn-1">Get Started</a>
     </div>
 
     <div class="cards-wrapper">
@@ -33,7 +33,7 @@
 </div>
 
  <!-- Trusted Partners Section -->
- <div class="full-page-container">
+ <div  class="full-page-container">
     <!-- Logo Container -->
     <div class="logo-container">
         <img src="{{ asset('assets/images/utc.jpg') }}" alt="Logo 1">
@@ -172,13 +172,13 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front" style="background-image: url('assets/images/ai.jpg');">
-                        <p class="service">AI & Machine Learning</p>
+                        <p class="service">Data Analysis</p>
                     </div>
                     <div class="flip-card-back">
                         <div class="content">
                             <img src="{{ asset('assets/images/software symbole.jpg') }}" alt="" style="height: 50px;">
-                            <p>Explore AI & Machine Learning</p>
-                            <a class="oe ms-lg-0" href="{{ route('ai') }}">
+                            <p>Explore Data Analysis</p>
+                            <a class="oe ms-lg-0" href="{{ route('data') }}">
                                 Learn More<i class="fa fa-arrow-right arrow-icon-1"></i>
                             </a>
                         </div>
@@ -238,7 +238,7 @@
     <div style="
     background-image: url('{{ asset('assets/images/test.png') }}');
      margin-top:0px;"   class="">
-        <h2 class="testimonial-title ">Clients Say We Are the Best</h2>
+        <h2 class="testimonial-title ">Our Clients Speak for Us</h2>
         <p class="text-center testimonial-p" >See it Below!</p>
         <div class="container">
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -285,15 +285,76 @@
 
 
 
+    <section class="container my-5">
+        <h2 style="color:#1E88E5;font-size:30px;font-family:'poppins',sanserif; font-weight: bold;;" class="text-center mb-4">Network of Excellence</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="partner-card">
+                    <img src="{{ asset('assets/images/UTCL Logo.png') }}" alt="Partner 1" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="partner-card">
+                    <img src="{{ asset('assets/images/capsci.jpg') }}" alt="Partner 2" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="partner-card">
+                    <img src="{{ asset('assets/images/utc.jpg') }}" alt="Partner 3" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="partner-card">
+                    <img src="{{ asset('assets/images/maros.jpg') }}" alt="Partner 4" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="partner-card">
+                    <img src="{{ asset('assets/images/logo.png') }}" alt="Partner 5" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="partner-card">
+                    <img src="{{ asset('assets/images/fimat.jpeg') }}" alt="Partner 6" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="partner-card">
+                    <img src="{{ asset('assets/images/town c.jpg') }}" alt="Partner 7" class="partner-logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="partner-card">
+                    <img src="{{ asset('assets/images/ri.jpeg') }}" alt="Partner 8" class="partner-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
  <section class="partner-section">
         <div class="container">
             <h1 class="animate-heading">Partner with Our Talent Community!</h1>
-            <p class="animate-paragraph">Join a network of skilled professionals and innovators!
-                Our talent community connects expertise with opportunity,
-                fostering partnerships that drive success. Collaborate with
-                us to access top talent, share knowledge, and bring fresh solutions
-                to your business. Let's make it happen together!</p>
+            <p class="animate-paragraph">Join a network of skilled professionals and innovators.Connect with top talent, share <br>knowledge,
+                 and drive success together.Let's make it happen together!</p>
 
             <a class="btn-join-talent" href="{{ route('contactus') }}">
                 Join the Talent Crew <i id="arrow" class="fa fa-arrow-right arrow"></i>

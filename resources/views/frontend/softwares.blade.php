@@ -1,151 +1,240 @@
+
+
 @extends('layouts.app')
 
 @section('content')
-
-<div class="background1" style="background-image: url('assets/images/software.jpg'); background-size: cover; background-position: center; height: 90vh;">
-    <div class="card" style="background-color: rgb(3, 3, 56); color: white; margin-bottom:33px" >
-        <h2 style="font-size: 20px;">Software Development at CodeToInnovate Africa</h2>
-        <p style="font-size: 18px;">
-        At CodeToInnovate Africa, we specialize in custom software development tailored
-             to meet the unique needs of our clients. Our expert team leverages the
-             latest technologies and industry best practices to build robust, scalable,
-              and efficient software solutions that drive innovation and business growth.
-
-
+<div style="background-image: url('{{ asset('assets/images/sst.png') }}');" class="web-container">
+    <div class="web-card">
+        <h2>Building Software,Together We Innovate.</h2>
+        <p>We build software solutions that deliver measurable results and enhance your brand's impact.
         </p>
-        </p>
+        <a href="{{ route('contactus') }}">Talk to Us</a>
     </div>
 </div>
 
+<section class="photo-text-section1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 tttyd-program-card-2" data-aos="fade-right">
+                <img src="{{ asset('assets/images/ssst.avif') }}" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-content tttyd-program-card-2" data-aos="fade-left" style="margin-top: 16px;">
+                <h2 id="h12">About Software Development</h2>
+                <p id="p12" >
+                    
 
-<section class="custom-section" style=" margin-top: 2px;">
-    <!-- First Div -->
-    <div class="custom-div custom-first-div">
-
-    <img src="{{ asset('assets/images/software.jpg') }}" alt="" >
-
-    </div>
-
-    <!-- Second Div -->
-    <div class="custom-div custom-second-div">
-        <!--<img src="/img/software.jpg" alt="Smaller Profile Picture">
-        <span class="custom-span">Name<br>Number</span>-->
-        <h1 class="custom-h1" style="font-size: 25px;">Software Development</h1>
-        <p class="custom-p" style="text-align: left; font-size: 18px;">
-
-
-            We offer a comprehensive range of services, including web applications,
-            mobile applications, and enterprise software solutions, ensuring that
-            our clients have the tools they need to succeed in today's competitive landscape.
-            From initial consultation to final deployment, we collaborate closely with our
-            clients to understand their goals and deliver solutions that enhance productivity,
-            streamline operations, and improve user experiences. With a focus on quality and
-             continuous improvement, CodeToInnovate Africa is dedicated to helping businesses
-             transform their ideas into powerful software solutions that make a lasting impact.
-
-        </p>
-    </div>
-</section>
-
-
-
-<section class="py-5" style="margin-top: -50px;background: linear-gradient(135deg, #1E88E5, #43A047);">
-    <h1 class="text-center" style="font-size: 25px;font-family: Arial, sans-serif; font-weight: bold;">Programming Languages We Use</h1>
-    <div class="scroll-container">
-        <div class="language-wrapper">
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-                <p>Interactive Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="Python">
-                <h3>Python</h3>
-                <p>Data Science & ML</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
-                <h3>PHP</h3>
-                <p>Backend Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Laravel">
-                <h3>Laravel</h3>
-                <p>Modern PHP Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="React.js">
-                <h3>React.js</h3>
-                <p>Frontend Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++">
-                <h3>C++</h3>
-                <p>System & App Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
-                <h3>Java</h3>
-                <p>Enterprise Software</p>
-            </div>
-            <!-- Duplicate items for seamless scrolling -->
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-                <p>Interactive Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="Python">
-                <h3>Python</h3>
-                <p>Data Science & ML</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
-                <h3>PHP</h3>
-                <p>Backend Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Laravel">
-                <h3>Laravel</h3>
-                <p>Modern PHP Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="React.js">
-                <h3>React.js</h3>
-                <p>Frontend Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++">
-                <h3>C++</h3>
-                <p>System & App Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
-                <h3>Java</h3>
-                <p>Enterprise Software</p>
+                    CodeToInnovate Africa delivers practical software solutions for real-world problems. We focus on building scalable and maintainable applications. We equip individuals with the skills to contribute to Africa's tech growth.
+                </p>
+                
             </div>
         </div>
     </div>
 </section>
 
-<section class="partner-section" style="margin-top: -2px; background-color: white;" >
-    <div class="container" >
-        <h1 style="font-size: 18x; font-family: Arial, sans-serif;">Have an idea?Lets Build it together!</h1>
-        <p>
-            Have an Idea? Let’s Build Together!
-            At CodeToInnovate Africa, we believe in turning great ideas into reality.
-            If you have a vision for a website, app, or digital project, we’re here to
-            collaborate and bring it to life. Together, we’ll build a solution that not
-            only meets your needs but exceeds your expectations. Let’s innovate, create,
-            and grow together</p>
-
-            <a style="border: 2px solid green; text-decoration: none; padding-right: 30px; display: inline-flex; align-items: center; "
-   class="oj ms-lg-0" href="{{ route('contactus') }}">
-  Contact Us <i class="fa fa-arrow-right arrow-icon"></i></a>
 
 
+
+<h1 class="ercdv-why-choose-us-title">What Sets Us Apart</h1>
+
+<div class="ercdv-why-choose-us-section mt-4">
+  <div class="row ercdv-row">
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-check-circle"></i> Proven Track Record</div>
+    </div>
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-person-lines-fill"></i> Expert Team</div>
+    </div>
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-chat-square-text-fill"></i> Transparent Communication</div>
+    </div>
+  </div>
+  <div class="row ercdv-row mt-2">
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-phone"></i> Responsive and Mobile-Friendly</div>
+    </div>
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-clock"></i> Timely Delivery & Budget-Friendly</div>
+    </div>
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-graph-up"></i> Results-Driven Development</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div style="margin: 0"   class="container-1  ">
+    <h1 class="team-head" data-aos="fade-up">Software Development services</h1>
+    <p class="team-p1" data-aos="fade-up" data-aos-delay="200">Unique Design Reflecting your brand's identity and vision.</p>
+    <div class="row">
+        <!-- Left Card with Expertise Content -->
+        <div class="col-md-6 col-sm-12 mb-4">
+            <div class="left-card" data-aos="fade-right">
+                <h5 class="card-title text-center"></h5>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-code-slash"></i> API Development & System Integration
+                    </li>
+                    <p>RESTful & GraphQL API design and implementation.</p>
+
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-palette"></i> Software Testing & Quality Assurance
+                    </li>
+                    <p>Automated and manual testing for bug-free software.</p>
+
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-palette"></i> IT Consulting & Technical Support
+                  </li>
+                  <p> Expert advice on software architecture and digital transformation.</p>
+
+
+            </div>
+        </div>
+
+        <!-- Right Card with Expertise Content -->
+        <div class="col-md-6 col-sm-12 mb-4">
+            <div class="right-card" data-aos="fade-left">
+              
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-gear-wide-connected"></i> Custom Software Development
+                    </li>
+                    <p>Tailor-made solutions to meet specific business needs.</p>
+
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-people"></i> Software Maintenance & Support
+                    </li>
+                    <p>Performance optimization and security patches.</p>
+
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-people"></i> UI/UX Design & Prototyping
+                  </li>
+                  <p>Wireframing and user testing for best experience.</p>
+
+
+                  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="programming-tech">
+    <div class="tech-container">
+      <h2 class="tech-title">Our Technology Stack</h2>
+      
+      <div class="tech-list">
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python">
+            <span>Python</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/it/2/2e/Java_Logo.svg" alt="Java">
+            <span>Java</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="Angular">
+            <span>Angular</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/FastAPI_logo.svg/512px-FastAPI_logo.svg.png?20240902201856" alt="fastapi">
+            <span>FastAPI</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/MySQL_textlogo.svg/800px-MySQL_textlogo.svg.png?20210508081050" alt="mysql">
+            <span>Mysql</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel">
+            <span>Laravel</span>
+        </div>
+    </div>
     </div>
   </section>
+
+
+
+
+  <section style="background-image: url('{{ asset('assets/images/test.png') }}');"  class="unique-faq-section">
+    <div class="faq-container">
+      <h2>Your Questions,Answered</h2>
+      <div class="faq-accordion">
+        <details>
+          <summary>
+            <span> How much will it cost to develop my software?</span>
+            <i class="bi b"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Costs vary by project complexity. We provide detailed estimates after requirement analysis. We prioritize transparent, cost-effective solutions.
+
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span> How long will it take to develop my software?</span>
+            <i class="bi bi-chev"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Timelines depend on project scope. Agile methods ensure efficient delivery. We provide realistic, adaptable timelines.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span> What technologies do you use for software development?</span>
+            <i class="bi bi-chevro"></i>
+          </summary>
+          <div class="faq-content">
+            <p>We use modern technologies like Python, Java, and JavaScript. Frameworks include React and Angular. We select technologies based on project needs.
+
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span>How do you ensure the quality of the software you develop?     </span>
+            <i class="bi bi-chevr"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Rigorous testing is implemented throughout development. We follow best practices and coding standards. Ongoing maintenance ensures reliability.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section  class="partner-section ">
+    <div class="container">
+        <h1 class="animate-heading">Let's Get Started!</h1>
+        <p class="animate-paragraph">Your idea is the beginning. We'll turn it into a digital reality. Collaborate with us,<br> and let's build something remarkable together."</p>
+
+        <a class="btn-join-talent" href="{{ route('contactus') }}">
+            Let's Connect<i id="arrow" class="fa fa-arrow-right arrow"></i>
+        </a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

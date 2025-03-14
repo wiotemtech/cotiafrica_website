@@ -6,13 +6,13 @@
     <!-- Hero Section with Popping Signs -->
     <section class="hero animate__animated animate__fadeInDown">
         <div class="popping-signs">
-            <div>🚀 10,000+ Students Enrolled</div>
+            <div>🚀 100+ Students Enrolled</div>
             <div>💼 95% Job Placement</div>
             <div>🏆 Industry-Recognized Certificates</div>
         </div>
         <h1>Learn to Code Anytime, Anywhere!</h1>
         <p>Join our online coding school and master programming skills.</p>
-        <a href="#courses" class="btn-1 btn-lg shadow">Start Learning</a>
+        <a href="{{ route('contactus') }}" class="btn-1 btn-lg shadow">Start Learning</a>
     </section>
     
 
@@ -81,7 +81,7 @@
             <div class="col-md-6 col-lg-3">
                 <div class="testimonial-card p-3">
                     <div class="testimonial-header">
-                        <img src="/about.jpg" alt="Student" class="testimonial-img">
+                        <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                         <div>
                             <h5 class="t-h">Front-end track</h5>
                             <p class="mb-1"><strong>Apio Daniella</strong></p>
@@ -93,7 +93,7 @@
             <div class="col-md-6 col-lg-3">
                 <div class="testimonial-card p-3">
                     <div class="testimonial-header">
-                        <img src="/about.jpg" alt="Student" class="testimonial-img">
+                        <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                         <div>
                             <h5 class="t-h">Mobile App track</h5>
                             <p class="mb-1"><strong>Jane Blessings</strong></p>
@@ -105,7 +105,7 @@
             <div class="col-md-6 col-lg-3">
                 <div class="testimonial-card p-3">
                     <div class="testimonial-header">
-                        <img src="/about.jpg" alt="Student" class="testimonial-img">
+                        <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                         <div>
                             
                             <h5 class="t-h">Back-end track</h5>
@@ -118,7 +118,7 @@
             <div class="col-md-6 col-lg-3">
                 <div class="testimonial-card p-3">
                     <div class="testimonial-header">
-                        <img src="/about.jpg" alt="Student" class="testimonial-img">
+                        <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                         <div>
                             <h5 class="t-h">Front-end track</h5>
                             <p class="mb-1"><strong>Akac Jane</strong></p>
@@ -134,106 +134,64 @@
 
 
 
-<!--
 
-    <div style="background-image: url('{{ asset('assets/images/test.png') }}');" class="container faq-section mt-4">
-        <h2 class="faq-title">Frequently Asked Questions</h2>
-        <div class="accordion" id="faqAccordion">
-            <!-- FAQ 1 --
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What programming languages do you teach?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            We offer courses in various programming languages, including Python, JavaScript, PHP, and React. Our curriculum is designed to give students a solid foundation in both front-end and back-end development.
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <section style=" background: linear-gradient(to right, #007bff, #6610f2);"  class="unique-faq-section">
+        <div class="faq-container">
+          <h2>Your Questions,Answered</h2>
+          <div class="faq-accordion">
+            <details>
+              <summary>
+                <span> What programming languages will I learn in the Frontend Development track?</span>
+                <i class="bi b"></i>
+              </summary>
+              <div class="faq-content">
+                <p>You’ll learn HTML, CSS, JavaScript, and frameworks like React.js to build dynamic, responsive web applications.
     
-            <!-- FAQ 2 --
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Do I need any prior experience to join?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            No prior experience is required. Our courses are beginner-friendly and designed to take you from basic concepts to advanced topics. We welcome learners of all skill levels!
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>  What tools do we use for Backend Development?</span>
+                <i class="bi bi-chev"></i>
+              </summary>
+              <div class="faq-content">
+                <p>We focus on server-side technologies like PHP, Node.js, Laravel, and databases like MySQL to handle data and business logic.</p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span> Will the Mobile App Development program cover both Android and iOS??</span>
+                <i class="bi bi-chevro"></i>
+              </summary>
+              <div class="faq-content">
+                <p>Yes, we teach mobile app development using React Native, enabling you to build cross-platform apps for both Android and iOS.
     
-            <!-- FAQ 3 --
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How long do the courses last?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Our courses vary in length. Some can be completed in a few weeks, while others may take a few months, depending on the intensity and level of detail. We offer both full-time and part-time options to suit your schedule.
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- FAQ 4 --
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Can I learn at my own pace?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes! Our platform offers flexible learning options, allowing you to learn at your own pace. You can access course materials and lessons at any time, so you can fit learning around your schedule.
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- FAQ 5 --
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Do you provide job placement assistance?
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes, we provide job placement assistance to our students. Our team helps with resume building, interview preparation, and connecting you with potential employers in the tech industry.
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>  Do we get hands-on projects during the program?</span>
+                <i class="bi bi-chevr"></i>
+              </summary>
+              <div class="faq-content">
+                <p> Absolutely! Each track includes practical projects to help you apply your knowledge in real-world scenarios and build your portfolio.</p>
+              </div>
+            </details>
+          </div>
         </div>
-    </div>
-    
--->     
-    
-
-
-    
+      </section>
 
 
 
 
 
-<section class="partner-section mt-3">
+
+<section class="partner-section ">
     <div class="container">
-        <h1 class="animate-heading">Code Your Success,Secure Your Spot Now!</h1>
+        <h1 class="animate-heading">Code Your Success—Join Now!</h1>
         <p class="animate-paragraph">"Unlock your career potential with our hands-on curriculum,
         expertly designed to <br> equip you with the skills needed to thrive in today's
         competitive job market."</p>

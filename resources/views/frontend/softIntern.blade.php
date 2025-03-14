@@ -135,7 +135,7 @@
 
 
     <!-- Learning Outcomes Section -->
-    <div class="learning-outcomes-section-3">
+    <div style="margin-top: -50px" class="learning-outcomes-section-3">
 <!-- Left Section with Title and Outcome Card -->
 <div class="learning-outcomes-left-3">
 <h1>Learning Outcomes</h1>
@@ -158,7 +158,7 @@
 </div>
 
 
-<section class="partner-section mt-3">
+<section style="margin-top: -50px" class="partner-section ">
 <div class="container">
 <h1 class="animate-heading">Get practical skills. Apply today!</h1>
 <p class="animate-paragraph">Make a real impact with our dynamic internship. You'll contribute to meaningful <br> projects and gain industry insights. Apply now to launch your career.</p>

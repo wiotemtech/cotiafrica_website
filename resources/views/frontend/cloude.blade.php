@@ -3,148 +3,230 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="background1" style="background-image: url('assets/images/cloud.jpg'); background-size: cover; background-position: center; height: 90vh;">
-    <div class="card" style="background-color: rgb(3, 3, 56); color: white; margin-bottom:33px" >
-        <h2 style="font-size: 20px;">Cloud Computing at CodeToInnovate Africa</h2>
-        <p style="font-size: 18px;">
-        At CodeToInnovate Africa, we harness the power of cloud computing to
-        deliver flexible, scalable, and cost-effective solutions that meet the
-        diverse needs of our clients. Our team specializes in deploying and
-        managing cloud infrastructures that enhance operational efficiency.
-
-        </p>
-        </p>
+<div style="background-image: url('{{ asset('assets/images/clo.jpeg') }}');"  class="web-container">
+    <div class="web-card">
+        <h2>Building in the Cloud, Collaboratively</h2>
+        <p>We drive innovation and scalability through cutting-edge cloud computing technologies.</p>
+        <a href="{{ route('contactus') }}">Talk to Us</a>
     </div>
 </div>
 
+<section class="photo-text-section1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 tttyd-program-card-2" data-aos="fade-right">
+                <img src="{{ asset('assets/images/clo.avif') }}" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-content tttyd-program-card-2" data-aos="fade-left" style="margin-top: 16px;">
+                <h2 id="h12">   About Cloud Computing</h2>
+                <p id="p12" >
+                    
 
-<section class="custom-section" style=" margin-top: 2px;">
-    <!-- First Div -->
-    <div class="custom-div custom-first-div">
-        <img src="{{ asset('assets/images/cloud.jpg') }}" alt="Profile Picture">
-    </div>
-
-    <!-- Second Div -->
-    <div class="custom-div custom-second-div">
-       <!-- <img src="/img/eric.jpg" alt="Smaller Profile Picture">
-        <span class="custom-span">Name<br>Number</span>-->
-        <h1 class="custom-h1" style="font-size: 25px;">Cloud Computing</h1>
-        <p class="custom-p" style="text-align: left; font-size: 18px;">
-
-
-            We offer a range of cloud services, including cloud storage,
-            cloud hosting, and software as a service (SaaS), enabling businesses
-            to reduce costs and improve collaboration. By leveraging cutting-edge
-            technologies, we help organizations transition to the cloud smoothly,
-            ensuring data security and compliance while optimizing performance.
-            Whether you're a startup looking to scale quickly or an established
-            enterprise seeking to modernize your operations, CodeToInnovate Africa
-            is here to empower you with innovative cloud solutions that drive
-            growth and success.
-
-        </p>
-    </div>
-</section>
-
-
-
-<section class="py-5" style="margin-top: -50px; background: linear-gradient(135deg, #1E88E5, #43A047);">
-    <h1 class="text-center" style="font-size: 25px;font-family: Arial, sans-serif; font-weight: bold;">Programming Languages We Use</h1>
-    <div class="scroll-container">
-        <div class="language-wrapper">
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-                <p>Interactive Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="Python">
-                <h3>Python</h3>
-                <p>Data Science & ML</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
-                <h3>PHP</h3>
-                <p>Backend Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Laravel">
-                <h3>Laravel</h3>
-                <p>Modern PHP Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="React.js">
-                <h3>React.js</h3>
-                <p>Frontend Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++">
-                <h3>C++</h3>
-                <p>System & App Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
-                <h3>Java</h3>
-                <p>Enterprise Software</p>
-            </div>
-            <!-- Duplicate items for seamless scrolling -->
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-                <p>Interactive Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="Python">
-                <h3>Python</h3>
-                <p>Data Science & ML</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
-                <h3>PHP</h3>
-                <p>Backend Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Laravel">
-                <h3>Laravel</h3>
-                <p>Modern PHP Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="React.js">
-                <h3>React.js</h3>
-                <p>Frontend Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++">
-                <h3>C++</h3>
-                <p>System & App Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
-                <h3>Java</h3>
-                <p>Enterprise Software</p>
+                  We leverage the latest cloud advancements to build scalable and agile solutions that empower your business to innovate and adapt. From serverless computing to AI-powered cloud services, we help you unlock the full potential of the cloud.
+                </p>
+                
             </div>
         </div>
     </div>
 </section>
 
-<section class="partner-section" style="margin-top: -2px; background-color: white;" >
-    <div class="container" >
-        <h1 style="font-size: 18x; font-family: Arial, sans-serif;">Have an idea?Lets Build it together!</h1>
-        <p>
-            Have an Idea? Let’s Build Together!
-            At CodeToInnovate Africa, we believe in turning great ideas into reality.
-            If you have a vision for a website, app, or digital project, we’re here to
-            collaborate and bring it to life. Together, we’ll build a solution that not
-            only meets your needs but exceeds your expectations. Let’s innovate, create,
-            and grow together</p>
 
 
-            <a class="btn" style="border: 2px solid green; text-decoration: none; padding-right: 30px; display: inline-flex; align-items: center; "
-        class="oj ms-lg-0" href="{{ route('contactus') }}">
-        Contact Us <i class="fa fa-arrow-right arrow-icon"></i></a>
 
-  </section>
+<h1 class="ercdv-why-choose-us-title">Cloud computing deployments</h1>
+
+<div class="ercdv-why-choose-us-section mt-4">
+  <div class="row ercdv-row">
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-check-circle"></i>  Business Applications (CRM, ERP)</div>
+    </div>
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-person-lines-fill"></i> Data Storage and Backup</div>
+    </div>
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-chat-square-text-fill"></i> Big Data Analytics</div>
+    </div>
   </div>
+  <div class="row ercdv-row mt-2">
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-phone"></i> AI and Machine Learning (AI/ML)</div>
+    </div>
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-clock"></i> Internet of Things (IoT)</div>
+    </div>
+    <div class="col-md-4">
+      <div class="ercdv-why-choose-us-item"><i class="bi bi-graph-up"></i> DevOps:</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div style="margin: 0"   class="container-1  ">
+    <h1 class="team-head" data-aos="fade-up">Cloud Deployment & Service Models</h1>
+    <p class="team-p1" data-aos="fade-up" data-aos-delay="200">An inclusive assembly of creative minds.</p>
+    <div class="row">
+        <!-- Left Card with Expertise Content -->
+        <div class="col-md-6 col-sm-12 mb-4">
+            <div class="left-card" data-aos="fade-right">
+                <h5 class="card-title text-center">Cloud Service Models</h5>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-code-slash"></i> Infrastructure as a Service (IaaS)
+                    </li>
+                    <p>IaaS provides fundamental computing infrastructure—virtual servers, storage, networks, and operating systems—over the internet. It offers the highest level of flexibility and control.</p>
+
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-palette"></i> Platform as a Service (PaaS)
+                    </li>
+                    <p>PaaS provides a platform allowing customers to develop, run, and manage web applications without the complexity of building and maintaining the infrastructure associated with developing and launching an app.
+
+                    </p>
+
+
+
+
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-laptop"></i>Software as a Service (SaaS)
+                    </li>
+                    <p>SaaS delivers software applications over the internet, typically on a subscription basis. Users access these applications through a web browser or mobile app.</p>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Card with Expertise Content -->
+        <div class="col-md-6 col-sm-12 mb-4">
+            <div class="right-card" data-aos="fade-left">
+                <h5 class="card-title text-center">Cloud Deployment Models</h5>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-gear-wide-connected"></i> Public Cloud
+                    </li>
+                    <p>Services are offered over the public internet and available to anyone who wants to purchase them.</p>
+
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-people"></i> Private Cloud
+                    </li>
+                    <p>Services are dedicated to a single organization and are typically hosted on-premises or in a dedicated data center.</p>
+
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-people"></i> Multi-Cloud
+                  </li>
+                  <p>Using multiple public cloud providers to leverage the best features of each</p>
+
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-shield-check"></i> Hybrid Cloud
+                    </li>
+                    <p>A combination of public and private clouds, allowing data and applications to be shared between them..</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="programming-tech">
+    <div class="tech-container">
+      <h2 class="tech-title">Our Technology Stack</h2>
+      
+      <div class="tech-list">
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg/512px-AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg.png" alt="Amazon EC2">
+            <span>Amazon EC2</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/150px-Microsoft_Azure.svg.png?20211008202712" alt="Azure">
+            <span>Azure</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/512px-Google_Cloud_logo.svg.png" alt="Google Cloud Storage">
+            <span>Google Cloud Storage</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/617px-Kubernetes_logo_without_workmark.svg.png" alt="Kubernetes">
+            <span>Kubernetes</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Terraform_Logo.svg/512px-Terraform_Logo.svg.png?20181016201549" alt="Terraform">
+            <span>Terraform</span>
+        </div>
+        <div class="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/610px-Docker_%28container_engine%29_logo.svg.png" alt="Docker">
+            <span>Docker</span>
+        </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <section style="background-image: url('{{ asset('assets/images/test.png') }}');" class="unique-faq-section">
+    <div class="faq-container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <details>
+          <summary>
+            <span>Is cloud computing secure?</span>
+            <i class="bi bi-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Yes, with robust security measures like encryption and access control. We implement best practices and work with you to ensure data protection. Cloud providers often have stronger security than on-premises setups. Security is a shared responsibility.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span>How will moving to the cloud affect my systems?</span>
+            <i class="bi bi-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-content">
+            <p>We assess, plan, and execute migrations with minimal disruption. Options include lift-and-shift or re-architecting for cloud-native benefits. We help modernize applications for optimal cloud performance. A smooth transition is our goal.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span>How much will cloud migration cost?</span>
+            <i class="bi bi-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Costs vary; we optimize spending with analysis and recommendations. Pay-as-you-go models and cost-control tools help manage expenses. Transparent pricing and resource scaling ensure you only pay for what you use.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span>What are the benefits of cloud computing?</span>
+            <i class="bi bi-chevron-down faq-icon"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Scalability, cost savings, accessibility, and improved reliability. Automatic updates and enhanced collaboration boost productivity. Cloud fosters innovation and faster time-to-market. It's a modern, efficient solution..</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section  class="partner-section ">
+    <div class="container">
+        <h1 class="animate-heading">Cloud vision? We'll build the infrastructure.</h1>
+        <p class="animate-paragraph">Your cloud vision, our infrastructure expertise. We'll build<br> the foundation for your digital success</p>
+
+        <a class="btn-join-talent" href="{{ route('contactus') }}">
+            Let's Connect<i id="arrow" class="fa fa-arrow-right arrow"></i>
+        </a>
+    </div>
+</section>
 
 
 

@@ -32,7 +32,7 @@ background-image: url('{{ asset('assets/images/test.png') }}');
             <div class="social-icons mt-3">
                 <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/company/codetoinnovate-africa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>

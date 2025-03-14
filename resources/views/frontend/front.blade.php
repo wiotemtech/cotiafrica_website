@@ -2,12 +2,11 @@
 
 @section('content')
 
-<div class="section">
-    <h1 style="font-size: 5vw;color:white;font-family:'poppins',sans-serif" >Frontend Engineering</h1>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-</div>
+<section style="margin-top: 55px" class="erc-landing-section">
+    <div class="erc-landing-content">
+        <h1>Frontend Engineering</h1>
+    </div>
+</section>
 
 
 <div class="program-section">
@@ -39,6 +38,11 @@
       </tr>
     </table>
   </div>
+
+
+
+
+
 
   <section  class="admission-requirements-section">
     <div class="container">
@@ -114,7 +118,7 @@
 
         <!-- Best Choice (Upfront Payment) - Styled Uniquely -->
         <div class="payment-plan-card payment-plan-upfront">
-            <div class="payment-plan-header best-choice-header">Best Choice</div>
+            <div style="color: white" class="payment-plan-header best-choice-header">Best Choice</div>
             <div class="payment-plan-content">
                 <h3 class="payment-plan-title">Pay in Full</h3>
                 <p style="color:#1E88E5" class="payment-plan-price">UGX 890,000</p>
@@ -181,13 +185,13 @@
     
     <section class="partner-section mt-3">
         <div class="container">
-            <h1 class="animate-heading">Code Your Success,Secure Your Spot Now!</h1>
+            <h1 class="animate-heading">Code Your Success, Enroll Now!</h1>
             <p class="animate-paragraph">"Unlock your career potential with our hands-on curriculum,
             expertly designed to <br> equip you with the skills needed to thrive in today's
             competitive job market."</p>
     
             <a class="btn-join-talent" href="{{ route('contactus') }}">
-                Enrole Now<i id="arrow" class="fa fa-arrow-right arrow"></i>
+                Enroll Now<i id="arrow" class="fa fa-arrow-right arrow"></i>
             </a>
         </div>
     </section>

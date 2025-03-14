@@ -79,7 +79,7 @@
 <!-- Left Card: Required Qualifications -->
 <div class="qualification-card qualification-left-card">
 <div class="qualification-card-image">
-<img src="{{ asset('assets/images/a.jpg') }}" alt="Left Card Image">
+<img src="{{ asset('assets/images/dataA.jpg') }}" alt="Left Card Image">
 </div>
 <div class="qualification-card-content">
 <h2>Key Responsibility</h2>
@@ -99,7 +99,7 @@
 <!-- Right Card: Preferred Qualifications -->
 <div class="qualification-card qualification-right-card">
 <div class="qualification-card-image">
-<img src="{{ asset('assets/images/a.jpg') }}" alt="Right Card Image">
+<img src="{{ asset('assets/images/dataA.jpg') }}" alt="Right Card Image">
 </div>
 <div class="qualification-card-content">
 <h2>Preferred Qualifications</h2>
@@ -136,7 +136,7 @@
 
 
     <!-- Learning Outcomes Section -->
-    <div class="learning-outcomes-section-3">
+    <div style="margin-top: -50px" class="learning-outcomes-section-3">
 <!-- Left Section with Title and Outcome Card -->
 <div class="learning-outcomes-left-3">
 <h1>Learning Outcomes</h1>
@@ -154,12 +154,12 @@
                                                                                             
 <!-- Right Section with Image -->
 <div class="learning-outcomes-right-3">
-<img src="{{ asset('assets/images/software intern.jpg') }}">
+<img src="{{ asset('assets/images/dataA.jpg') }}">
 </div>
 </div>
 
 
-<section class="partner-section mt-3">
+<section style="margin-top: -50px"  class="partner-section ">
 <div class="container">
 <h1 class="animate-heading">Get practical skills. Apply today!</h1>
 <p class="animate-paragraph">Drive real impact through data analysis. Gain industry insights on meaningful<br> projects. Apply now to launch your career in data.</p>
