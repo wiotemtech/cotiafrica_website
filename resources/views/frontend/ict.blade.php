@@ -57,7 +57,7 @@ Our internship program offers a valuable, hands-on experience across various tec
             </div>
             <div class="col-md-6 col-lg-4">
                 <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
-                    <img src="{{ asset('assets/images/digital.jpg') }}" class="img-fluid" alt="Corporate ICT Training">
+                    <img src="{{ asset('assets/images/dataA.jpg') }}" class="img-fluid" alt="Corporate ICT Training">
                     <div class="card-body">
                         <h5 class="card-title-1">Data Analytics intern</h5>
                         <p class="card-text-1">Our Data Analytics Internship is your entry point into the dynamic world of data-driven decision making. You'll gain hands-on experience with real-world datasets, learning how to extract insights, build visualizations, and deliver actionable recommendations. You'll work alongside experienced analysts, gaining practical skills in areas like data cleaning, statistical analysis, and data visualization.</p>
@@ -67,7 +67,7 @@ Our internship program offers a valuable, hands-on experience across various tec
             </div>
             <div class="col-md-6 col-lg-4">
                 <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
-                    <img src="{{ asset('assets/images/gg.avif') }}" class="img-fluid" alt="Women in Tech">
+                    <img src="{{ asset('assets/images/cyper.jpg') }}" class="img-fluid" alt="Women in Tech">
                     <div class="card-body">
                         <h5 class="card-title-1"> Cybersecurity intern</h5>
                         <p class="card-text-1">A Cybersecurity Internship offers a critical launchpad, where you'll translate security concepts into robust defenses. You'll gain hands-on experience with security tools and platforms, working on real-world scenarios that span threat analysis, vulnerability assessments, and incident response. You'll collaborate with experienced security professionals, refining your skills in network security.</p>
@@ -88,7 +88,7 @@ Our internship program offers a valuable, hands-on experience across various tec
         <div class="col-md-6 col-lg-3">
             <div class="testimonial-card p-3">
                 <div class="testimonial-header">
-                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                     <div>
                         <h5 class="t-h">Information Technology</h5>
                         <p class="mb-1"><strong>John Doe</strong></p>
@@ -100,7 +100,7 @@ Our internship program offers a valuable, hands-on experience across various tec
         <div class="col-md-6 col-lg-3">
             <div class="testimonial-card p-3">
                 <div class="testimonial-header">
-                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                     <div>
                         <h5 class="t-h">Digital Marketing</h5>
                         <p class="mb-1"><strong>Jane Smith</strong></p>
@@ -112,7 +112,7 @@ Our internship program offers a valuable, hands-on experience across various tec
         <div class="col-md-6 col-lg-3">
             <div class="testimonial-card p-3">
                 <div class="testimonial-header">
-                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                     <div>
                         <h5 class="t-h">Graphics Design</h5>
                         <p class="mb-1"><strong>muwanguzi Allan</strong></p>
@@ -124,7 +124,7 @@ Our internship program offers a valuable, hands-on experience across various tec
         <div class="col-md-6 col-lg-3">
             <div class="testimonial-card p-3">
                 <div class="testimonial-header">
-                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                     <div>
                         <h5 class="t-h">Computer Science</h5>
                         <p class="mb-1"><strong>Emily Davis</strong></p>
@@ -137,100 +137,60 @@ Our internship program offers a valuable, hands-on experience across various tec
 </div>
 
 
-<!--
+<section style=" background: linear-gradient(to right, #007bff, #6610f2);"  class="unique-faq-section">
+    <div class="faq-container">
+      <h2>You Ask, We Answer!
+        <h2></h2>
+      <div class="faq-accordion">
+        <details>
+          <summary>
+            <span>What specific projects will I work on?</span>
+            <i class="bi b"></i>
+          </summary>
+          <div class="faq-content">
+            <p>You'll tackle real-world challenges, contributing to live data analysis, software development, or cybersecurity incident response. Expect hands-on experience and mentorship.
 
-<div style="background-image: url('{{ asset('assets/images/test.png') }}');" class="container faq-section mt-4">
-    <h2 class="faq-title">Frequently Asked Questions</h2>
-    <div class="accordion" id="faqAccordion">
-        <!-- FAQ 1 --
-        <div class="faq-item">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What internship opportunities do you offer?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        We offer internships in Digital Marketing, Software Engineering, and Graphics Design. Each program provides hands-on experience, mentorship, and exposure to industry-standard tools and practices.
-                    </div>
-                </div>
-            </div>
-        </div>
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span>  What skills will I gain during the internship?</span>
+            <i class="bi bi-chev"></i>
+          </summary>
+          <div class="faq-content">
+            <p>You'll sharpen your technical skills in data analysis tools, software development languages, or cybersecurity protocols. Expect practical experience and portfolio building.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span> Is this a paid internship, and what is the duration?</span>
+            <i class="bi bi-chevro"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Paid internships are available, and the duration is typically three(3) months, with flexible scheduling options. Check our website for precise details.
 
-        <!-- FAQ 2 --
-        <div class="faq-item">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What are the requirements needed to apply for the internship?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        To apply for the internship, we require a placement letter from your institution, as well as a registration fee of 50,000 UGX. These are the basic requirements to secure your spot in the program
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FAQ 3 --
-        <div class="faq-item">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        How long do the internship programs last?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Our internship programs typically last 8 to 12 weeks, with flexible start dates. Some programs may offer part-time options, allowing you to balance other commitments..
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FAQ 4 --
-        <div class="faq-item">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Can I work at my own pace during the internship?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, our internship programs are designed with flexibility in mind. You can work at your own pace while meeting project deadlines. Our mentors will guide you throughout the program to ensure you stay on track.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FAQ 5 --
-        <div class="faq-item">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Will I receive job placement assistance after completing the internship?
-                        </button>
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, we provide job placement assistance to our students. Our team helps with resume building, interview preparation, and connecting you with potential employers in the tech industry.
-                    </div>
-                </div>
-            </div>
-        </div>
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span> What are the career prospects after completing the internship?   </span>
+            <i class="bi bi-chevr"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Interns gain valuable industry connections and experience, often leading to full-time opportunities or enhanced career prospects within our company or related fields.</p>
+          </div>
+        </details>
+      </div>
     </div>
-</div>
-
--->
+  </section>
 
 
-<section class="partner-section mt-3">
+
+<section class="partner-section ">
     <div class="container">
-        <h1 class="animate-heading">Gain real-world skills,Apply for our internship today!</h1>
+        <h1 class="animate-heading">Gain skills—apply for our internship!</h1>
         <p class="animate-paragraph">Make a real impact with our dynamic internship. You'll contribute to meaningful <br> projects and gain industry insights. Apply now to launch your career.</p>
 
         <a class="btn-join-talent" href="https://docs.google.com/forms/d/e/1FAIpQLSdy_uIywrsqinOgqRpBgYFWz65de5ysU-b1vCJKIk667cNtsQ/formResponse">
@@ -238,92 +198,6 @@ Our internship program offers a valuable, hands-on experience across various tec
         </a>
     </div>
 </section>
-
-
-
-
-      <!-- Corporate ICT Training Section -
-      <section id="ict-section">
-        <div class="container">
-            <h2 id="ict-title " class="text-center">Our Corporate ICT Training Programs</h2>
-            <div class="row">
-                <!-- Program 1 --
-                <div class="col-md-4 mb-4">
-                    <div class="card-t shadow-sm">
-                        <h3 class="card-h">Cybersecurity Essentials</h3>
-                        <p class="card-p">Learn to protect your organization's critical data and networks from cybersecurity threats.
-                            Ideal for IT professionals looking to enhance their security skills.</p>
-                    </div>
-                </div>
-                <!-- Program 2 --
-                <div class="col-md-4 mb-4">
-                    <div class="card-t shadow-sm">
-                        <h3 class="card-h">Computer Networking</h3>
-                        <p class="card-p">Master cloud technologies like AWS and Azure to optimize your organization’s IT infrastructure and improve operational efficiency.</p>
-                    </div>
-                </div>
-                <!-- Program 3 --
-                <div class="col-md-4 mb-4">
-                    <div class="card-t shadow-sm">
-                        <h3 class="card-h">Data Analysis</h3>
-                        <p class="card-p">Equip your team with data analysis skills using tools like Power BI and Python to make data-driven decisions that improve business performance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
-
-            <!-- Who Can Apply Section --
-    <section id="who-can-apply">
-        <div class="container">
-            <h2>Who Can Apply for Corporate ICT Training</h2>
-            <ul class="list-group">
-                <li class="lgs-item-123">
-                    <i class="fas fa-user"></i>
-                    <span class="fwb-987">IT Professionals:</span>
-                    <span>Upgrade your skills with our Corporate ICT training programs.</span>
-                </li>
-                <li class="lgs-item-123">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span class="fwb-987">Students & Graduates:</span>
-                    <span>Enhance your knowledge and gain practical ICT skills to boost your career prospects.</span>
-                </li>
-                <li class="lgs-item-123">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <span class="fwb-987">Educators:</span>
-                    <span>Gain advanced skills to integrate technology into your teaching methods.</span>
-                </li>
-                <li class="lgs-item-123">
-                    <i class="fas fa-user-tie"></i>
-                    <span class="fwb-987">Entrepreneurs:</span>
-                    <span>Discover how to leverage ICT for business innovation and growth.</span>
-                </li>
-            </ul>
-        </div>
-    </section>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @endsection

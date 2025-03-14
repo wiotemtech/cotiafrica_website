@@ -29,7 +29,7 @@ Route::controller(Controller::class)->group(function(){
     Route::get('/softwares','software')->name('software');
     Route::get('/mobileApp','mobile')->name('mobileApp');
     Route::get('/webDevelopment','web')->name('webDevelopment');
-    Route::get('/ai','artificial')->name('ai');
+    Route::get('/data','dataAnalysis')->name('data');
     Route::get('/programming','program')->name('programming');
     Route::get('/ict-training','coperate')->name('ict-training');
     Route::get('/women-in tech','tech')->name('women-in tech');

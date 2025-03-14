@@ -12,7 +12,7 @@
     <div class="internship-text">
         <h1>A Community for Women in Technology.</h1>
         <p>Join a network of driven women, develop essential tech skills, and make a real impact through hands-on experience. Apply now and start shaping the future of technology</p>
-        <a href="#apply-now">Apply Now</a>
+        <a href="{{ route('contactus') }}">Apply Now</a>
     </div>
 </div>
 
@@ -62,7 +62,7 @@
         <div class="col-md-6 col-lg-3">
             <div class="testimonial-card p-3">
                 <div class="testimonial-header">
-                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                     <div>
                         <h5>Bussines</h5>
                         <p class="mb-1"><strong>Mercy Ruth</strong></p>
@@ -74,7 +74,7 @@
         <div class="col-md-6 col-lg-3">
             <div class="testimonial-card p-3">
                 <div class="testimonial-header">
-                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                     <div>
                         <h5>Teacher</h5>
                         <p class="mb-1"><strong>Akello Lucy</strong></p>
@@ -86,7 +86,7 @@
         <div class="col-md-6 col-lg-3">
             <div class="testimonial-card p-3">
                 <div class="testimonial-header">
-                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                     <div>
                         <h5>Student</h5>
                         <p class="mb-1"><strong>Nalubega Ruth</strong></p>
@@ -98,7 +98,7 @@
         <div class="col-md-6 col-lg-3">
             <div class="testimonial-card p-3">
                 <div class="testimonial-header">
-                    <img src="/about.jpg" alt="Student" class="testimonial-img">
+                    <img src="{{ asset('assets/images/ict train.jpg') }}" alt="Student" class="testimonial-img">
                     <div>
                         <h5>Accountant</h5>
                         <p class="mb-1"><strong>Dolly Atukunda</strong></p>
@@ -109,6 +109,61 @@
         </div>
     </div>
 </div>
+
+
+
+<section style=" background: linear-gradient(to right, #007bff, #6610f2);"  class="unique-faq-section">
+    <div class="faq-container">
+      <h2>You Ask, We Answer!
+    </h2>
+      <div class="faq-accordion">
+        <details>
+          <summary>
+            <span> What is the goal of the Women in Tech program?</span>
+            <i class="bi b"></i>
+          </summary>
+          <div class="faq-content">
+            <p>The program aims to empower women with tech skills, mentorship, and career opportunities, bridging the gender gap in the industry.
+
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span>  Who can apply for the program?</span>
+            <i class="bi bi-chev"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Any woman passionate about technology, regardless of background, can apply. No prior experience is required, just enthusiasm to learn.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span> What skills will I gain from this program?</span>
+            <i class="bi bi-chevro"></i>
+          </summary>
+          <div class="faq-content">
+            <p>You'll learn coding, UI/UX design, data science, and soft skills like teamwork and problem-solving, preparing you for tech careers.
+
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span> Is there any financial support or scholarship available?  </span>
+            <i class="bi bi-chevr"></i>
+          </summary>
+          <div class="faq-content">
+            <p>Yes, we offer scholarships and financial aid for eligible applicants to ensure accessibility and inclusion in the program.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
 
 

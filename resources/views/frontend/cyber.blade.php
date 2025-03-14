@@ -79,7 +79,7 @@
 <!-- Left Card: Required Qualifications -->
 <div class="qualification-card qualification-left-card">
 <div class="qualification-card-image">
-<img src="{{ asset('assets/images/a.jpg') }}" alt="Left Card Image">
+<img src="{{ asset('assets/images/cyper.jpg') }}" alt="Left Card Image">
 </div>
 <div class="qualification-card-content">
 <h2>Key Responsibility</h2>
@@ -98,7 +98,7 @@
 <!-- Right Card: Preferred Qualifications -->
 <div class="qualification-card qualification-right-card">
 <div class="qualification-card-image">
-<img src="{{ asset('assets/images/a.jpg') }}" alt="Right Card Image">
+<img src="{{ asset('assets/images/cyper.jpg') }}" alt="Right Card Image">
 </div>
 <div class="qualification-card-content">
 <h2>Preferred Qualifications</h2>
@@ -135,32 +135,33 @@
 
 
     <!-- Learning Outcomes Section -->
-    <div class="learning-outcomes-section-3">
+    <div style="margin-top: -50px"  class="learning-outcomes-section-3">
 <!-- Left Section with Title and Outcome Card -->
 <div class="learning-outcomes-left-3">
 <h1>Learning Outcomes</h1>
 <!-- Outcome Card -->
 <div class="outcome-card-3">
 <ul>
-<li><strong>Industry Exposure:</strong> Practical experience in security operations and monitoring.</li>
-<li><strong>Skill Development:</strong> Understanding of incident response procedures and methodologies.</li>
-<li><strong>Networking Opportunities:</strong> Knowledge of security tools and their implementation.</li>
-<li><strong>Real-World Problem Solving:</strong> Skills in threat detection and analysis.</li>
-<li><strong>Agile Development Knowledge:</strong> Experience with vulnerability management processes.</li>
+  <li><strong>Industry Exposure:</strong> Gain hands-on experience in cybersecurity operations and real-time threat monitoring.</li>
+  <li><strong>Skill Development:</strong> Develop expertise in incident response and security protocols.</li>
+  <li><strong>Networking Opportunities:</strong> Learn to implement and manage cutting-edge security tools effectively.</li>
+  <li><strong>Real-World Problem Solving:</strong> Build skills in identifying, analyzing, and mitigating security threats.</li>
+  <li><strong>Agile Development Knowledge:</strong> Understand and apply vulnerability management in dynamic environments.</li>
+  
 </ul>
 </div>
 </div>
                                                                                             
 <!-- Right Section with Image -->
 <div class="learning-outcomes-right-3">
-<img src="{{ asset('assets/images/software intern.jpg') }}">
+<img src="{{ asset('assets/images/cyper.jpg') }}">
 </div>
 </div>
 
 
-<section class="partner-section mt-3">
+<section style="margin-top: -50px"  class="partner-section ">
 <div class="container">
-<h1 class="animate-heading">Gain practical cyber skills. Apply now!</h1>
+<h1 class="animate-heading">Get Cyber Skills. Apply Now!</h1>
 <p class="animate-paragraph">Contribute to real-world security projects, gain industry insights,<br> and launch your cyber career. Apply today."</p>
                                                                                                 
 <a class="btn-join-talent" href="https://docs.google.com/forms/d/e/1FAIpQLSdy_uIywrsqinOgqRpBgYFWz65de5ysU-b1vCJKIk667cNtsQ/formResponse">
