@@ -6,7 +6,7 @@
             style="background:#5216ac!important"><i class="fa fa-bars"></i></label>
         <h5 class="" style="line-height:1; margin:0!important; font-weight:300">
             <a href="#" class="w3-button" style="background:#5216ac!important">
-                <img src="{{ asset('images/logo.png') }}" alt="w3mix" class="w3-image"> &nbsp; Hakateq Solutions
+                
             </a>
         </h5>
     </div>
@@ -27,6 +27,21 @@
             &nbsp;<span>Blogs</span>
 
         </a>
+
+         <!-- Blogs Management -->
+         <a href="{{ route('events.index2') }}"
+         class=" w3-bar-item w3-button w3-padding-large w3-hover-text-primary">
+         <i class="fa fa-fw fa-book"></i>
+         &nbsp;<span>Events</span>
+
+     </a>
+
+          <!-- Blogs Management -->
+          <a href="{{ route('messages.index3') }}"
+          class=" w3-bar-item w3-button w3-padding-large w3-hover-text-primary">
+          <i class="fa fa-fw fa-book"></i>
+          &nbsp;<span>messages from Contact Form</span>
+ 
 
 
     </div>

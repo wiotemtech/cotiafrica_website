@@ -19,11 +19,12 @@
         </a>
 
         <!-- For larger devices -->
-        <nav class="d-none d-md-flex">
-            <a href="{{ route('home') }}" class="nav-link text-app mx-2">Home</a>
+        <nav  class="d-none d-md-flex">
+            <a  href="{{ route('home') }}" class="nav-link text-app mx-2">Home</a>
             {{-- <a href="" class="nav-link text-app mx-2">Services</a> --}}
 
             <a href="{{ route('whyus')}}" class="nav-link text-app mx-2">Why Us</a>
+            <a href="{{ route('events') }}" class="nav-link text-app mx-2">Events</a>
             <a href="{{ route('blogs') }}" class="nav-link text-app mx-2">Blogs</a>
             <a href="{{ route('contactus') }}" class="nav-link text-app mx-2">Contact Us</a>
 
@@ -40,8 +41,9 @@
         <div class="container py-3">
             <a href="{{ route('home') }}" class="nav-link text-white">Home</a>
             {{-- <a href="" class="nav-link text-white">Services</a> --}}
-            <a href="{{ route('blogs') }}" class="nav-link text-white">Blogs</a>
             <a href="{{ route('whyus') }}" class="nav-link text-white">Why Us</a>
+            <a href="{{ route('events') }}" class="nav-link text-white">Events</a>
+            <a href="{{ route('blogs') }}" class="nav-link text-white">Blogs</a>
             <a href="{{ route('contactus') }}" class="nav-link text-white">Contact us</a>
 
 

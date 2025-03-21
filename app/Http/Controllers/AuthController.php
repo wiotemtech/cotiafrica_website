@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Exception;
 
 class AuthController extends Controller
 {
     //
     public function login(Request $request)
-    {
+{
+    try {
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
@@ -20,12 +22,15 @@ class AuthController extends Controller
             return redirect()->intended('dashboard');
         }
 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        throw new Exception('Invalid credentials');
+    } catch (Exception $e) {
+      
+        return back()->with('error', $e->getMessage())
+            ->withInput();
     }
+}
 
-
+    
     public function logout(Request $request)
     {
         Auth::logout();
