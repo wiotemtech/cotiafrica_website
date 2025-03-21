@@ -4,6 +4,10 @@ html, body {
     margin: 0; 
     padding:0}
 
+.one{
+        color: green;
+        margin: 15px;
+    }
 
 .bg-app{
   
@@ -4455,3 +4459,5 @@ span a{
 
 
 /*-----------------------------end for woemn in tech landing page-----------------------*/
+
+

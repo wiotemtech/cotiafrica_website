@@ -8,7 +8,7 @@
 <section id="blogshow" class="py-5 container mt-5">
     <div class="w3-card-4 w3-light-grey w3-padding-16 p-3">
         <h4 class="text-center display-4 font-weight-bold">{{$blog->title}}</h4>
-        <p><small>Published on {{ \Carbon\Carbon::parse($blog->published_at)->format('F j, Y') }}</small></p>
+        <p style="font-size:20px; font-weight: bolder;"><small>Published on {{ optional($blog->created_at)->format('Y-m-d') }}</small></p>
         <img src="{{asset('storage/' . $blog->blog_image)}}" width="100%" alt="">
         <hr>
 

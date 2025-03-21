@@ -2,7 +2,10 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,8 +27,13 @@ Route::controller(Controller::class)->group(function(){
     Route::get('/blogs', 'blogs')->name('blogs');
     Route::get('/blogs/{id}/{title}','showBlog')->name('blogs.show');
 
+    Route::get('/events','events')->name('events');
+    Route::get('/events/{id}/{title}', 'showBlog1')->name('events.show');
+
     Route::get('/why-us', 'whyus')->name('whyus');
     Route::get('/contact-us','contactus')->name('contactus');
+    Route::post('/contact-us',[ContactController::class,'sendEnquiry'])->name('contact-us.sendEnquiry');
+    
     Route::get('/softwares','software')->name('software');
     Route::get('/mobileApp','mobile')->name('mobileApp');
     Route::get('/webDevelopment','web')->name('webDevelopment');
@@ -51,9 +59,19 @@ Route::controller(Controller::class)->group(function(){
 
 Route::controller(BlogController::class)->group(function(){
     Route::get('/admin/blogs', 'index')->name('blogs.index');
+
     Route::post('/admin/blogs/store', 'store')->name('blogs.store');
     Route::put('/admin/blogs/update/{blog}', 'update')->name('blog.update');
     Route::delete('/admin/blogs/delete/{blog}', 'destroy')->name('blog.destroy');
 });
 
+
+
+Route::controller(EventController::class)->group(function(){
+    Route::get('/admin/events', 'index2')->name('events.index2');
+    Route::get('admin/messages-2025',[MessageController::class,'index3'])->name('messages.index3');
+    Route::post('/admin/events/store', 'store')->name('events.store');
+    Route::put('/admin/events/update/{event}', 'update')->name('event.update');
+    Route::delete('/admin/events/delete/{event}', 'destroy')->name('event.destroy');
+});
 

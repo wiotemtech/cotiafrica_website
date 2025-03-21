@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use App\Models\Blog;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -84,6 +85,8 @@ class Controller extends BaseController
         $blogs = Blog::orderBy('id', 'desc')->paginate(9);
         return view('frontend.blogs', compact('blogs'));
     }
+    
+
 
     public function showBlog($id, $title)
     {
@@ -99,6 +102,26 @@ class Controller extends BaseController
 
     public function dashboard(){
         return view('backend.dashboard');
+    }
+
+
+    //public function events(){
+     //   return view('frontend.events');
+    //}
+
+
+    public function events(){
+        $allevents = Event::orderBy('id', 'desc')->paginate(9);
+        return view('frontend.events', compact('allevents'));
+    }
+
+
+    public function showBlog1($id, $title)
+    {
+
+        $allevents = Event::where('id', $id)->firstOrFail();
+
+        return view('frontend.eventShow', compact('allevents'));
     }
 
 

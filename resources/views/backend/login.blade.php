@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeToInnovate Africa</title>
+    <title>CotiAfrica</title>
+    <link rel="icon" href="{{ asset('assets/icons/logo3.png') }}" type="image/x-icon">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -13,64 +15,79 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #f8f9fa;
+            background-color:whitesmoke;
             font-family: 'Arial', sans-serif;
         }
 
         .login-container {
-            max-width: 800px;
-            padding: 50px;
+            max-width: 400px;
+            padding: 60px;
             background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .login-container h2 {
-            text-align: center;
+            color: #333;
             margin-bottom: 20px;
-            color: black;
+            font-weight: 600;
         }
 
-        .login-container .form-control {
+        .form-control {
             margin-bottom: 15px;
-            padding: 15px;
+            padding: 14px;
             font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: 0.3s;
         }
 
-        .login-container .btn {
+        .form-control:focus {
+            border-color: #1e88e5;
+            box-shadow: 0 0 8px rgba(30, 136, 229, 0.3);
+        }
+
+        .btn-primary {
             width: 100%;
             padding: 12px;
-            background-color: #1e88e5;
+            background: linear-gradient(90deg, #1e88e5, #42a5f5);
             color: white;
             font-size: 16px;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
+            transition: 0.3s;
         }
 
-        .login-container .btn:hover {
-            background-color: #1e88e5;
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #1565c0, #1e88e5);
         }
 
-        .login-container .social-login {
+        .social-login {
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
 
-        .login-container .social-login a {
+        .social-login a {
             color: #1e88e5;
             margin: 0 10px;
             font-size: 20px;
             transition: color 0.3s;
         }
 
-        .login-container .social-login a:hover {
+        .social-login a:hover {
             color: #007bff;
         }
 
-        .login-container .forgot-password {
-            text-align: center;
-            margin-top: 10px;
+        .forgot-password {
+            margin-top: 15px;
         }
 
         .forgot-password a {
@@ -82,12 +99,22 @@
             text-decoration: underline;
         }
 
+        .error-message {
+            color: red;
+            margin-bottom: 15px;
+        }
     </style>
-<head>
+</head>
 <body>
-
     <div class="login-container">
         <h2>Admin Login</h2>
+
+        @if(session('error'))
+        <div class="error-message">
+            <strong>{{ session('error') }}</strong>
+        </div>
+        @endif
+
         <form action="{{ route('login') }}" method="POST">
             @csrf
             <div class="form-group">
@@ -104,33 +131,17 @@
         </form>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootsrapbundle.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- Include jQuery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="/js/jquery.min.js"></script>
-   <script src="/js/bootsrapbundle.min.js"></script>
-   <script src="/js/owl.carousel.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-   <!-- jQuery to load header and footer -->
-   <script>
-      $(function(){
-          $('#header').load('header.html');
-          $('#footer').load('footer.html');
-      });
-   </script>
+    <script>
+        $(function(){
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        });
+    </script>
 </body>
 </html>

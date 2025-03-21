@@ -35,7 +35,7 @@ class="custom-footer">
                                                                                                                 <h5 class="custom-footer-header">Follow Us</h5>
                                                                                                                 <div class="d-flex custom-social-links">
                                                                                                                     <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-facebook-f"></i></a>
-                                                                                                                    <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-twitter"></i></a>
+                                                                                                                    <a href="https://x.com/CodetoinnovateA/status/1901875910879383997" class="btn btn-outline-light btn-sm"><i class="fab fa-twitter"></i></a>
                                                                                                                     <a href="https://www.linkedin.com/company/codetoinnovate-africa/" class="btn btn-outline-light btn-sm"><i class="fab fa-linkedin"></i></a>
                                                                                                                     <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-instagram"></i></a>
                                                                                                                 </div>

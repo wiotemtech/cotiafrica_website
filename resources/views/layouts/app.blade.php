@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CotiAfrica</title>
     
-        <!-- Other meta tags and CSS links -->
+     <link rel="icon" href="{{ asset('assets/icons/logo3.png') }}"  type="image/x-icon">
     
-        <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CNGB4XS16W"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTNXSHQCFD"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-CNGB4XS16W');
+  gtag('config', 'G-NTNXSHQCFD');
 </script>
+
     
 
-    <link rel="icon" href="{{ asset('imagez/logo.png') }}">
+  
+    
+
 
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

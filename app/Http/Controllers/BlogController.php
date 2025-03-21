@@ -8,6 +8,7 @@ class BlogController extends Controller
 {
     /**
      * Display a listing of the blogs.
+     *  
      */
     public function index()
     {
@@ -21,7 +22,7 @@ class BlogController extends Controller
     {
         $request->validate([
             'title' => 'required|string|max:255',
-            'blog_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'blog_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:51200',
             'content' => 'required',
         ]);
 

@@ -39,20 +39,43 @@ background-image: url('{{ asset('assets/images/test.png') }}');
 
         <!-- Right Section: Contact Form -->
         <div class="col-md-6 animate">
+        
+        
+        
             <div class="contact-box">
+                @if(session('success'))
+                <div style="background-color: blue; color: white; padding: 10px; border-radius: 5px; position: relative;" class="alert" role="alert">
+                    <span>{{ session('success') }}</span>
+                    <button type="button" style="position: absolute; top: 5px; right: 10px; background: none; border: none; color: white; font-size: 18px; cursor: pointer;" onclick="this.parentElement.style.display='none';">
+                        &times;
+                    </button>
+                </div>
+            @endif
+            
+            
                 <h3 class="text-center fw-bold">Send Us a Message</h3>
-                <form>
+                <form action="{{route('contact-us.sendEnquiry')}}" method="POST">
+                    @csrf
                     <div class="mb-3">
-                        <label for="fullName" class="form-label">Full Name</label>
-                        <input style="background: #e9ecef; box-shadow: none;" type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                        <label for="fullName" class="form-label">Name</label>
+                        <input style="background: #e9ecef; box-shadow: none;" type="text" class="form-control" name="name" placeholder="Enter your full name">
+                        @error('name')
+                       <p style="color: red"> {{$message}}</p>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input style="background: #e9ecef; box-shadow: none;" type="email" class="form-control" id="email" placeholder="Enter your email">
+                        <input style="background: #e9ecef; box-shadow: none;" type="email" class="form-control" name="email" placeholder="Enter your email">
+                        @error('email')
+                       <p style="color: red"> {{$message}}</p>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
-                        <textarea style="background: #e9ecef; box-shadow: none;" class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                        <textarea style="background: #e9ecef; box-shadow: none;" class="form-control" name="messageContent" rows="4" placeholder="Your message"></textarea>
+                        @error('messageContent')
+                       <p style="color: red"> {{$message}}</p>
+                        @enderror
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Send Message</button>
                 </form>
