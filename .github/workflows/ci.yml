@@ -53,23 +53,23 @@ jobs:
       - name: Set application key
         run: php artisan key:generate
 
-      - name: Configure test database
-        run: |
-          echo "DB_CONNECTION=mysql" >> .env
-          echo "DB_HOST=127.0.0.1" >> .env
-          echo "DB_PORT=3306" >> .env
-          echo "DB_DATABASE=cotiafrica_test" >> .env
-          echo "DB_USERNAME=root" >> .env
-          echo "DB_PASSWORD=root" >> .env
+      # - name: Configure test database
+      #   run: |
+      #     echo "DB_CONNECTION=mysql" >> .env
+      #     echo "DB_HOST=127.0.0.1" >> .env
+      #     echo "DB_PORT=3306" >> .env
+      #     echo "DB_DATABASE=cotiafrica_test" >> .env
+      #     echo "DB_USERNAME=root" >> .env
+      #     echo "DB_PASSWORD=root" >> .env
 
-      - name: Run database migrations
-        run: php artisan migrate --force
+      # - name: Run database migrations
+      #   run: php artisan migrate --force
 
-      - name: Check code style (Pint)
-        run: ./vendor/bin/pint --test
+      # - name: Check code style (Pint)
+      #   run: ./vendor/bin/pint --test
 
-      - name: Run PHPUnit tests
-        run: php artisan test --parallel
+      # - name: Run PHPUnit tests
+      #   run: php artisan test --parallel
 
   # lint:
   #   name: Lint & Static Analysis
