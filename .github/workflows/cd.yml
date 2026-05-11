@@ -1,0 +1,81 @@
+name: CD
+
+on:
+  push:
+    branches: [main]
+
+# Only run one deployment at a time; cancel any in-flight run on new pushes
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  # CI must pass before deploying
+  test:
+    name: Run Tests (pre-deploy gate)
+    uses: ./.github/workflows/ci.yml
+
+  deploy:
+    name: Deploy to Production
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # -------------------------------------------------------
+      # Install PHP & Node dependencies and build assets locally
+      # before uploading via FTP
+      # -------------------------------------------------------
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          extensions: mbstring, pdo, pdo_mysql, xml, bcmath, curl, gd
+          coverage: none
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install Composer dependencies (production)
+        run: composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader
+
+      - name: Install NPM dependencies
+        run: npm ci
+
+      - name: Build frontend assets
+        run: npm run build
+
+      # -------------------------------------------------------
+      # Deploy via FTP
+      # Requires these repository secrets:
+      #   FTP_HOST     - FTP server hostname or IP
+      #   FTP_USER     - FTP username
+      #   FTP_PASSWORD - FTP password
+      #   FTP_PATH     - Remote path to upload to (e.g. /public_html)
+      # -------------------------------------------------------
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /cotiafrica.com
+          # Exclude files that should not be overwritten on the server
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .env
+            storage/
+            bootstrap/cache/
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Deployment failed. Check the logs above."
+          # Optional: add a Slack / email notification here
