@@ -37,12 +37,6 @@ jobs:
           extensions: mbstring, pdo, pdo_mysql, xml, bcmath, curl, gd
           coverage: none
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-
       - name: Cache Composer packages
         uses: actions/cache@v4
         with:
