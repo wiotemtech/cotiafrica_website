@@ -54,7 +54,7 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /cotiafrica.com
+          server-dir: cotiafrica.com/
           # Exclude files that should not be overwritten on the server
           exclude: |
             **/.git*
