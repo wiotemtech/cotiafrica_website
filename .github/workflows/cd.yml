@@ -35,21 +35,11 @@ jobs:
           extensions: mbstring, pdo, pdo_mysql, xml, bcmath, curl, gd
           coverage: none
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-
+    
       - name: Install Composer dependencies (production)
         run: composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader
 
-      - name: Install NPM dependencies
-        run: npm ci
-
-      - name: Build frontend assets
-        run: npm run build
-
+      
       # -------------------------------------------------------
       # Deploy via FTP
       # Requires these repository secrets:
