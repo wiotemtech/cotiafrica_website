@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,31 +18,31 @@ Route::controller(AuthController::class)->group(function(){
     Route::post('/login', 'login')->name('login');
     Route::post('/logout', 'logout')->name('logout');
 });
-Route::controller(Controller::class)->group(function(){
-    Route::get('/', 'index')->name('home');
-    Route::get('/blogs', 'blogs')->name('blogs');
-    Route::get('/blogs/{id}/{title}','showBlog')->name('blogs.show');
 
-    Route::get('/why-us', 'whyus')->name('whyus');
-    Route::get('/contact-us','contactus')->name('contactus');
-    Route::get('/softwares','software')->name('software');
-    Route::get('/mobileApp','mobile')->name('mobileApp');
-    Route::get('/webDevelopment','web')->name('webDevelopment');
-    Route::get('/ai','artificial')->name('ai');
-    Route::get('/programming','program')->name('programming');
-    Route::get('/ict-training','coperate')->name('ict-training');
-    Route::get('/women-in tech','tech')->name('women-in tech');
+// Vue SPA frontend entry points
+Route::view('/', 'spa')->name('home');
+Route::view('/about', 'spa')->name('about');
+Route::view('/blogs', 'spa')->name('blogs');
+Route::view('/blogs/{id}/{title}', 'spa')->name('blogs.show');
+Route::view('/why-us', 'spa')->name('whyus');
+Route::view('/contact-us', 'spa')->name('contactus');
+Route::view('/softwares', 'spa')->name('software');
+Route::view('/mobileApp', 'spa')->name('mobileApp');
+Route::view('/webDevelopment', 'spa')->name('webDevelopment');
+Route::view('/ai', 'spa')->name('ai');
+Route::view('/programming', 'spa')->name('programming');
+Route::view('/ict-training', 'spa')->name('ict-training');
+Route::view('/women-in-tech', 'spa')->name('women-in-tech');
+Route::view('/cloude', 'spa')->name('cloude');
+Route::view('/ehealth', 'spa')->name('ehealth');
+Route::view('/digital-security', 'spa')->name('digital-security');
+Route::view('/digital-skills', 'spa')->name('digital-skills');
+Route::view('/startup-incubator', 'spa')->name('startup-incubator');
+Route::view('/green-tech', 'spa')->name('green-tech');
 
-
-
-
-
-    Route::get('/cloude','cloudes')->name('cloude');
-
-
-    Route::get('/login', 'showLogin')->name('login.show');
-    Route::get('/dashboard', 'dashboard')->name('dashboard');
-});
+// Legacy backend/auth pages remain server-rendered
+Route::view('/login', 'backend.login')->name('login.show');
+Route::view('/dashboard', 'backend.dashboard')->name('dashboard');
 
 Route::controller(BlogController::class)->group(function(){
     Route::get('/admin/blogs', 'index')->name('blogs.index');

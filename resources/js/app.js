@@ -1,2 +1,7 @@
 import './bootstrap';
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+
+createApp(App).use(router).mount('#app');

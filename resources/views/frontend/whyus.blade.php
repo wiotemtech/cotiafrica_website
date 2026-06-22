@@ -2,198 +2,141 @@
 
 @section('content')
 
+<section class="relative overflow-hidden bg-slate-950 pt-40 pb-20 text-white c2i-grid-glow">
+    <div class="pointer-events-none absolute -left-24 top-0 h-80 w-80 rounded-full bg-teal-400/25 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-sky-400/20 blur-3xl"></div>
 
-
-<section style="background-image: url('{{ asset('assets/images/test.png') }}'); margin-top: 120px;" class="landing-section">
-    <div class="overlay"></div>
-    <div class="landing-content">
-        <h1>We're CodeToInnovate<span style="color: #1E88E5"> Africa</span></h1>
-        <p style="font-family:'poppins',sanserif; font-size: 16px;">"Trusted Partner of the Technology Innovation Support Centre (TISC) UTC-Lira."</p>
-    </div>
-</section>
-
-
-
-
- <!-- Section Start -->
- <section style="margin-top:20px"  class="ctia-unique-section container" data-aos="fade-up">
-    <div class="ctia-unique-left" data-aos="fade-right">
-        <h1  class="ctia-unique-header" data-aos="fade-up">Why Choose Us?</h1>
-        <p class="ctia-unique-text" data-aos="fade-up">Decisions you will never forget.</p>
-    </div>
-
-    <div class="ctia-unique-right" data-aos="fade-left">
-        <p class="ctia-unique-text" data-aos="fade-up">
-            At CodeToInnovate Africa, we deliver innovative, tailored solutions with a focus on excellence. Our experienced team blends technical expertise and industry insight to provide services that meet your unique needs. We prioritize customer satisfaction, offer reliable support, and foster continuous learning to keep you ahead in the digital world. Choose us as your trusted partner for efficient and effective solutions.
-        </p>
-    </div>
-</section>
-
-   <!--mision,vission sectio-->
-   <div  style="
-   background-image: url('{{ asset('assets/images/test.png') }}');
-    margin-top:120px; margin-top: 25px;"   class="card-container">
-    <!-- Title inside the container -->
-    <h2 class="title">Our Vision, Mission & Goal</h2>
-
-    <!-- Vision Card -->
-    <div class="glass-card-1">
-        <i class="fas fa-eye icon"></i>
-        <h1>Vision</h1>
-        <p class="vision">Establish CodeToInnovate Africa as the leading technology innovation hub,
-            fostering a culture of creativity ,entreprenuership and progress across
-             Africa</p>
-    </div>
-
-    <!-- Mission Card -->
-    <div class="glass-card-1">
-        <i class="fas fa-bullseye icon"></i>
-        <h1>Mission</h1>
-        <p class="vision">Empowering African Communities through Inovative technology<br>
-             solutions, 
-           education,collaboration,
-           driving socio-economic growth and transformation</p>
-    </div>
-
-    <!-- Goal Card -->
-    <div class="glass-card-1">
-        <i class="fas fa-flag-checkered icon"></i>
-        <h1>Goal</h1>
-        <p class="vision">Transform Africa through technology innovation,<br>education and
-             entreprenuership impacting 0ne million lives by 2035
-
-        </p>
-    </div>
-</div>
-
-   
-
-
-      <!-- TEAM PHOTO SECTION -->
-
-
-      <div style="margin: 0"   class="container-1  ">
-        <h1 class="team-head" data-aos="fade-up">CodeToInnovate Africa Execution Team!</h1>
-        <p class="team-p1" data-aos="fade-up" data-aos-delay="200">An inclusive assembly of creative minds.</p>
-        <div class="row">
-            <!-- Left Card with Expertise Content -->
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="left-card" data-aos="fade-right">
-                    <h5 class="card-title text-center">Our Team's Talent</h5>
-                    <ul class="list-unstyled">
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-code-slash"></i> Developers
-                        </li>
-                        <p>Digital solutions are built upon the foundation of skilled developers.</p>
-
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-palette"></i> Designers
-                        </li>
-                        <p>Designers craft the visual experiences that shape user interaction</p>
-
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-laptop"></i>Customer Support Experts
-                        </li>
-                        <p>Creators generate unique solutions by integrating diverse knowledge.</p>
-                    </ul>
-                </div>
+    <div class="container relative z-10 mx-auto px-4">
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
+            <div class="lg:col-span-8" data-aos="fade-right">
+                <span class="c2i-chip">Why CodeToInnovate</span>
+                <h1 class="mt-5 text-4xl font-bold leading-tight md:text-6xl">We design technology that works in real contexts, not just slides.</h1>
+                <p class="mt-6 max-w-3xl text-lg text-slate-200 md:text-xl">
+                    CodeToInnovate Africa combines software engineering, digital capacity building, and compliance-led execution to help institutions and communities move from intention to measurable impact.
+                </p>
             </div>
 
-            <!-- Right Card with Expertise Content -->
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="right-card" data-aos="fade-left">
-                    <h5 class="card-title text-center">Our Signature Style</h5>
-                    <ul class="list-unstyled">
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-gear-wide-connected"></i> Innovation & excellence
-                        </li>
-                        <p>We drive innovation to deliver products defined by excellence.</p>
-
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-people"></i> Diversity, Equity & Inclusion
-                        </li>
-                        <p>Diversity is our reality, equity is our commitment, and inclusion is our practice.</p>
-
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-shield-check"></i> Integrity & Accountability
-                        </li>
-                        <p>Integrity guides our actions; accountability ensures our results.</p>
-                    </ul>
+            <div class="lg:col-span-4" data-aos="fade-left">
+                <div class="c2i-surface rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
+                    <p class="text-xs uppercase tracking-widest text-teal-200">Operating Principle</p>
+                    <p class="mt-3 text-sm leading-relaxed text-slate-100">Every initiative must be useful, compliant, scalable, and locally adoptable from day one.</p>
+                    <div class="mt-5 space-y-2 text-sm text-slate-200">
+                        <p><i class="fas fa-check mr-2 text-teal-300"></i>Inclusion-first service design</p>
+                        <p><i class="fas fa-check mr-2 text-teal-300"></i>Execution with public-interest outcomes</p>
+                        <p><i class="fas fa-check mr-2 text-teal-300"></i>Engineering discipline and accountability</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-   
+</section>
 
-   <!-- CEO Section -->
-   <div class="ctia-ceo">
-      <img class="img" src="{{ asset('assets/images/emma.jpeg') }}"" alt="Co-Founder">
-      <p style="color: white;"> <br> Co-Founder</p>
-      <p class="ctia-ceo-quote" style="color: white;">""CodeToInnovate Africa is dedicated to the action of making innovative ideas a reality, for a better future."
+<section class="py-20">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
+            <article class="c2i-surface-soft rounded-2xl p-8 md:p-10" data-aos="fade-up">
+                <p class="text-xs font-bold uppercase tracking-[0.18em] text-teal-700">Why Teams Choose Us</p>
+                <h2 class="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">Execution strength with social relevance</h2>
+                <p class="mt-5 text-slate-600">We bring strategy, engineering, and field understanding together so projects launch faster, stay compliant, and deliver practical value.</p>
+                <ul class="mt-8 space-y-4">
+                    <li class="flex gap-3"><span class="mt-1 text-teal-600"><i class="fas fa-circle-check"></i></span><span class="text-slate-700"><strong>Proven Delivery</strong> across NGOs, schools, SMEs, and institutional programs.</span></li>
+                    <li class="flex gap-3"><span class="mt-1 text-teal-600"><i class="fas fa-circle-check"></i></span><span class="text-slate-700"><strong>Compliance by Design</strong> with PDPA and governance-conscious implementation.</span></li>
+                    <li class="flex gap-3"><span class="mt-1 text-teal-600"><i class="fas fa-circle-check"></i></span><span class="text-slate-700"><strong>Contextual Insight</strong> tuned for East African adoption realities.</span></li>
+                </ul>
+            </article>
 
-        </p>
-   </div>
+            <article class="c2i-surface rounded-2xl p-8 md:p-10" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-700">What You Get</p>
+                <h2 class="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">A partner, not just a vendor</h2>
+                <p class="mt-5 text-slate-600">From architecture to user onboarding, we stay involved to ensure deployment quality and long-term sustainability.</p>
+                <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                        <p class="text-xs uppercase tracking-widest text-slate-500">Support Mode</p>
+                        <p class="mt-2 font-semibold text-slate-900">Hands-on implementation</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                        <p class="text-xs uppercase tracking-widest text-slate-500">Transfer</p>
+                        <p class="mt-2 font-semibold text-slate-900">Skills and documentation included</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                        <p class="text-xs uppercase tracking-widest text-slate-500">Approach</p>
+                        <p class="mt-2 font-semibold text-slate-900">Co-design with stakeholders</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                        <p class="text-xs uppercase tracking-widest text-slate-500">Outcome</p>
+                        <p class="mt-2 font-semibold text-slate-900">Adopted systems and measurable impact</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
 
-   <!-- Core Values Section -->
-   <section class="container ctia-core-values-section">
-    <h1 class="ctia-core-value-heading">Core Values</h1>
-    <div class="row g-4">
-        <div class="col-md-4 mb-4" data-aos="fade-right">
-            <div class="ctia-core-value">
-                <i class="fas fa-lightbulb"></i>
-                <strong>Innovation & Excellence</strong>
-                <p>At CodeToInnovate Africa, innovation and excellence drive everything we do. We embrace creativity and encourage out-of-the-box thinking to develop cutting-edge solutions.</p>
-            </div>
+<section class="bg-gradient-to-b from-slate-100 to-slate-50 py-20">
+    <div class="container mx-auto px-4">
+        <div class="mb-14 text-center">
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-teal-700">Our Foundation</p>
+            <h2 class="mt-3 text-4xl font-bold text-slate-900">Vision, Mission, and the 2035 Target</h2>
         </div>
-        <div class="col-md-4 mb-4" data-aos="fade-up">
-            <div class="ctia-core-value">
-                <i class="fas fa-users"></i>
-                <strong>Collaboration & Teamwork</strong>
-                <p>Collaboration and teamwork are at the heart of CodeToInnovate Africa. We believe that great ideas are born from diverse perspectives and open communication.</p>
-            </div>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <article class="c2i-surface-soft rounded-2xl p-8" data-aos="fade-up">
+                <i class="fas fa-eye text-3xl text-teal-700"></i>
+                <h3 class="mt-4 text-2xl font-bold text-slate-900">Vision</h3>
+                <p class="mt-3 text-slate-600">To become East Africa's trusted regional hub for technology innovation, data-informed software engineering, and digital inclusion.</p>
+            </article>
+
+            <article class="c2i-surface-soft rounded-2xl p-8" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-bullseye text-3xl text-sky-700"></i>
+                <h3 class="mt-4 text-2xl font-bold text-slate-900">Mission</h3>
+                <p class="mt-3 text-slate-600">To empower underserved populations, institutions, and SMEs through resilient digital platforms and workforce-ready skills pathways.</p>
+            </article>
+
+            <article class="c2i-surface-soft rounded-2xl p-8" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-flag-checkered text-3xl text-violet-700"></i>
+                <h3 class="mt-4 text-2xl font-bold text-slate-900">2035 Goal</h3>
+                <p class="mt-3 text-slate-600">Impact 1 million lives through local software, digital literacy acceleration, and inclusive economic opportunities.</p>
+            </article>
         </div>
-        <div class="col-md-4 mb-4" data-aos="fade-left">
-            <div class="ctia-core-value">
-                <i class="fas fa-handshake"></i>
-                <strong>Customer-Centricity</strong>
-                <p>Customer centricity drives our decisions and actions. We prioritize understanding and meeting our clients' needs, ensuring tailored solutions and exceptional service.</p>
+    </div>
+</section>
+
+<section class="bg-white py-20">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            <div data-aos="fade-right">
+                <h3 class="text-3xl font-bold text-slate-900">Team Expertise</h3>
+                <ul class="mt-6 space-y-4 text-slate-700">
+                    <li class="flex gap-3"><i class="fas fa-angles-right mt-1 text-teal-600"></i><span><strong>Full-Stack Engineering</strong> for robust product architecture.</span></li>
+                    <li class="flex gap-3"><i class="fas fa-angles-right mt-1 text-teal-600"></i><span><strong>Data and Analytics</strong> for better policy and operational decisions.</span></li>
+                    <li class="flex gap-3"><i class="fas fa-angles-right mt-1 text-teal-600"></i><span><strong>Security and Compliance</strong> embedded into every release cycle.</span></li>
+                    <li class="flex gap-3"><i class="fas fa-angles-right mt-1 text-teal-600"></i><span><strong>Training and Mentorship</strong> that turns learning into employability.</span></li>
+                    <li class="flex gap-3"><i class="fas fa-angles-right mt-1 text-teal-600"></i><span><strong>Public Sector Product Design</strong> for service-oriented systems.</span></li>
+                </ul>
             </div>
-        </div>
-        <div class="col-md-4 mb-4" data-aos="fade-right">
-            <div class="ctia-core-value">
-                <i class="fas fa-balance-scale"></i>
-                <strong>Integrity & Accountability</strong>
-                <p>At CodeToInnovate Africa, integrity and accountability are fundamental to our operations. We prioritize transparency and ethical standards, ensuring responsibility for our actions.</p>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4" data-aos="fade-up">
-            <div class="ctia-core-value">
-                <i class="fas fa-globe"></i>
-                <strong>Diversity, Equity & Inclusion</strong>
-                <p>We celebrate diversity as a source of strength. We believe in creating an inclusive environment where everyone feels valued and empowered, regardless of their background.</p>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4" data-aos="fade-left">
-            <div class="ctia-core-value">
-                <i class="fas fa-shield-alt"></i>
-                <strong>Trust</strong>
-                <p>Trust is at the heart of everything we do at CodeToInnovate Africa. We are committed to delivering on our promises, building strong relationships through reliability and consistency.</p>
+
+            <div class="c2i-surface rounded-2xl p-8" data-aos="fade-left">
+                <h3 class="text-3xl font-bold text-slate-900">Commitment Standards</h3>
+                <div class="mt-6 space-y-4">
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4"><strong class="text-slate-900">User-Centered Design</strong><p class="mt-1 text-sm text-slate-600">Solutions shaped around real user behavior and adoption barriers.</p></div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4"><strong class="text-slate-900">Transparent Delivery</strong><p class="mt-1 text-sm text-slate-600">Clear timelines, clear communication, and shared accountability.</p></div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 p-4"><strong class="text-slate-900">Long-Term Sustainability</strong><p class="mt-1 text-sm text-slate-600">Maintainable systems, local capacity transfer, and measurable outcomes.</p></div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-
-
-
-
- 
-     
-       
-
-
-
-
-    
+<section class="bg-slate-950 py-20 text-white">
+    <div class="container mx-auto px-4 text-center">
+        <p class="text-xs font-bold uppercase tracking-[0.2em] text-teal-200">Partnership Invitation</p>
+        <h2 class="mt-4 text-4xl font-bold md:text-5xl">Build with a team that combines purpose and precision.</h2>
+        <p class="mx-auto mt-5 max-w-2xl text-lg text-slate-300">If you are planning a digital initiative, we can help you scope, design, build, and implement it responsibly.</p>
+        <div class="mt-9 flex flex-wrap justify-center gap-4">
+            <a href="{{ route('contactus') }}" class="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 font-bold text-slate-900 transition hover:bg-slate-100">Contact Us</a>
+            <a href="{{ route('home') }}" class="inline-flex h-12 items-center justify-center rounded-full border border-white/70 px-8 font-bold text-white transition hover:bg-white hover:text-slate-900">Explore Services</a>
+        </div>
+    </div>
+</section>
 
 @endsection

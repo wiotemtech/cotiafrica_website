@@ -1,430 +1,248 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="particles-js"></div>
 
-<div style="margin-bottom: 88px" class="landing-container">
-    <div class="landing-left">
-        <h2 style="color:#1E88E5;  font-family: 'Poppins', sans-serif; "> CodeToInnovate <span style="color: white" >Africa</span> </h2>
-        <p>Innovating the Future With <span style="color: #1E88E5;">Advanced Software Solutions.</span></p>
-        <a href="#" class="btn-1">Get Started</a>
-    </div>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-teal-900 pt-40 pb-24 text-white">
+    <div class="pointer-events-none absolute -left-24 top-16 h-72 w-72 rounded-full bg-teal-400/20 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-16 bottom-8 h-72 w-72 rounded-full bg-cyan-300/20 blur-3xl"></div>
 
-    <div class="cards-wrapper">
-        <div class="card-item active">
-            <i class="bi bi-award"></i>
-            <h5>projects completed</h5>
-            <p style="color: #1E88E5; font-size: 25px; font-weight: bold;" class="card-number">10+</p>
-            <p class="card-description">Goals Achieved, Tasks Finalized.</p>
-        </div>
-        <div class="card-item">
-            <i class="bi bi-graph-up"></i>
-            <h5>Learners Served</h5>
-            <p style="color: #43A047; font-size: 25px; font-weight: bold;" class="card-number">100+</p>
-            <p class="card-description">participants in learning initiatives.</p>
-        </div>
-        <div class="card-item">
-            <i class="bi bi-emoji-smile"></i>
-            <h5>Active Clients</h5>
-            <p style="color: #FFC107; font-size: 25px; font-weight: bold;" class="card-number">80%</p>
-            <p class="card-description">We're confident you'll be pleased.</p>
-        </div>
-    </div>
-</div>
+    <div class="container relative z-10 mx-auto px-4">
+        <div class="mx-auto max-w-5xl text-center">
+            <span class="mb-5 inline-flex items-center rounded-full border border-teal-300/40 bg-teal-300/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-teal-100">
+                East Africa Innovation Hub
+            </span>
+            <h1 class="text-4xl font-bold leading-tight md:text-6xl">
+                Building practical digital systems that move communities and institutions forward.
+            </h1>
+            <p class="mx-auto mt-6 max-w-3xl text-lg text-slate-200 md:text-xl">
+                We deliver compliant software, workforce-ready training, and technology partnerships that create measurable inclusion and sustainable growth.
+            </p>
 
- <!-- Trusted Partners Section -->
- <div class="full-page-container">
-    <!-- Logo Container -->
-    <div class="logo-container">
-        <img src="{{ asset('assets/images/utc.jpg') }}" alt="Logo 1">
-        <img src="{{ asset('assets/images/logo7.png') }}" alt="Logo 2">
-    </div>
-    
-    <!-- Text Content -->
-    <p class="custom-text">Trusted Partners of the Technology Innovation Support Centre (TISC) UTC-Lira.</p>
-</div>
-
-
-
-<!--OUR STORY SECTION-->
-<section class="story-section">
-    <div class="container">
-        <h2 class="story-title" data-aos="fade-up">Our Story</h2>
-        <div class="row align-items-center">
-            <!-- Our Story Text -->
-            <div class="col-lg-6" data-aos="fade-right">
-                <div class="glass-card">
-                    <p class="story-text">
-                        Founded in 2023, CodeToInnovate Africa empowers communities by bridging skill gaps, enhancing problem-solving, and driving digital transformation. Our expert team leverages technology to create sustainable solutions for education, automation, and web maintenance across Africa.
-                    </p>
-                    <div class="extra-content">
-                        <p class="story-text">
-                        
-                        </p>
-                    </div>
-                    <button class="btn btn-primary" id="readMoreBtn" onclick="toggleContent()">Read More</button>
-                </div>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="{{ route('contactus') }}" class="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 font-bold text-slate-900 transition hover:-translate-y-0.5 hover:bg-slate-100">
+                    Start a Partnership
+                </a>
+                <a href="{{ route('ict-training') }}" class="inline-flex h-12 items-center justify-center rounded-full border border-white/70 px-8 font-bold text-white transition hover:-translate-y-0.5 hover:bg-white hover:text-slate-900">
+                    Explore Training Tracks
+                </a>
             </div>
-            
-            <!-- YouTube Video -->
-            <div class="col-lg-6" data-aos="fade-left">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+
+            <div class="mt-10 grid grid-cols-1 gap-4 text-left md:grid-cols-3">
+                <div class="rounded-xl border border-white/15 bg-white/5 p-4">
+                    <p class="text-xs uppercase tracking-widest text-teal-200">Location</p>
+                    <p class="mt-2 text-sm text-slate-100">TISC, UTC-Lira</p>
+                </div>
+                <div class="rounded-xl border border-white/15 bg-white/5 p-4">
+                    <p class="text-xs uppercase tracking-widest text-teal-200">Compliance</p>
+                    <p class="mt-2 text-sm text-slate-100">Aligned with PDPA 2019 and national IT standards</p>
+                </div>
+                <div class="rounded-xl border border-white/15 bg-white/5 p-4">
+                    <p class="text-xs uppercase tracking-widest text-teal-200">Reach</p>
+                    <p class="mt-2 text-sm text-slate-100">Underserved communities across East Africa</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
-
-
-
-<div style="margin-top: 44px" class="container ">
-    <h4 class="text-center text-app-1">Our Expertise</h4>
-    <p class="text-center tex-app-2">We deliver custom software solutions, from mobile apps 
-        to web platforms, to enhance your operations and drive success.
-        </p>
-
-    <div class="row justify-content-center g-3 py-4">
-        <!-- Web Development Card -->
-        <div class="col-md-4 col-lg-2">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front" style="background-image: url('assets/images/web3.avif');">
-                        <p class="service">Web Development</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="content">
-                            <img src="{{ asset('assets/images/software symbole.jpg') }}" alt="" style="height: 50px;">
-                            <p>Explore Engineering</p>
-                            <a class="oe ms-lg-0" href="{{ route('webDevelopment') }}">
-                                Learn More<i class="fa fa-arrow-right arrow-icon-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<!-- Impact Section -->
+<section class="bg-gradient-to-b from-white to-slate-50 py-20">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="rounded-2xl bg-gradient-to-br from-teal-600 to-teal-700 p-8 text-white shadow-lg ring-1 ring-teal-500/40" data-aos="fade-up">
+                <p class="text-xs uppercase tracking-widest text-teal-100">Impact Goal</p>
+                <h3 class="mt-3 text-4xl font-bold">1 Million</h3>
+                <p class="mt-2 text-lg text-teal-100">Lives impacted by 2035</p>
+                <p class="mt-3 text-sm text-teal-200">Through tech education, localized software, and digital inclusion.</p>
             </div>
-        </div>
-
-        <!-- Mobile App Development Card -->
-        <div class="col-md-4 col-lg-2">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front" style="background-image: url('assets/images/app.avif');">
-                        <p class="service">Mobile App Development</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="content">
-                            <img src="{{ asset('assets/images/software symbole.jpg') }}" alt="" style="height: 50px;">
-                            <p>Explore Mobile App Development</p>
-                            <a class="oe ms-lg-0" href="{{ route('mobileApp') }}">
-                                Learn More<i class="fa fa-arrow-right arrow-icon-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-slate-200" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-xs uppercase tracking-widest text-blue-700">Core Focus</p>
+                <h3 class="mt-3 text-2xl font-bold text-slate-900">E-services at scale</h3>
+                <p class="mt-2 text-sm text-slate-600">Health, education, workflow management, and automation for local realities.</p>
             </div>
-        </div>
-
-        <!-- Cloud Computing Card -->
-        <div class="col-md-4 col-lg-2">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front" style="background-image: url('assets/images/cloud.jpg');">
-                        <p class="service">Cloud Computing</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="content">
-                            <img src="{{ asset('assets/images/software symbole.jpg') }}" alt="" style="height: 50px;">
-                            <p>Explore Cloud Computing</p>
-                            <a class="oe ms-lg-0" href="{{ route('cloude') }}">
-                                Learn More<i class="fa fa-arrow-right arrow-icon-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Software Development Card -->
-        <div class="col-md-4 col-lg-2">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front" style="background-image: url('assets/images/soft.jpg');">
-                        <p class="service">Software Development</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="content">
-                            <img src="{{ asset('assets/images/software symbole.jpg') }}" alt="" style="height: 50px;">
-                            <p>Explore Software Development</p>
-                            <a class="oe ms-lg-0" href="{{ route('software') }}">
-                                Learn More<i class="fa fa-arrow-right arrow-icon-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- AI & Machine Learning Card -->
-        <div class="col-md-4 col-lg-2">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front" style="background-image: url('assets/images/ai.jpg');">
-                        <p class="service">AI & Machine Learning</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="content">
-                            <img src="{{ asset('assets/images/software symbole.jpg') }}" alt="" style="height: 50px;">
-                            <p>Explore AI & Machine Learning</p>
-                            <a class="oe ms-lg-0" href="{{ route('ai') }}">
-                                Learn More<i class="fa fa-arrow-right arrow-icon-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-   
-
-<section style="background: linear-gradient(to top, #ffffff, #6daee8);" class=" py-5">
-    <div class="container">
-        <h2 class="text-center mb-4  top-head">Top Programs</h2>
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-4">
-                <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
-                    <img src="{{ asset('assets/images/a.jpg') }}" class="img-fluid" alt="Learn Programming">
-                    <div class="card-body">
-                        <h5 class="card-title-1">Learn Programming</h5>
-                        <p class="card-text-1">Our tailored programming courses offer a practical path to mastery. From beginner to advanced, learn key languages like Python, JavaScript, and PHP through real-world projects and develop essential problem-solving skills</p>
-                        <a href="{{ route('programming') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
-                    <img src="{{ asset('assets/images/intern.jpg') }}" class="img-fluid" alt="Corporate ICT Training">
-                    <div class="card-body">
-                        <h5 class="card-title-1">Internship</h5>
-                        <p class="card-text-1">Our internships provide a unique opportunity to learn, grow, and contribute. Immerse yourself in a dynamic environment, work alongside experienced professionals, and gain practical knowledge that will shape your future</p>
-                        <a href="{{ route('ict-training') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div style="border-radius: 20px" class="card shadow p-3 tttyd-program-card">
-                    <img src="{{ asset('assets/images/women.jpg') }}" class="img-fluid" alt="Women in Tech">
-                    <div class="card-body">
-                        <h5 class="card-title-1">Women in Tech</h5>
-                        <p class="card-text-1">CodeToInnovate Africa's Women in Tech program champions gender equality in technology. We provide women with mentorship, practical training, and pathways to leadership in software development, data science, and IT</p>
-                        <a href="{{ route('women-in tech') }}" class="tttyd-ok-link">Learn More <i class="fa fa-arrow-right tttyd-arrow-icon"></i></a>
-                    </div>
-                </div>
+            <div class="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-slate-200" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-xs uppercase tracking-widest text-purple-700">Audience</p>
+                <h3 class="mt-3 text-2xl font-bold text-slate-900">Students to institutions</h3>
+                <p class="mt-2 text-sm text-slate-600">Programs and platforms built for learners, partners, and SMEs.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Partner Section -->
+<section class="py-20 bg-white border-y border-slate-200">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div data-aos="fade-right">
+                <p class="text-teal-600 font-semibold mb-2">In Collaboration With</p>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Technology Innovation Support Centre (TISC), UTC-Lira</h2>
+                <p class="text-slate-600 text-lg">Partnering to deliver innovation support and digital transformation across Northern Uganda and East Africa.</p>
+            </div>
+            <div class="flex gap-8 justify-center" data-aos="fade-left">
+                <img src="{{ asset('assets/images/utc.jpg') }}" alt="UTC Lira" class="h-24 rounded-lg">
+                <img src="{{ asset('assets/images/logo7.png') }}" alt="CodeToInnovate Africa" class="h-24 rounded-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission Section -->
+<section class="py-20 bg-gradient-to-b from-slate-50 to-blue-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-slate-900 text-center mb-16">Strategic Direction</h2>
         
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 shadow-lg" data-aos="fade-right">
+                <h3 class="text-2xl font-bold mb-4">Vision</h3>
+                <p class="text-slate-200 leading-relaxed">
+                    To establish CodeToInnovate Africa as the leading regional hub for technology innovation, data-driven software engineering, and digital inclusion across East Africa.
+                </p>
+            </div>
+            <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 shadow-lg" data-aos="fade-left">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Mission</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    To empower underserved populations, public institutions, and SMEs by engineering scalable software platforms, bridging digital literacy gaps, and deploying resilient e-services.
+                </p>
+            </div>
+        </div>
 
-
-
-
-    <!-- OUR CLIENTS SECTION -->
-    <div style="
-    background-image: url('{{ asset('assets/images/test.png') }}');
-     margin-top:0px;"   class="">
-        <h2 class="testimonial-title ">Clients Say We Are the Best</h2>
-        <p class="text-center testimonial-p" >See it Below!</p>
-        <div class="container">
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="testimonial-item">
-                            <img src="{{ asset('assets/images/learn programmimg.JXBtAr') }}" alt="Client Photo" class="testimonial-img">
-                            <div class="client-info">
-                                <p class="testimonial-content">"CodeToInnovate Africa provided us with exceptional service and went above and beyond to meet our needs. Highly recommended!"</p>
-                                <p class="client-name">Lule Paul</p>
-                                <p class="client-position">CEO, Tech Solutions</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-item">
-                            <img src="{{ asset('assets/images/learn programmimg.JXBtAr') }}" alt="Client Photo" class="testimonial-img">
-                            <div class="client-info">
-                                <p class="testimonial-content">"The professionalism and quality of work at CodeToInnovate Africa are unmatched. We are very pleased with their services."</p>
-                                <p class="client-name">Opio Lawrence</p>
-                                <p class="client-position">Marketing Manager, InnovateCo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-item">
-                            <img src="{{ asset('assets/images/learn programmimg.JXBtAr') }}" alt="Client Photo" class="testimonial-img">
-                            <div class="client-info">
-                                <p class="testimonial-content">"Working with CodeToInnovate Africa was a fantastic experience. Their team is knowledgeable, responsive, and reliable."</p>
-                                <p class="client-name">Daniel Roy</p>
-                                <p class="client-position">CTO, StartUp Inc.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-teal-600" data-aos="fade-up">
+                <span class="text-5xl font-bold text-teal-600 block mb-3">01</span>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Regional Digital Inclusivity</h3>
+                <p class="text-slate-600">Designing practical digital access for Northern Uganda and other rural or off-grid communities.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-blue-600" data-aos="fade-up" data-aos-delay="100">
+                <span class="text-5xl font-bold text-blue-600 block mb-3">02</span>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Absolute Regulatory Compliance</h3>
+                <p class="text-slate-600">Building platforms in alignment with national IT standards, NISF, and the PDPA 2019.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-purple-600" data-aos="fade-up" data-aos-delay="200">
+                <span class="text-5xl font-bold text-purple-600 block mb-3">03</span>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Public-Private Collaboration</h3>
+                <p class="text-slate-600">Creating interoperable, cloud-ready services that connect with government and growth ecosystems.</p>
             </div>
         </div>
     </div>
+</section>
 
+<!-- Who We Serve Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-slate-900 text-center mb-16">Who We Serve</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 border border-teal-200 shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">For Students</h3>
+                <p class="text-slate-600 mb-6">Build job-ready software, data, and digital operations skills through training, internships, and mentorship.</p>
+                <a href="{{ route('programming') }}" class="text-teal-600 font-semibold hover:text-teal-700">Explore learning programs →</a>
+            </div>
+            <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-200 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">For Partners</h3>
+                <p class="text-slate-600 mb-6">Work with an innovation hub that can co-design pilots, MVPs, and local implementation strategies.</p>
+                <a href="{{ route('contactus') }}" class="text-blue-600 font-semibold hover:text-blue-700">Discuss a partnership →</a>
+            </div>
+            <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">For Institutions & SMEs</h3>
+                <p class="text-slate-600 mb-6">Deploy secure web systems, workflow tools, and digital transformation support tailored to local realities.</p>
+                <a href="{{ route('software') }}" class="text-purple-600 font-semibold hover:text-purple-700">View service capabilities →</a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Services Section -->
+<section class="py-20 bg-gradient-to-b from-slate-50 to-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-slate-900 text-center mb-4">Our Services</h2>
+        <p class="text-xl text-slate-600 text-center max-w-3xl mx-auto mb-16">Technology delivery with practical adoption in mind. Our offer combines software engineering, training, infrastructure, and incubation support.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+                <div class="text-4xl text-teal-600 mb-4"><i class="fas fa-code"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Custom Software</h3>
+                <p class="text-slate-600">Platforms engineered for local workflows, public services, and business growth.</p>
+            </div>
 
-    
- <section class="partner-section">
-        <div class="container">
-            <h1 class="animate-heading">Partner with Our Talent Community!</h1>
-            <p class="animate-paragraph">Join a network of skilled professionals and innovators!
-                Our talent community connects expertise with opportunity,
-                fostering partnerships that drive success. Collaborate with
-                us to access top talent, share knowledge, and bring fresh solutions
-                to your business. Let's make it happen together!</p>
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-4xl text-teal-600 mb-4"><i class="fas fa-hospital"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">E-Health & E-Education</h3>
+                <p class="text-slate-600">Digital tools that improve access, continuity, reporting, and service coordination.</p>
+            </div>
 
-            <a class="btn-join-talent" href="{{ route('contactus') }}">
-                Join the Talent Crew <i id="arrow" class="fa fa-arrow-right arrow"></i>
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-4xl text-teal-600 mb-4"><i class="fas fa-lock"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Digital Security</h3>
+                <p class="text-slate-600">Reliable systems, cloud readiness, and governance-aware deployment support.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-4xl text-teal-600 mb-4"><i class="fas fa-graduation-cap"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Skills Training</h3>
+                <p class="text-slate-600">Applied training programs that move learners from theory to production-ready practice.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-4xl text-teal-600 mb-4"><i class="fas fa-rocket"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Startup Incubator</h3>
+                <p class="text-slate-600">Rapid validation, technical advisory, and product execution for emerging founders.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+                <div class="text-4xl text-teal-600 mb-4"><i class="fas fa-leaf"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Green Tech</h3>
+                <p class="text-slate-600">Sustainable digital systems that connect efficiency, monitoring, and community impact.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programs Section -->
+<section class="bg-gradient-to-r from-slate-900 to-teal-900 py-20 text-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <p class="mb-2 text-xs font-semibold uppercase tracking-widest text-teal-200">Training Journeys</p>
+                <h2 class="mb-6 text-4xl font-bold">Real skills that translate into real opportunity</h2>
+                <p class="text-lg leading-relaxed text-slate-200">
+                    We connect digital literacy, project-based learning, and inclusion-focused mentorship to prepare the next generation of tech leaders.
+                </p>
+            </div>
+            <div class="space-y-4" data-aos="fade-left">
+                <a href="{{ route('programming') }}" class="block rounded-xl border border-white/15 bg-white/10 p-6 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/20">
+                    <h3 class="text-2xl font-bold mb-2">Learn Programming</h3>
+                    <p class="text-slate-200">Hands-on pathways in modern software development.</p>
+                </a>
+                <a href="{{ route('ict-training') }}" class="block rounded-xl border border-white/15 bg-white/10 p-6 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/20">
+                    <h3 class="text-2xl font-bold mb-2">Internships & ICT Training</h3>
+                    <p class="text-slate-200">Professional exposure, guided practice, and workplace readiness.</p>
+                </a>
+                <a href="{{ route('women-in-tech') }}" class="block rounded-xl border border-white/15 bg-white/10 p-6 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/20">
+                    <h3 class="text-2xl font-bold mb-2">Women in Tech</h3>
+                    <p class="text-slate-200">Mentorship and access-building for women entering technical careers.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Ready to Build a Local Solution With Regional Reach?</h2>
+        <p class="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+            Visit us at TISC, UTC-Lira, P.O. Box 331626, Lira, Uganda, or contact the team to discuss partnerships, training opportunities, and product development.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="{{ route('contactus') }}" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-teal-700 text-white font-bold hover:bg-teal-800 transition">
+                Contact the Team
+            </a>
+            <a href="https://www.cotiafrica.com/" target="_blank" class="inline-flex items-center justify-center h-12 px-8 rounded-full border-2 border-teal-700 text-teal-700 font-bold hover:bg-teal-50 transition">
+                Visit cotiafrica.com
             </a>
         </div>
-    </section>
+    </div>
+</section>
 
-
-    
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-    <script>
-        window.onload = function() {
-            particlesJS("particles-js", {
-                "particles": {
-                    "number": {
-                        "value": 150, 
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#ffffff"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.5,
-                        "random": true
-                    },
-                    "size": {
-                        "value": 4,
-                        "random": true,
-                        "anim": {
-                            "enable": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#ffffff",
-                        "opacity": 0.4,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 2,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "out"
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "repulse"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        }
-                    },
-                    "modes": {
-                        "repulse": {
-                            "distance": 100
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        }
-                    }
-                },
-                "retina_detect": true
-            });
-        }
-
-
-        const statsSection = document.getElementById('statsSection');
-        let counted = false;
-
-        statsSection.addEventListener('mouseenter', function() {
-            if (counted) return; // Prevent recounting on additional hovers
-            counted = true;
-
-            document.querySelectorAll('.stat-item').forEach(item => {
-                const statValue = item.querySelector('.stat-value');
-                const targetCount = +item.getAttribute('data-count');
-                let startCount = 0;
-                const increment = Math.ceil(targetCount / 100); // Adjust for faster/slower counting
-
-                function updateCount() {
-                    startCount += increment;
-                    if (startCount >= targetCount) {
-                        statValue.textContent = `+${targetCount}`;
-                    } else {
-                        statValue.textContent = `+${startCount}`;
-                        requestAnimationFrame(updateCount);
-                    }
-                }
-
-                updateCount(); // Start counting
-            });
-        });
-
-        // FAQ Toggle Script
-        const faqHeaders = document.querySelectorAll('.faq-header');
-
-        faqHeaders.forEach(header => {
-            header.addEventListener('click', () => {
-                const faqBody = header.nextElementSibling;
-                const icon = header.querySelector('i');
-
-                // Toggle the body and icon
-                faqBody.classList.toggle('open');
-                header.classList.toggle('active');
-            });
-        });
-    </script>
 @endsection

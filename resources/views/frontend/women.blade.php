@@ -1,107 +1,32 @@
-
 @extends('layouts.app')
 
 @section('content')
-
-<div class="landing-page">
-    <img src="{{ asset('assets/images/rr.jpg') }}" alt="Web Development" class="landing-image">
-    <div class="overlay">
-        <h1>The Rise Of Women In Tech</h1>
-
-    </div>
-</div>
-
-<section class="photo-text-section1" style="background-color: #e8f0ff;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-
-                <img src="{{ asset('assets/images/rr.jpg') }}" alt="" style="width: 100%; height:300px;" >
-
-            </div>
-            <div class="col-md-6 text-content" style="margin-top: 16px;">
-                <h2 style="font-size: 25px; color: #1e88e5;" >About The Programm</h2>
-                <p style="font-size: 18px; color:black;text-align:justify;">
-                We recognize the significance of diversity in driving innovation and growth in the
-                 tech industry. Our Women in Tech initiative aims to bridge the gender gap by
-                 providing a supportive ecosystem for women to thrive. Through mentorship programs,
-                  networking events, and specialized training, we empower women to overcome
-                  obstacles and achieve their full potential.
-</p>
-            </div>
-        </div>
+<section class="bg-slate-900 py-16 text-white">
+    <div class="mx-auto max-w-7xl px-4">
+        <h1 class="text-4xl font-extrabold md:text-6xl">Women in Tech</h1>
+        <p class="mt-4 max-w-3xl text-slate-300">Expanding access, mentorship, and leadership pathways for women across the technology ecosystem.</p>
     </div>
 </section>
 
+<section class="mx-auto max-w-7xl px-4 py-16">
+    <div class="grid items-center gap-8 md:grid-cols-2">
+        <img src="{{ asset('assets/images/rr.jpg') }}" alt="Women in tech" class="h-80 w-full rounded-3xl object-cover shadow-xl">
+        <article class="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-slate-200">
+            <h2 class="text-2xl font-extrabold">About the initiative</h2>
+            <p class="mt-4 leading-8 text-slate-600">Through mentorship, networking, and specialized training, this program supports women in building confidence, technical depth, and career momentum in technology.</p>
+        </article>
+    </div>
 
-<!-- Women in Tech Section -->
-<section id="women-in-tech">
-    <div class="container">
-        <h2>Empowering Women in Tech</h2>
-        <p>Women have played a pivotal role in the technology sector, breaking barriers and leading
-             innovations that shape our world. <br>From coding to leadership, their contributions are
-             invaluable. Our initiative aims to support, educate, and inspire <br>women to thrive in
-             tech careers, fostering a more diverse and inclusive industry.</p>
-        <div class="row">
-            <div class="col-md-4">
-                <i class="fas fa-laptop-code icon"></i>
-                <h4>Coding & Development</h4>
-                <p>Encouraging women to excel in software development and programming languages.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-users icon"></i>
-                <h4>Community Building</h4>
-                <p>Creating supportive networks for women to share experiences and opportunities.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-chalkboard-teacher icon"></i>
-                <h4>Education & Mentorship</h4>
-                <p>Providing resources and mentorship to nurture the next generation of female tech leaders.</p>
-            </div>
-        </div>
+    <div class="mt-10 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200"><h3 class="font-bold">Coding and Development</h3><p class="mt-2 text-slate-600">Practical pathways into software development and digital product work.</p></div>
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200"><h3 class="font-bold">Community Building</h3><p class="mt-2 text-slate-600">Supportive networks that connect peers, mentors, and opportunities.</p></div>
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200"><h3 class="font-bold">Education and Mentorship</h3><p class="mt-2 text-slate-600">Guided growth for the next generation of women tech leaders.</p></div>
+    </div>
+
+    <div class="mt-12 rounded-3xl bg-gradient-to-r from-brand-900 to-accent p-8 text-white">
+        <h2 class="text-2xl font-extrabold">Join our talent community</h2>
+        <p class="mt-3 text-cyan-100">Become part of a vibrant network shaping the future of technology inclusively.</p>
+        <a href="{{ route('ict-training') }}" class="mt-5 inline-flex rounded-full bg-white px-6 py-3 text-sm font-bold text-brand-800">Learn More</a>
     </div>
 </section>
-
-
-
-
-
-<div class="section-join">
-    <h1 id="heading-join">Join Our Talent Community</h1>
-    <p  style="color: black; font-size: 18px;" >
-        Together, let's break barriers and shatter glass ceilings. <br>
-        Become part of our vibrant network of women who are redefining the future of tech.
-
-   </p>
-    <!--<a href="contact.html" id="enroll-btn">Enroll Now</a>-->
-    <a style=" text-decoration: none; padding-right: 10px; display: inline-flex; align-items: center; "
-                            class="ok ms-lg-0" href="{{ route('ict-training') }}">
-                            Learn More<i class="fa fa-arrow-right arrow-icon-1"></i></a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @endsection

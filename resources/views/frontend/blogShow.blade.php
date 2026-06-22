@@ -1,19 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('assets/css/w3pro-4.13.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/w3-theme.css') }}">
-    <div class="row mt-5"></div>
-
-<section id="blogshow" class="py-5 container mt-5">
-    <div class="w3-card-4 w3-light-grey w3-padding-16 p-3">
-        <h4 class="text-center display-4 font-weight-bold">{{$blog->title}}</h4>
-        <p><small>Published on {{ \Carbon\Carbon::parse($blog->published_at)->format('F j, Y') }}</small></p>
-        <img src="{{asset('storage/' . $blog->blog_image)}}" width="100%" alt="">
-        <hr>
-
-        <p>{!! $blog->content !!}</p>
-    </div>
+<section class="mx-auto max-w-4xl px-4 py-16">
+    <article class="overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200">
+        <img src="{{ asset('storage/' . $blog->blog_image) }}" class="h-72 w-full object-cover md:h-96" alt="{{ $blog->title }}">
+        <div class="p-8 md:p-10">
+            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Published on {{ \Carbon\Carbon::parse($blog->published_at)->format('F j, Y') }}</p>
+            <h1 class="mt-3 text-3xl font-extrabold text-slate-900 md:text-5xl">{{ $blog->title }}</h1>
+            <div class="mt-8 max-w-none text-slate-700">
+                {!! $blog->content !!}
+            </div>
+        </div>
+    </article>
 </section>
 @endsection
-

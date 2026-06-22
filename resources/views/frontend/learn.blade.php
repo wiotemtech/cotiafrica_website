@@ -1,135 +1,47 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="landing-page">
-    <img src="{{ asset('assets/images/web2.jpg') }}" alt="Web Development" class="landing-image">
-    <div class="overlay">
-        <h1>Become a Web Developer</h1>
-        <p style="color: #ffc107;">Start your journey in web development today!</p>
-    </div>
-</div>
-
-<section class="photo-text-section1" style="background-color: #e8f0ff;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-
-                <img src="{{ asset('assets/images/web2.jpg') }}" alt="" style="width: 100%; height:300px;" >
-
-            </div>
-            <div class="col-md-6 text-content" style="margin-top: 16px;">
-                <h2 style="font-size: 25px; color: #1e88e5;" >About The Programm</h2>
-                <p style="font-size: 18px; color:black;text-align:justify">
-
-
-          Unlock the world of coding with our comprehensive programming courses designed for all
-          levels,from beginners to advanced developers.Learn essential skills,explore modern
-          programming languages,and build real-world projects to become a proficient coder ready
-          to excel in the tech industry.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<!--COURSE OUTLINE SECTION-->
-<section id="ercdv-course-outline-section">
-    <div class="ercdv-container">
-        <h2 class="ercdv-section-title" style="font-size: 25px;">Course Outline</h2>
-
-        <div class="ercdv-course-content">
-            <!-- Card 1 -->
-<div class="ercdv-card">
-    <ul class="ercdv-course-outline">
-        <li>Understand the fundamentals of deploying front-end projects on various platforms, ensuring a smooth launch process.</li>
-        <li>Implement real-time updates and dynamic features in your applications using websockets for instant communication.</li>
-        <li>Build mobile-responsive websites that adjust effortlessly across devices, offering a flawless user experience on all screens.</li>
-        <li>Get hands-on experience with powerful front-end libraries like Vue.js and React to create modern and feature-rich web applications.</li>
-    </ul>
-</div>
-
-<!-- Card 2 -->
-<div class="ercdv-card">
-    <ul class="ercdv-course-outline">
-        <li>Master the process of interacting with APIs to retrieve data from back-end servers and display it within your apps.</li>
-        <li>Learn to follow coding standards and participate in peer code reviews, ensuring that your codebase is clean and maintainable.</li>
-        <li>Boost your site’s efficiency by minimizing load times and refining overall performance to enhance user engagement.</li>
-        <li>Build confidence for front-end job applications by creating a diverse project portfolio and polishing interview skills.</li>
-    </ul>
-</div>
-
-
-            </div>
-        </div>
+<section class="bg-slate-900 py-16 text-white">
+    <div class="mx-auto max-w-7xl px-4">
+        <h1 class="text-4xl font-extrabold md:text-6xl">Learn Programming</h1>
+        <p class="mt-4 max-w-3xl text-slate-300">Start your journey from beginner fundamentals to practical software projects that prepare you for real tech roles.</p>
     </div>
 </section>
 
-<!--ADMISSION SECTION-->
-<section class="admission-requirements-section">
-    <div class="container">
-        <div class="admission-card">
-            <h2>Admission Criteria
-            </h2>
-            <ul>
-                <li>
-                    <strong>Background of Education:</strong>
-                    High school diploma or equivalent, foundation in mathematics and computer science
-                </li>
-                <li>
-                    <strong>English Language Proficiency:</strong>
-                    English is the mode of teaching.
-                </li>
-                <li>
-                    <strong>Admission Fee:</strong>
-                    Application fee: $10 (non-refundable), Tuition fee: $22 (per month).
-                </li>
+<section class="mx-auto max-w-7xl px-4 py-16">
+    <div class="grid items-center gap-8 md:grid-cols-2">
+        <img src="{{ asset('assets/images/web2.jpg') }}" alt="Programming course" class="h-80 w-full rounded-3xl object-cover shadow-xl">
+        <article class="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-slate-200">
+            <h2 class="text-2xl font-extrabold">About the program</h2>
+            <p class="mt-4 leading-8 text-slate-600">Unlock the world of coding with a curriculum designed for beginners and advancing learners. Build real-world projects and gain confidence in modern development workflows.</p>
+        </article>
+    </div>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+        <article class="rounded-3xl bg-white p-8 ring-1 ring-slate-200 shadow-lg">
+            <h3 class="text-xl font-bold">Course Outline</h3>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+                <li>Responsive frontend development and deployment practices.</li>
+                <li>API integration and dynamic data experiences.</li>
+                <li>Team coding standards and code review collaboration.</li>
+                <li>Performance optimization and portfolio readiness.</li>
             </ul>
-        </div>
+        </article>
+        <article class="rounded-3xl bg-white p-8 ring-1 ring-slate-200 shadow-lg">
+            <h3 class="text-xl font-bold">Admission Criteria</h3>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
+                <li>High school diploma or equivalent background.</li>
+                <li>English proficiency for instruction and participation.</li>
+                <li>Affordable training model with clear monthly tuition.</li>
+                <li>Course duration: 12 months of practical progression.</li>
+            </ul>
+        </article>
+    </div>
 
-        <!-- Small Card for Course Duration -->
-        <div class="small-card">
-            <h4>Course Duration</h4>
-            <p style="font-size: 18px;">12 Months</p>
-        </div>
+    <div class="mt-12 rounded-3xl bg-gradient-to-r from-brand-900 to-accent p-8 text-white">
+        <h2 class="text-2xl font-extrabold">Join our training community</h2>
+        <p class="mt-3 text-cyan-100">Build career-ready skills with practical mentorship and project-based learning.</p>
+        <a href="{{ route('ict-training') }}" class="mt-5 inline-flex rounded-full bg-white px-6 py-3 text-sm font-bold text-brand-800">Learn More</a>
     </div>
 </section>
-
-
-
-
-
-<div class="section-join">
-    <h1 id="heading-join">Join Our Online Class</h1>
-    <p  style="color: black; font-size: 18px;" >
-        "Unlock your career potential with our hands-on curriculum,
-        expertly designed to <br> equip you with the skills needed to thrive in today's
-        competitive job market."
-   </p>
-    <!--<a href="https://forms.gle/tPA5FKKKv3EmTuXRA" id="enroll-btn">Enroll Now</a>-->
-    <a style=" text-decoration: none; padding-right: 10px; display: inline-flex; align-items: center; "
-                            class="ok ms-lg-0" href="{{ route('ict-training') }}">
-                            Learn More<i class="fa fa-arrow-right arrow-icon-1"></i></a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @endsection

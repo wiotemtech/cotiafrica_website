@@ -2,157 +2,188 @@
 
 @section('content')
 
-<div class="background1" style="background-image: url('assets/images/software.jpg'); background-size: cover; background-position: center; height: 90vh;">
-    <div class="card" style="background-color: rgb(3, 3, 56); color: white; margin-bottom:33px" >
-        <h2 style="font-size: 20px;">Software Development at CodeToInnovate Africa</h2>
-        <p style="font-size: 18px;">
-        At CodeToInnovate Africa, we specialize in custom software development tailored
-             to meet the unique needs of our clients. Our expert team leverages the
-             latest technologies and industry best practices to build robust, scalable,
-              and efficient software solutions that drive innovation and business growth.
-
-
-        </p>
-        </p>
-    </div>
-</div>
-
-
-<section class="custom-section" style=" margin-top: 2px;">
-    <!-- First Div -->
-    <div class="custom-div custom-first-div">
-
-    <img src="{{ asset('assets/images/software.jpg') }}" alt="" >
-
-    </div>
-
-    <!-- Second Div -->
-    <div class="custom-div custom-second-div">
-        <!--<img src="/img/software.jpg" alt="Smaller Profile Picture">
-        <span class="custom-span">Name<br>Number</span>-->
-        <h1 class="custom-h1" style="font-size: 25px;">Software Development</h1>
-        <p class="custom-p" style="text-align: left; font-size: 18px;">
-
-
-            We offer a comprehensive range of services, including web applications,
-            mobile applications, and enterprise software solutions, ensuring that
-            our clients have the tools they need to succeed in today's competitive landscape.
-            From initial consultation to final deployment, we collaborate closely with our
-            clients to understand their goals and deliver solutions that enhance productivity,
-            streamline operations, and improve user experiences. With a focus on quality and
-             continuous improvement, CodeToInnovate Africa is dedicated to helping businesses
-             transform their ideas into powerful software solutions that make a lasting impact.
-
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-r from-slate-900 to-teal-900 text-white pt-40 pb-20">
+    <div class="container mx-auto px-4 relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">Custom Software Development</h1>
+        <p class="text-xl text-slate-100 max-w-3xl">
+            Platforms engineered for local workflows, public services, and business growth. We build secure, scalable solutions tailored to your needs.
         </p>
     </div>
 </section>
 
-
-
-<section class="py-5" style="margin-top: -50px;background: linear-gradient(135deg, #1E88E5, #43A047);">
-    <h1 class="text-center" style="font-size: 25px;font-family: Arial, sans-serif; font-weight: bold;">Programming Languages We Use</h1>
-    <div class="scroll-container">
-        <div class="language-wrapper">
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-                <p>Interactive Web Development</p>
+<!-- Overview Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <img src="{{ asset('assets/images/softpage.jpeg') }}" alt="Software development" class="rounded-2xl shadow-lg w-full">
             </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="Python">
-                <h3>Python</h3>
-                <p>Data Science & ML</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
-                <h3>PHP</h3>
-                <p>Backend Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Laravel">
-                <h3>Laravel</h3>
-                <p>Modern PHP Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="React.js">
-                <h3>React.js</h3>
-                <p>Frontend Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++">
-                <h3>C++</h3>
-                <p>System & App Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
-                <h3>Java</h3>
-                <p>Enterprise Software</p>
-            </div>
-            <!-- Duplicate items for seamless scrolling -->
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-                <p>Interactive Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="Python">
-                <h3>Python</h3>
-                <p>Data Science & ML</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP">
-                <h3>PHP</h3>
-                <p>Backend Web Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Laravel">
-                <h3>Laravel</h3>
-                <p>Modern PHP Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="React.js">
-                <h3>React.js</h3>
-                <p>Frontend Framework</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++">
-                <h3>C++</h3>
-                <p>System & App Development</p>
-            </div>
-            <div class="language-item">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
-                <h3>Java</h3>
-                <p>Enterprise Software</p>
+            <div data-aos="fade-left">
+                <h2 class="text-4xl font-bold text-slate-900 mb-6">Build Systems That Scale With You</h2>
+                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                    From corporate dashboards and NGO portals to public health systems and e-commerce platforms, we engineer digital solutions that solve real problems.
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                    Our software is built for performance, security, and adaptability - ensuring your investment grows with your organization.
+                </p>
+                <div class="flex gap-4">
+                    <a href="{{ route('contactus') }}" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-teal-700 text-white font-bold hover:bg-teal-800 transition">
+                        Get Started
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="partner-section" style="margin-top: -2px; background-color: white;" >
-    <div class="container" >
-        <h1 style="font-size: 18x; font-family: Arial, sans-serif;">Have an idea?Lets Build it together!</h1>
-        <p>
-            Have an Idea? Let’s Build Together!
-            At CodeToInnovate Africa, we believe in turning great ideas into reality.
-            If you have a vision for a website, app, or digital project, we’re here to
-            collaborate and bring it to life. Together, we’ll build a solution that not
-            only meets your needs but exceeds your expectations. Let’s innovate, create,
-            and grow together</p>
+<!-- Services Section -->
+<section class="py-20 bg-gradient-to-b from-slate-50 to-blue-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-slate-900 text-center mb-16">What We Build</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+                <div class="text-4xl text-teal-600 mb-4">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Web Applications</h3>
+                <p class="text-slate-600">Responsive, fast-loading web platforms that work on desktop, tablet, and mobile.</p>
+            </div>
 
-            <a style="border: 2px solid green; text-decoration: none; padding-right: 30px; display: inline-flex; align-items: center; "
-   class="oj ms-lg-0" href="{{ route('contactus') }}">
-  Contact Us <i class="fa fa-arrow-right arrow-icon"></i></a>
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-4xl text-teal-600 mb-4">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Backend Systems</h3>
+                <p class="text-slate-600">Powerful APIs and databases designed for reliability, scalability, and data security.</p>
+            </div>
 
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-4xl text-teal-600 mb-4">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Cloud Solutions</h3>
+                <p class="text-slate-600">Deployment, hosting, and infrastructure setup on AWS, Google Cloud, or local servers.</p>
+            </div>
 
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-4xl text-teal-600 mb-4">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">System Integration</h3>
+                <p class="text-slate-600">Connect your existing tools, databases, and services into one unified platform.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-4xl text-teal-600 mb-4">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Progressive Web Apps</h3>
+                <p class="text-slate-600">App-like web experiences that work offline and load instantly on any device.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+                <div class="text-4xl text-teal-600 mb-4">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Custom Tools</h3>
+                <p class="text-slate-600">Specialized software for unique workflows, processes, and industry requirements.</p>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
+<!-- Tech Stack Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-slate-900 text-center mb-16">Technologies We Use</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+            <div data-aos="zoom-in">
+                <div class="text-5xl text-blue-400 mb-4"><i class="fab fa-js"></i></div>
+                <h3 class="font-bold text-slate-900">JavaScript</h3>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="50">
+                <div class="text-5xl text-red-600 mb-4"><i class="fab fa-laravel"></i></div>
+                <h3 class="font-bold text-slate-900">Laravel</h3>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="100">
+                <div class="text-5xl text-blue-600 mb-4"><i class="fab fa-react"></i></div>
+                <h3 class="font-bold text-slate-900">React</h3>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="150">
+                <div class="text-5xl text-green-500 mb-4"><i class="fab fa-node"></i></div>
+                <h3 class="font-bold text-slate-900">Node.js</h3>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="200">
+                <div class="text-5xl text-blue-400 mb-4"><i class="fab fa-python"></i></div>
+                <h3 class="font-bold text-slate-900">Python</h3>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="250">
+                <div class="text-5xl text-orange-500 mb-4"><i class="fas fa-database"></i></div>
+                <h3 class="font-bold text-slate-900">PostgreSQL</h3>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Benefits Section -->
+<section class="py-20 bg-gradient-to-b from-slate-50 to-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-slate-900 text-center mb-16">Why Choose Our Software?</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl p-8 border border-slate-200" data-aos="fade-up">
+                <div class="text-3xl text-teal-600 mb-4"><i class="fas fa-check-circle"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Secure by Default</h3>
+                <p class="text-slate-600">Built with PDPA compliance, encryption, and security best practices from day one.</p>
+            </div>
 
+            <div class="bg-white rounded-2xl p-8 border border-slate-200" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-3xl text-teal-600 mb-4"><i class="fas fa-rocket"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Lightning Fast</h3>
+                <p class="text-slate-600">Optimized for speed, scalability, and performance even under high traffic.</p>
+            </div>
 
+            <div class="bg-white rounded-2xl p-8 border border-slate-200" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-3xl text-teal-600 mb-4"><i class="fas fa-expand"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Scalable</h3>
+                <p class="text-slate-600">Built to grow with your organization - from startup to enterprise.</p>
+            </div>
 
+            <div class="bg-white rounded-2xl p-8 border border-slate-200" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-3xl text-teal-600 mb-4"><i class="fas fa-headset"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Ongoing Support</h3>
+                <p class="text-slate-600">Maintenance, updates, monitoring, and support for the lifetime of your system.</p>
+            </div>
 
+            <div class="bg-white rounded-2xl p-8 border border-slate-200" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-3xl text-teal-600 mb-4"><i class="fas fa-book"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Well Documented</h3>
+                <p class="text-slate-600">Clear documentation, training, and knowledge transfer for your team.</p>
+            </div>
 
+            <div class="bg-white rounded-2xl p-8 border border-slate-200" data-aos="fade-up" data-aos-delay="500">
+                <div class="text-3xl text-teal-600 mb-4"><i class="fas fa-code-branch"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Future-Proof</h3>
+                <p class="text-slate-600">Built on modern frameworks and architectures that stand the test of time.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-slate-900 to-teal-900 text-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Build Your Next Software Solution?</h2>
+        <p class="text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
+            Share your requirements and we'll design a solution that drives real business results.
+        </p>
+        <a href="{{ route('contactus') }}" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-white text-slate-900 font-bold hover:bg-slate-100 transition">
+            Start Your Project
+        </a>
+    </div>
+</section>
 
 @endsection

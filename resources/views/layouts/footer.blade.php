@@ -1,48 +1,62 @@
-<footer style="
-background-image: url('{{ asset('assets/images/footer.jpg') }}');
- background-color:red;" 
-class="custom-footer">
-    <div class="custom-footer-overlay"></div>
-        <div class="container custom-footer-container">
-           <div class="row">
-                <div class="col-md-4 text-center text-md-start">
-                                                                                                                <img src="{{ asset('assets/images/logo7.png') }}"" alt="CodeToInnovate Logo" class="custom-footer-logo">
-                                                                                                                <h5 class="custom-footer-header">CodeToInnovate Africa</h5>
-                                                                                                                <p class="custom-footer-text">Innovating technology to meet your business needs and drive success.</p>
-                                                                                                            </div>
-                                                                                            
-                                                                                                            <div class="col-md-2">
-                                                                                                                <h5 class="custom-footer-header">Quick Links</h5>
-                                                                                                                <ul class="list-unstyled custom-footer-links">
-                                                                                                                    <li><a href="{{ route('home') }}" class="text-white">Home</a></li>
-                                                                                                                    <li><a href="{{ route('home') }}" class="text-white">Services</a></li>
-                                                                                                                    <li><a href="{{ route('whyus') }}" class="text-white">Why Us</a></li>
-                                                                                                                    <li><a href="{{ route('blogs') }}" class="text-white">Blog</a></li>
-                                                                                                                    <li><a href="{{ route('contactus') }}" class="text-white">Contact</a></li>
-                                                                                                                </ul>
-                                                                                                            </div>
-                                                                                            
-                                                                                                            <div class="col-md-3">
-                                                                                                                <h5 class="custom-footer-header">Contact Us</h5>
-                                                                                                                <ul class="list-unstyled custom-footer-contact">
-                                                                                                                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@cotiafrica.com" class="text-white">info@cotiafrica.com</a></li>
-                                                                                                                    <li><i class="fas fa-phone"></i> +256-779-512-100 / +256-759-512-100</li>
-                                                                                                                    <li><i class="fas fa-map-marker-alt"></i> Technology Innovation Surport Centre (TISC) UTC Lira</li>
-                                                                                                                </ul>
-                                                                                                            </div>
-                                                                                            
-                                                                                                            <div style="padding-bottom: 75px;" class="col-md-3">
-                                                                                                                <h5 class="custom-footer-header">Follow Us</h5>
-                                                                                                                <div class="d-flex custom-social-links">
-                                                                                                                    <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-facebook-f"></i></a>
-                                                                                                                    <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-twitter"></i></a>
-                                                                                                                    <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-linkedin"></i></a>
-                                                                                                                    <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-instagram"></i></a>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="text-center custom-footer-bottom">
-                                                                                                            <p class="mb-0">&copy; <?php echo date('Y'); ?> CodeToInnovate Africa. All Rights Reserved.</p>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </foote>
+<footer class="relative overflow-hidden bg-slate-950 text-white">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(45,212,191,0.15),transparent_40%)]"></div>
+    <div class="container relative mx-auto px-4 py-16">
+        <div class="mb-12 grid grid-cols-1 gap-8 border-b border-slate-800 pb-12 md:grid-cols-4">
+            <!-- About Section -->
+            <div class="text-center md:text-left">
+                <img src="{{ asset('assets/images/logo7.png') }}" alt="CodeToInnovate Africa logo" class="mx-auto mb-4 h-20 w-20 rounded-xl border border-slate-800 bg-slate-900 p-2 object-contain md:mx-0">
+                <h5 class="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-teal-200">CodeToInnovate Africa</h5>
+                <p class="text-sm leading-relaxed text-slate-300">
+                    A technology innovation hub and enterprise software engineering firm building inclusive,
+                    compliant digital systems from Northern Uganda.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h5 class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-teal-200">Quick Links</h5>
+                <ul class="space-y-2">
+                    <li><a href="{{ route('home') }}" class="text-slate-300 transition hover:pl-1 hover:text-white">Home</a></li>
+                    <li><a href="{{ route('whyus') }}" class="text-slate-300 transition hover:pl-1 hover:text-white">Why Us</a></li>
+                    <li><a href="{{ route('blogs') }}" class="text-slate-300 transition hover:pl-1 hover:text-white">Blog</a></li>
+                    <li><a href="{{ route('contactus') }}" class="text-slate-300 transition hover:pl-1 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h5 class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-teal-200">Contact</h5>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-envelope text-teal-400 mt-1 flex-shrink-0"></i>
+                        <a href="mailto:codetoinnovateafrica256@gmail.com" class="text-slate-300 transition hover:text-white">codetoinnovateafrica256@gmail.com</a>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-phone text-teal-400 mt-1 flex-shrink-0"></i>
+                        <span class="text-slate-300">+256 779 512 100 / +256 759 512 100</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-map-marker-alt text-teal-400 mt-1 flex-shrink-0"></i>
+                        <span class="text-slate-300">TISC, UTC-Lira, P.O. Box 331626, Lira, Uganda</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Compliance & Social -->
+            <div>
+                <h5 class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-teal-200">Footprint</h5>
+                <p class="mb-4 text-sm leading-relaxed text-slate-300">
+                    Systems aligned with the Data Protection and Privacy Act (2019).
+                </p>
+                <p class="text-xs leading-relaxed text-slate-400">
+                    Follow: @CodeToInnovateA on X and CodeToInnovate Africa on LinkedIn, TikTok, and Instagram.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-2 text-center text-sm text-slate-400">
+            <p>&copy; {{ date('Y') }} CodeToInnovate Africa. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
