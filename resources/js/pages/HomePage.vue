@@ -41,11 +41,11 @@
         <!-- Floating badge -->
         <div class="absolute -bottom-4 left-6 rounded-xl px-4 py-3 shadow-2xl" style="background:rgba(13,27,42,0.92);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.12)">
           <p class="text-[10px] font-bold uppercase tracking-widest" style="color:#f9a825">Operating Principle</p>
-          <p class="mt-0.5 text-sm font-semibold text-white">Train Â· Build Â· Mentor Â· Support</p>
+          <p class="mt-0.5 text-sm font-semibold text-white">Train &middot; Build &middot; Mentor &middot; Support</p>
         </div>
         <!-- Green pill -->
         <div class="absolute -top-3 right-6 rounded-full px-3 py-1.5 text-[11px] font-bold text-white shadow-lg" style="background:#43a047">
-          âœ“ Compliance-first
+          &#10003; Compliance-first
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
       <div class="mb-12 text-center">
         <p class="c2i-section-label" style="color:#1e88e5">Choose your pathway</p>
         <h2 class="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">A path for every goal</h2>
-        <p class="mx-auto mt-3 max-w-2xl text-slate-500">Built for students, professionals, and institutions that need practical outcomes â€” not just certificates.</p>
+        <p class="mx-auto mt-3 max-w-2xl text-slate-500">Built for students, professionals, and institutions that need practical outcomes &ndash; not just certificates.</p>
       </div>
 
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -124,7 +124,7 @@
           <p class="mt-4 text-slate-500 leading-relaxed">We partner with NGOs, schools, and growing businesses to deliver software products, team training, and implementation support suited to local constraints.</p>
           <ul class="mt-6 space-y-3">
             <li v-for="benefit in orgBenefits" :key="benefit" class="flex items-start gap-3 text-sm text-slate-700">
-              <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] text-white" style="background:#1e88e5">âœ“</span>
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] text-white" style="background:#1e88e5">&#10003;</span>
               {{ benefit }}
             </li>
           </ul>
@@ -172,12 +172,61 @@
   </section>
 
   <!-- â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- Partners -->
+  <section class="bg-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="mb-12 text-center">
+        <p class="c2i-section-label" style="color:#1e88e5">Our Ecosystem</p>
+        <h2 class="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">Partners &amp; Collaborators</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-slate-500">We operate within a network of institutions that share our commitment to innovation, capacity building, and sustainable development across Northern Uganda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <article v-for="partner in partners" :key="partner.name" class="c2i-card overflow-hidden">
+          <!-- Coloured top band -->
+          <div class="relative px-6 py-5" :style="`background:${partner.color}`">
+            <div class="flex items-center gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl" style="background:rgba(255,255,255,0.22)">
+                <i :class="partner.icon" class="text-xl text-white"></i>
+              </div>
+              <div>
+                <span class="block text-[10px] font-bold uppercase tracking-[0.2em] text-white/60">{{ partner.category }}</span>
+                <h3 class="text-lg font-bold text-white leading-tight">{{ partner.name }}</h3>
+              </div>
+            </div>
+            <div class="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full" style="background:rgba(255,255,255,0.07)"></div>
+          </div>
+          <!-- Body -->
+          <div class="p-6">
+            <p class="text-sm leading-relaxed text-slate-600">{{ partner.description }}</p>
+            <ul class="mt-5 space-y-2 text-sm text-slate-700">
+              <li v-for="point in partner.highlights" :key="point" class="flex items-start gap-2.5">
+                <i class="fas fa-check-circle mt-0.5 shrink-0 text-xs" :style="`color:${partner.color}`"></i>
+                <span>{{ point }}</span>
+              </li>
+            </ul>
+            <div class="mt-5 flex flex-wrap items-center gap-3">
+              <span v-for="tag in partner.tags" :key="tag" class="rounded-full px-3 py-1 text-[11px] font-semibold" :style="`background:${partner.color}18;color:${partner.color}`">{{ tag }}</span>
+            </div>
+            <a v-if="partner.url" :href="partner.url" target="_blank" rel="noopener noreferrer"
+               class="mt-5 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-white transition hover:opacity-90"
+               :style="`background:${partner.color}`">
+              Visit website <i class="fas fa-external-link-alt text-xs"></i>
+            </a>
+            <span v-else class="mt-5 inline-flex items-center gap-2 text-sm font-semibold" :style="`color:${partner.color}`">
+              <i class="fas fa-map-marker-alt text-xs"></i> {{ partner.location }}
+            </span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
   <section class="relative overflow-hidden py-20 text-white" style="background:linear-gradient(135deg,#12294d 0%,#0d2b1f 100%)">
     <div class="pointer-events-none absolute inset-0" style="background:radial-gradient(ellipse at 50% 0%,rgba(30,136,229,0.18),transparent 65%)"></div>
     <div class="container relative mx-auto px-4 text-center">
       <p class="c2i-section-label" style="color:#f9a825">Ready to collaborate?</p>
       <h2 class="mx-auto mt-4 max-w-3xl text-3xl font-bold md:text-5xl">Build local solutions with regional impact.</h2>
-      <p class="mx-auto mt-4 max-w-2xl c2i-body-light">Whether you need training, software delivery, or implementation support â€” our team is ready to work with you.</p>
+      <p class="mx-auto mt-4 max-w-2xl c2i-body-light">Whether you need training, software delivery, or implementation support &ndash; our team is ready to work with you.</p>
       <div class="mt-8 flex flex-wrap justify-center gap-3">
         <RouterLink to="/contact-us" class="c2i-btn-primary gap-2">
           Talk to our team <i class="fas fa-arrow-right text-xs"></i>
@@ -263,5 +312,76 @@ const journeySteps = [
   { number: '02', title: 'Build Capacity',   text: 'Teams and learners gain role-specific digital skills with hands-on support.',         icon: 'fas fa-graduation-cap', color: '#43a047' },
   { number: '03', title: 'Deliver Systems',  text: 'We design and implement software products that solve practical problems.',            icon: 'fas fa-code',           color: '#f9a825' },
   { number: '04', title: 'Sustain Outcomes', text: 'Documentation, governance, and support keep solutions useful over time.',            icon: 'fas fa-shield-alt',     color: '#1e88e5' },
+];
+
+const partners = [
+  {
+    name: 'Technology & Innovation Support Centre (TISC)',
+    category: 'Innovation & IP Hub',
+    icon: 'fas fa-lightbulb',
+    color: '#1e88e5',
+    description: 'A specialized hub at Uganda Technical College Lira, facilitated by the Uganda Registration Services Bureau (URSB) in partnership with the World Intellectual Property Organization (WIPO). TISCs bridge creative ideas and commercially viable, IP-protected products.',
+    highlights: [
+      'Access to global patent databases and scientific journals for prior art searches',
+      'Expert guidance on patents, trademarks, industrial designs, and IP management',
+      'Commercialization support: technology licensing and pathways to market',
+      'Capacity building through workshops on patent drafting and IP law',
+      'Expanded into secondary schools including Comboni College and Dr. Obote College',
+    ],
+    tags: ['IP Services', 'Innovation', 'WIPO', 'URSB', 'UTC Lira'],
+    url: null,
+    location: 'Uganda Technical College, Lira',
+  },
+  {
+    name: 'MACSO Christ – Medical & Community Support Organisation',
+    category: 'Healthcare & Community',
+    icon: 'fas fa-heartbeat',
+    color: '#43a047',
+    description: 'A registered nonprofit in Lira City focused on restoring health, dignity, and opportunity through integrated medical and community support programs. MACSO-Uganda combines preventive, curative, and rehabilitative care with education and livelihood support.',
+    highlights: [
+      'Reproductive, maternal, and child health services',
+      'HIV and chronic disease care with community outreach',
+      'Gender-based violence prevention and response programs',
+      'Education, vocational pathways, and economic empowerment',
+      '12+ community programs reaching 5,000+ lives with 30+ care partners',
+    ],
+    tags: ['Healthcare', 'Community', 'Lira City', 'NGO'],
+    url: 'https://macsochrist.org',
+    location: null,
+  },
+  {
+    name: 'Reversible Technologies',
+    category: 'Clean Energy & Consultancy',
+    icon: 'fas fa-solar-panel',
+    color: '#f9a825',
+    description: 'Based at the Renewable Energy Training Centre at UTC Lira, Reversible Technologies promotes clean energy access across Uganda through technical advisory, consultancy, and product delivery. Their team develops tailored solutions for renewable energy challenges.',
+    highlights: [
+      'Vocational skills development in renewable energy technologies',
+      'Renewable energy support services and system assessments',
+      'Energy efficiency auditing and advisory services',
+      'Piloting of appropriate clean technologies for local contexts',
+      'Located 1km from Lira City Centre along Lira-Soroti Agwata Highway',
+    ],
+    tags: ['Clean Energy', 'Solar', 'Consultancy', 'UTC Lira'],
+    url: 'https://rtechnologies.org',
+    location: null,
+  },
+  {
+    name: 'Renewable Energy Training Centre (RETC)',
+    category: 'Vocational Training',
+    icon: 'fas fa-leaf',
+    color: '#0d7a5f',
+    description: 'A state-of-the-art regional training facility at UTC Lira, developed through the ProREU project in partnership with ACSET Uganda, Urbis Foundation (Germany), and GIZ. The centre decentralizes renewable energy skills across the Lango sub-region.',
+    highlights: [
+      'Trains Solar Extension Agents (SEAs) as regional technical multipliers',
+      'DIT-certified training using the NVTI Solar Curriculum national standard',
+      'Covers installation, maintenance, and troubleshooting for households and institutions',
+      'System mapping and database management for regional energy infrastructure',
+      'Hosts Solar Clinics connecting technicians, companies, and communities',
+    ],
+    tags: ['Solar Training', 'DIT Certified', 'GIZ', 'ProREU', 'UTC Lira'],
+    url: null,
+    location: 'Uganda Technical College, Lira',
+  },
 ];
 </script>

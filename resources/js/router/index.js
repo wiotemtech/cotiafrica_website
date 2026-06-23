@@ -6,6 +6,7 @@ import ContactPage from '../pages/ContactPage.vue';
 import BlogsPage from '../pages/BlogsPage.vue';
 import BlogDetailPage from '../pages/BlogDetailPage.vue';
 import ServicePage from '../pages/ServicePage.vue';
+import PartnersPage from '../pages/PartnersPage.vue';
 
 const routes = [
   { path: '/', name: 'home', component: HomePage },
@@ -14,6 +15,7 @@ const routes = [
   { path: '/contact-us', name: 'contactus', component: ContactPage },
   { path: '/blogs', name: 'blogs', component: BlogsPage },
   { path: '/blogs/:id/:title', name: 'blogs.show', component: BlogDetailPage },
+  { path: '/partners', name: 'partners', component: PartnersPage },
   { path: '/softwares', name: 'software', component: ServicePage, meta: { key: 'software' } },
   { path: '/mobileApp', name: 'mobileApp', component: ServicePage, meta: { key: 'mobile' } },
   { path: '/webDevelopment', name: 'webDevelopment', component: ServicePage, meta: { key: 'web' } },

@@ -86,6 +86,7 @@
             </div>
 
             <RouterLink to="/blogs" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900" active-class="text-blue-600 bg-blue-50">Blog</RouterLink>
+            <RouterLink to="/partners" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900" active-class="text-blue-600 bg-blue-50">Partners</RouterLink>
           </nav>
 
           <!-- CTA -->
@@ -116,6 +117,7 @@
               <RouterLink to="/startup-incubator" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-rocket w-4 text-xs" style="color:#43a047"></i> Startup Incubator</RouterLink>
               <RouterLink to="/green-tech" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-leaf w-4 text-xs" style="color:#f9a825"></i> Green Tech & Automation</RouterLink>
               <RouterLink to="/blogs" class="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"><i class="fas fa-newspaper w-4 text-xs text-slate-400"></i> Blog</RouterLink>
+              <RouterLink to="/partners" class="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"><i class="fas fa-handshake w-4 text-xs text-slate-400"></i> Partners</RouterLink>
               <div class="mt-2 pt-2 border-t border-slate-100">
                 <RouterLink to="/contact-us" class="c2i-btn-primary block w-full text-center">Work With Us</RouterLink>
               </div>
