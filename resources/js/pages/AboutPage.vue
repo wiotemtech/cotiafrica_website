@@ -167,7 +167,7 @@ import { RouterLink } from 'vue-router';
 
 const keyFacts = [
   { label: 'Headquarters', value: 'UTC-Lira, Northern Uganda', icon: 'fas fa-map-marker-alt', color: '#1e88e5' },
-  { label: 'Founded', value: 'Serving communities since 2020', icon: 'fas fa-calendar-alt', color: '#43a047' },
+  { label: 'Founded', value: 'Serving communities since 2023', icon: 'fas fa-calendar-alt', color: '#43a047' },
   { label: 'Impact Goal', value: '1 Million lives by 2035', icon: 'fas fa-bullseye', color: '#f9a825' },
   { label: 'Compliance', value: "Uganda's Data Protection & Privacy Act 2019", icon: 'fas fa-shield-alt', color: '#1e88e5' },
 ];

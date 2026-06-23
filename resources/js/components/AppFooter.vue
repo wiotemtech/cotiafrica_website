@@ -15,8 +15,11 @@
             <a href="https://linkedin.com/company/codetoinnovate-africa" target="_blank" rel="noopener" aria-label="LinkedIn" class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-teal-400 hover:text-teal-300">
               <i class="fab fa-linkedin-in text-sm"></i>
             </a>
-            <a href="https://tiktok.com/@codetoinnovateafrica" target="_blank" rel="noopener" aria-label="TikTok" class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-teal-400 hover:text-teal-300">
+            <a href="https://tiktok.com/@code.to.innovate" target="_blank" rel="noopener" aria-label="TikTok" class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-teal-400 hover:text-teal-300">
               <i class="fab fa-tiktok text-sm"></i>
+            </a>
+            <a href="https://wa.me/256779512100" target="_blank" rel="noopener" aria-label="WhatsApp" class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-teal-400 hover:text-teal-300">
+              <i class="fab fa-whatsapp text-sm"></i>
             </a>
             <a href="https://instagram.com/codetoinnovateafrica" target="_blank" rel="noopener" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-teal-400 hover:text-teal-300">
               <i class="fab fa-instagram text-sm"></i>

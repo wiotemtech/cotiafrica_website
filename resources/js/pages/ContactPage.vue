@@ -67,17 +67,20 @@
           <div class="pt-2">
             <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Follow us</p>
             <div class="mt-3 flex gap-2">
-              <a href="#" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-blue-300 hover:text-blue-600" aria-label="LinkedIn">
+              <a href="https://linkedin.com/company/codetoinnovate-africa" target="_blank" rel="noopener" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-blue-300 hover:text-blue-600" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in text-sm"></i>
               </a>
-              <a href="#" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-slate-900 hover:text-slate-900" aria-label="X / Twitter">
+              <a href="https://x.com/CodeToInnovateA" target="_blank" rel="noopener" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-slate-900 hover:text-slate-900" aria-label="X / Twitter">
                 <i class="fab fa-x-twitter text-sm"></i>
               </a>
-              <a href="#" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-pink-400 hover:text-pink-500" aria-label="Instagram">
-                <i class="fab fa-instagram text-sm"></i>
-              </a>
-              <a href="#" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-slate-900 hover:text-slate-900" aria-label="TikTok">
+              <a href="https://tiktok.com/@code.to.innovate" target="_blank" rel="noopener" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-slate-900 hover:text-slate-900" aria-label="TikTok">
                 <i class="fab fa-tiktok text-sm"></i>
+              </a>
+              <a href="https://wa.me/256779512100" target="_blank" rel="noopener" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-green-400 hover:text-green-500" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp text-sm"></i>
+              </a>
+              <a href="https://instagram.com/codetoinnovateafrica" target="_blank" rel="noopener" class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-pink-400 hover:text-pink-500" aria-label="Instagram">
+                <i class="fab fa-instagram text-sm"></i>
               </a>
             </div>
           </div>
