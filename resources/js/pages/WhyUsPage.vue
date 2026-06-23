@@ -12,7 +12,7 @@
         </div>
 
         <div class="lg:col-span-4">
-          <div class="c2i-surface rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
+          <div class="rounded-2xl bg-white/10 p-6 backdrop-blur-sm border border-white/20">
             <p class="text-xs uppercase tracking-widest text-teal-200">Operating Principle</p>
             <p class="mt-3 text-sm leading-relaxed text-slate-100">Every initiative must be useful, compliant, scalable, and locally adoptable from day one.</p>
           </div>
