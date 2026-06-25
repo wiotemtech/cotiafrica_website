@@ -63,6 +63,7 @@ jobs:
             .env
             storage/
             bootstrap/cache/
+            **/vendor/**
 
       - name: Notify on failure
         if: failure()
