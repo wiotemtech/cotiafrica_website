@@ -58,11 +58,10 @@ jobs:
           # Exclude files that should not be overwritten on the server
           exclude: |
             **/.git*
-            **/.git*/**
+            **/.github/**
             **/node_modules/**
-            .env
-            storage/
-            bootstrap/cache/
+            **/tests/**
+            **/.env
             **/vendor/**
 
       - name: Notify on failure
