@@ -39,15 +39,17 @@ jobs:
       - name: Install Composer dependencies (production)
         run: composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader
 
-      
-      # -------------------------------------------------------
-      # Deploy via FTP
-      # Requires these repository secrets:
-      #   FTP_HOST     - FTP server hostname or IP
-      #   FTP_USER     - FTP username
-      #   FTP_PASSWORD - FTP password
-      #   FTP_PATH     - Remote path to upload to (e.g. /public_html)
-      # -------------------------------------------------------
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Node Dependencies
+        run: npm install
+
+      - name: Build Vite Assets
+        run: npm run build
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -55,14 +57,15 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: cotiafrica.com/
-          # Exclude files that should not be overwritten on the server
+          
           exclude: |
             **/.git*
-            **/.git*/**
+            **/.github/**
             **/node_modules/**
-            .env
-            storage/
-            bootstrap/cache/
+            **/tests/**
+            **/.env
+            **/vendor/**
+            **/database/database.sqlite
 
       - name: Notify on failure
         if: failure()
