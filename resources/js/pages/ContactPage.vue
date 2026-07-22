@@ -203,7 +203,7 @@
 <script setup>
 import { reactive, ref } from 'vue';
 
-const contactPhoto = 'http://127.0.0.1:8000/assets/media/images/IMG_2113.jpg';
+const contactPhoto = `${import.meta.env.BASE_URL}assets/media/images/IMG_2113.jpg`;
 
 const form = reactive({ name: '', email: '', phone: '', subject: '', message: '' });
 const errors = ref({});

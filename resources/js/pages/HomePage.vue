@@ -293,7 +293,7 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 
-const heroImage = 'http://127.0.0.1:8000/assets/media/images/2.jpeg';
+const heroImage = `${import.meta.env.BASE_URL}assets/media/images/2.jpeg`;
 
 const homePhotos = [
   { name: '2.jpeg', title: 'Hands-on training', description: 'Learners and mentors working together in a practical setting.', alt: 'Training session at CodeToInnovate Africa' },
@@ -301,24 +301,24 @@ const homePhotos = [
   { name: 'pho.jpeg', title: 'Innovation in action', description: 'A visual look at the energy behind our work.', alt: 'Innovation and learning activity' },
 ];
 
-const photoUrl = (fileName) => `http://127.0.0.1:8000/assets/media/images/${encodeURIComponent(fileName)}`;
+const photoUrl = (fileName) => `${import.meta.env.BASE_URL}assets/media/images/${encodeURIComponent(fileName)}`;
 
 const featuredVideos = [
   {
     title: 'Program highlight',
     description: 'A short clip capturing the energy of one of our community and training activities.',
     fileName: '3.mp4',
-    poster: 'http://127.0.0.1:8000/assets/media/images/IMG_2106.jpg',
+    poster: `${import.meta.env.BASE_URL}assets/media/images/IMG_2106.jpg`,
   },
   {
     title: 'Community engagement',
     description: 'A second highlight showing learners and teams working together in action.',
     fileName: '5v.mp4',
-    poster: 'http://127.0.0.1:8000/assets/media/images/IMG_2124.jpg',
+    poster: `${import.meta.env.BASE_URL}assets/media/images/IMG_2124.jpg`,
   },
 ];
 
-const videoUrl = (fileName) => `http://127.0.0.1:8000/assets/media/videos/${encodeURIComponent(fileName)}`;
+const videoUrl = (fileName) => `${import.meta.env.BASE_URL}assets/media/videos/${encodeURIComponent(fileName)}`;
 
 const featuredMedia = [
   {

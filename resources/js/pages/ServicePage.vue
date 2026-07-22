@@ -261,7 +261,7 @@ const pages = {
 const page = computed(() => pages[route.meta.key] || pages.software);
 const pageMedia = computed(() => mediaByPage[route.meta.key] || mediaByPage.software);
 
-const mediaUrl = (fileName, folder) => `http://127.0.0.1:8000/assets/media/${folder}/${encodeURIComponent(fileName)}`;
+const mediaUrl = (fileName, folder) => `${import.meta.env.BASE_URL}assets/media/${folder}/${encodeURIComponent(fileName)}`;
 
 const videoType = (fileName) => {
   if (fileName.toLowerCase().endsWith('.mp4')) return 'video/mp4';

@@ -195,7 +195,7 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 
-const aboutPhoto = 'http://127.0.0.1:8000/assets/media/images/IMG_2111 (1).jpg';
+const aboutPhoto = `${import.meta.env.BASE_URL}assets/media/images/IMG_2111 (1).jpg`;
 
 const aboutPhotos = [
   { name: 'IMG_2120.jpg', title: 'Training atmosphere', description: 'A look at how our sessions are organized and delivered.', alt: 'Training atmosphere at CodeToInnovate' },
@@ -203,7 +203,7 @@ const aboutPhotos = [
   { name: 'IMG_2124 (1).jpg', title: 'Community presence', description: 'The environment that supports our work and outreach.', alt: 'Community-focused activity' },
 ];
 
-const photoUrl = (fileName) => `http://127.0.0.1:8000/assets/media/images/${encodeURIComponent(fileName)}`;
+const photoUrl = (fileName) => `${import.meta.env.BASE_URL}assets/media/images/${encodeURIComponent(fileName)}`;
 
 const keyFacts = [
   { label: 'Headquarters', value: 'UTC-Lira, Northern Uganda', icon: 'fas fa-map-marker-alt', color: '#1e88e5' },

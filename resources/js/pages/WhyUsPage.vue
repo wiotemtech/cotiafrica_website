@@ -1,6 +1,6 @@
 <script setup>
-const whyUsPhoto = 'http://127.0.0.1:8000/assets/media/images/IMG_2123 (1).jpg';
-const whyUsVideo = 'http://127.0.0.1:8000/assets/media/videos/5v.mp4';
+const whyUsPhoto = `${import.meta.env.BASE_URL}assets/media/images/IMG_2123 (1).jpg`;
+const whyUsVideo = `${import.meta.env.BASE_URL}assets/media/videos/5v.mp4`;
 </script>
 
 <template>
