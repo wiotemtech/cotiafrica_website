@@ -7,6 +7,7 @@ import BlogsPage from '../pages/BlogsPage.vue';
 import BlogDetailPage from '../pages/BlogDetailPage.vue';
 import ServicePage from '../pages/ServicePage.vue';
 import PartnersPage from '../pages/PartnersPage.vue';
+import GalleryPage from '../pages/GalleryPage.vue';
 
 const routes = [
   { path: '/', name: 'home', component: HomePage },
@@ -16,6 +17,7 @@ const routes = [
   { path: '/blogs', name: 'blogs', component: BlogsPage },
   { path: '/blogs/:id/:title', name: 'blogs.show', component: BlogDetailPage },
   { path: '/partners', name: 'partners', component: PartnersPage },
+  { path: '/gallery', name: 'gallery', component: GalleryPage },
   { path: '/softwares', name: 'software', component: ServicePage, meta: { key: 'software' } },
   { path: '/mobileApp', name: 'mobileApp', component: ServicePage, meta: { key: 'mobile' } },
   { path: '/webDevelopment', name: 'webDevelopment', component: ServicePage, meta: { key: 'web' } },
