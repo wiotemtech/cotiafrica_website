@@ -37,7 +37,7 @@
 
       <!-- Right image -->
       <div class="relative hidden lg:block">
-        <img :src="heroImage" alt="CodeToInnovate team and learners" class="h-[460px] w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10">
+        <img :src="heroImage" alt="CodeToInnovate team and learners" class="h-[460px] w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10" />
         <!-- Floating badge -->
         <div class="absolute -bottom-4 left-6 rounded-xl px-4 py-3 shadow-2xl" style="background:rgba(13,27,42,0.92);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.12)">
           <p class="text-[10px] font-bold uppercase tracking-widest" style="color:#f9a825">Operating Principle</p>
@@ -66,7 +66,58 @@
     </div>
   </section>
 
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="c2i-section-label" style="color:#43a047">Latest photos</p>
+          <h2 class="mt-2 text-3xl font-bold text-slate-900 md:text-4xl">What the work looks like on the ground</h2>
+        </div>
+        <RouterLink to="/gallery" class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:text-blue-600">
+          Open gallery <i class="fas fa-arrow-right text-xs"></i>
+        </RouterLink>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div v-for="photo in homePhotos" :key="photo.name" class="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-sm">
+          <img :src="photoUrl(photo.name)" :alt="photo.alt" class="h-64 w-full object-cover" loading="eager" />
+          <div class="p-4">
+            <h3 class="font-semibold text-slate-900">{{ photo.title }}</h3>
+            <p class="mt-1 text-sm text-slate-600">{{ photo.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- â”€â”€ Pathways â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <section class="bg-slate-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="c2i-section-label" style="color:#1e88e5">Featured videos</p>
+          <h2 class="mt-2 text-3xl font-bold text-slate-900 md:text-4xl">Short highlights from our programs</h2>
+        </div>
+        <RouterLink to="/gallery" class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:text-blue-600">
+          See all media <i class="fas fa-arrow-right text-xs"></i>
+        </RouterLink>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <article v-for="video in featuredVideos" :key="video.fileName" class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+          <video controls preload="metadata" playsinline class="h-72 w-full object-cover" :poster="video.poster">
+            <source :src="videoUrl(video.fileName)" :type="videoType(video.fileName)">
+            Your browser does not support the video tag.
+          </video>
+          <div class="p-4">
+            <h3 class="font-semibold text-slate-900">{{ video.title }}</h3>
+            <p class="mt-1 text-sm text-slate-600">{{ video.description }}</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="py-20" style="background:#f0f4f8">
     <div class="container mx-auto px-4">
       <div class="mb-12 text-center">
@@ -242,7 +293,61 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 
-const heroImage = '/assets/images/app.avif';
+const heroImage = 'http://127.0.0.1:8000/assets/media/images/2.jpeg';
+
+const homePhotos = [
+  { name: '2.jpeg', title: 'Hands-on training', description: 'Learners and mentors working together in a practical setting.', alt: 'Training session at CodeToInnovate Africa' },
+  { name: '4.jpeg', title: 'Community engagement', description: 'A real moment from one of our interactive programs.', alt: 'Community engagement at CodeToInnovate Africa' },
+  { name: 'pho.jpeg', title: 'Innovation in action', description: 'A visual look at the energy behind our work.', alt: 'Innovation and learning activity' },
+];
+
+const photoUrl = (fileName) => `http://127.0.0.1:8000/assets/media/images/${encodeURIComponent(fileName)}`;
+
+const featuredVideos = [
+  {
+    title: 'Program highlight',
+    description: 'A short clip capturing the energy of one of our community and training activities.',
+    fileName: '3.mp4',
+    poster: 'http://127.0.0.1:8000/assets/media/images/IMG_2106.jpg',
+  },
+  {
+    title: 'Community engagement',
+    description: 'A second highlight showing learners and teams working together in action.',
+    fileName: '5v.mp4',
+    poster: 'http://127.0.0.1:8000/assets/media/images/IMG_2124.jpg',
+  },
+];
+
+const videoUrl = (fileName) => `http://127.0.0.1:8000/assets/media/videos/${encodeURIComponent(fileName)}`;
+
+const featuredMedia = [
+  {
+    type: 'image',
+    title: 'Training in progress',
+    description: 'A snapshot of learners and mentors working side by side.',
+    fileName: '1.jpeg',
+  },
+  {
+    type: 'image',
+    title: 'Community engagement',
+    description: 'A look at the interactive sessions that shape our impact.',
+    fileName: 'IMG_2093.jpg',
+  },
+  {
+    type: 'video',
+    title: 'Program highlight',
+    description: 'A short clip from one of our dynamic events and activities.',
+    fileName: '3.mp4',
+  },
+];
+
+const mediaUrl = (fileName, folder) => `/assets/media/${folder}/${encodeURIComponent(fileName)}`;
+
+const videoType = (fileName) => {
+  if (fileName.toLowerCase().endsWith('.mp4')) return 'video/mp4';
+  if (fileName.toLowerCase().endsWith('.webm')) return 'video/webm';
+  return 'video/mp4';
+};
 
 const heroStats = [
   { value: '300+', label: 'Learners trained', color: '#93c5fd' },

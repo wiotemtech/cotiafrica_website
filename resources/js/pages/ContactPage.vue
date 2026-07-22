@@ -16,6 +16,19 @@
     <div class="w-full" style="height:3px;background:linear-gradient(90deg,#1e88e5 33%,#43a047 33% 66%,#f9a825 66%)"></div>
   </section>
 
+  <section class="bg-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm">
+        <img :src="contactPhoto" alt="CodeToInnovate Africa contact and outreach activity" class="h-[320px] w-full object-cover" loading="eager" />
+        <div class="bg-slate-900/80 px-4 py-3 text-sm text-white">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener" class="inline-flex items-center gap-2 font-semibold">
+            <i class="fas fa-play-circle"></i> Watch a short highlight
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact grid -->
   <section class="bg-white py-20">
     <div class="container mx-auto px-4">
@@ -189,6 +202,8 @@
 
 <script setup>
 import { reactive, ref } from 'vue';
+
+const contactPhoto = 'http://127.0.0.1:8000/assets/media/images/IMG_2113.jpg';
 
 const form = reactive({ name: '', email: '', phone: '', subject: '', message: '' });
 const errors = ref({});

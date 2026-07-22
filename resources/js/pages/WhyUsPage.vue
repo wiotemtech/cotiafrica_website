@@ -1,3 +1,8 @@
+<script setup>
+const whyUsPhoto = 'http://127.0.0.1:8000/assets/media/images/IMG_2123 (1).jpg';
+const whyUsVideo = 'http://127.0.0.1:8000/assets/media/videos/5v.mp4';
+</script>
+
 <template>
   <section class="relative overflow-hidden bg-slate-950 pt-40 pb-20 text-white c2i-grid-glow">
     <div class="pointer-events-none absolute -left-24 top-0 h-80 w-80 rounded-full bg-teal-400/25 blur-3xl"></div>
@@ -15,6 +20,29 @@
           <div class="rounded-2xl bg-white/10 p-6 backdrop-blur-sm border border-white/20">
             <p class="text-xs uppercase tracking-widest text-teal-200">Operating Principle</p>
             <p class="mt-3 text-sm leading-relaxed text-slate-100">Every initiative must be useful, compliant, scalable, and locally adoptable from day one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+          <img :src="whyUsPhoto" alt="CodeToInnovate Africa training and community engagement" class="h-[360px] w-full object-cover" loading="eager" />
+        </div>
+        <div class="space-y-4">
+          <div class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-teal-700">A visible approach</p>
+            <h2 class="mt-3 text-2xl font-bold text-slate-900">Photos and clips that show real delivery</h2>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">From workshops to implementation support, these visuals show the practical, community-led nature of our work.</p>
+          </div>
+          <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-900 p-3 shadow-sm">
+            <video controls preload="metadata" playsinline class="h-56 w-full rounded-[1.25rem] object-cover">
+              <source :src="whyUsVideo" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

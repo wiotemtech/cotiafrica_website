@@ -21,6 +21,36 @@
     <div class="w-full" style="height:3px;background:linear-gradient(90deg,#1e88e5 33%,#43a047 33% 66%,#f9a825 66%)"></div>
   </section>
 
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+        <div class="overflow-hidden rounded-3xl border border-slate-200 shadow-sm">
+          <img :src="aboutPhoto" alt="CodeToInnovate Africa team and learners" class="h-[360px] w-full object-cover" loading="eager" />
+        </div>
+        <div>
+          <p class="c2i-section-label" style="color:#43a047">Real impact in action</p>
+          <h2 class="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">Our work is visible, practical, and community-centered</h2>
+          <p class="mt-4 text-slate-600 leading-relaxed">From training sessions to implementation support, these moments show how our programs translate into real opportunities for learners, institutions, and communities.</p>
+          <RouterLink to="/gallery" class="c2i-btn-primary mt-7 self-start gap-2">View gallery <i class="fas fa-arrow-right text-xs"></i></RouterLink>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div v-for="photo in aboutPhotos" :key="photo.name" class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+          <img :src="photoUrl(photo.name)" :alt="photo.alt" class="h-56 w-full object-cover" loading="eager" />
+          <div class="p-4">
+            <h3 class="font-semibold text-slate-900">{{ photo.title }}</h3>
+            <p class="mt-1 text-sm text-slate-600">{{ photo.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Who We Are -->
   <section class="bg-white py-20">
     <div class="container mx-auto px-4">
@@ -164,6 +194,16 @@
 
 <script setup>
 import { RouterLink } from 'vue-router';
+
+const aboutPhoto = 'http://127.0.0.1:8000/assets/media/images/IMG_2111 (1).jpg';
+
+const aboutPhotos = [
+  { name: 'IMG_2120.jpg', title: 'Training atmosphere', description: 'A look at how our sessions are organized and delivered.', alt: 'Training atmosphere at CodeToInnovate' },
+  { name: 'IMG_2122.jpg', title: 'Practical learning', description: 'Hands-on participation and learner engagement.', alt: 'Learners in a practical session' },
+  { name: 'IMG_2124 (1).jpg', title: 'Community presence', description: 'The environment that supports our work and outreach.', alt: 'Community-focused activity' },
+];
+
+const photoUrl = (fileName) => `http://127.0.0.1:8000/assets/media/images/${encodeURIComponent(fileName)}`;
 
 const keyFacts = [
   { label: 'Headquarters', value: 'UTC-Lira, Northern Uganda', icon: 'fas fa-map-marker-alt', color: '#1e88e5' },

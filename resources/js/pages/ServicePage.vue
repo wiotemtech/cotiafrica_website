@@ -14,6 +14,29 @@
     <div class="w-full" style="height:3px;background:linear-gradient(90deg,#1e88e5 33%,#43a047 33% 66%,#f9a825 66%)"></div>
   </section>
 
+  <section class="bg-slate-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+          <img :src="mediaUrl(pageMedia.image, 'images')" :alt="pageMedia.alt" class="h-[320px] w-full object-cover" loading="eager" />
+        </div>
+        <div class="space-y-4">
+          <div class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em]" :style="`color:${page.color}`">In action</p>
+            <h2 class="mt-3 text-2xl font-bold text-slate-900">Real examples from our delivery work</h2>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{{ pageMedia.summary }}</p>
+          </div>
+          <div v-if="pageMedia.video" class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-900 p-3 shadow-sm">
+            <video controls preload="metadata" playsinline class="h-56 w-full rounded-[1.25rem] object-cover">
+              <source :src="mediaUrl(pageMedia.video, 'videos')" :type="videoType(pageMedia.video)">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Features grid -->
   <section class="bg-white py-20">
     <div class="container mx-auto px-4">
@@ -49,6 +72,18 @@ import { computed } from 'vue';
 import { useRoute, RouterLink } from 'vue-router';
 
 const route = useRoute();
+
+const mediaByPage = {
+  software: { image: 'IMG_2093.jpg', video: null, alt: 'Learners and mentors in a practical training session', summary: 'We use hands-on delivery and real-world examples to make our work visible and useful for the communities we serve.' },
+  ehealth: { image: 'IMG_2094.jpg', video: null, alt: 'Community-focused digital learning environment', summary: 'Our health and education solutions are designed around trusted workflows, user support, and practical adoption.' },
+  'digital-security': { image: 'IMG_2098.jpg', video: null, alt: 'A collaborative technology session in progress', summary: 'Security and infrastructure work becomes much more effective when it is paired with training and clear implementation support.' },
+  'digital-skills': { image: 'IMG_2101 (1).jpg', video: null, alt: 'Program participants engaged in a practical session', summary: 'Training programs are strongest when learners can see, use, and build with the tools in real time.' },
+  'startup-incubator': { image: 'IMG_2102.jpg', video: null, alt: 'Innovation work and project collaboration in a community setting', summary: 'We help founders move from idea to working solution through rapid prototyping and guided delivery.' },
+  'green-tech': { image: 'IMG_2106.jpg', video: null, alt: 'A technology showcase connected to community impact', summary: 'Green technology and automation projects work best when they are grounded in local realities and visible outcomes.' },
+  programming: { image: '1.jpeg', video: null, alt: 'Hands-on programming session with learners', summary: 'Practical programming training is easier to trust when learners can see how concepts turn into working products.' },
+  ict: { image: 'IMG_2099.jpg', video: null, alt: 'ICT training environment with learners and facilitators', summary: 'Our ICT programs combine coaching, practical exercises, and real tools to help people build confidence quickly.' },
+  women: { image: 'IMG_2107 (1).jpg', video: null, alt: 'Women in technology learning and supporting one another', summary: 'We highlight the human side of tech through mentorship, community, and visible outcomes.' },
+};
 
 const pages = {
   software: {
@@ -224,4 +259,13 @@ const pages = {
 };
 
 const page = computed(() => pages[route.meta.key] || pages.software);
+const pageMedia = computed(() => mediaByPage[route.meta.key] || mediaByPage.software);
+
+const mediaUrl = (fileName, folder) => `http://127.0.0.1:8000/assets/media/${folder}/${encodeURIComponent(fileName)}`;
+
+const videoType = (fileName) => {
+  if (fileName.toLowerCase().endsWith('.mp4')) return 'video/mp4';
+  if (fileName.toLowerCase().endsWith('.webm')) return 'video/webm';
+  return 'video/mp4';
+};
 </script>
