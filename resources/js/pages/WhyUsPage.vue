@@ -1,6 +1,6 @@
 <script setup>
-const whyUsPhoto = `${import.meta.env.BASE_URL}assets/media/images/IMG_2123 (1).jpg`;
-const whyUsVideo = `${import.meta.env.BASE_URL}assets/media/videos/5v.mp4`;
+const whyUsPhoto = '/assets/media/images/IMG_2123 (1).jpg';
+const whyUsVideo = '/assets/media/videos/5v.mp4';
 </script>
 
 <template>
