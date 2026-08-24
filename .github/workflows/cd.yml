@@ -59,6 +59,8 @@ jobs:
           protocol: ftp
           port: 21
           server-dir: cotiafrica.com/
+          log-level: verbose
+          timeout: 120000
           
           exclude: |
             **/.git*
