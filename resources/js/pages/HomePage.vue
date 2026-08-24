@@ -1,18 +1,32 @@
 ﻿<template>
   <!-- â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
-  <section class="relative overflow-hidden pt-36 text-white c2i-grid-glow md:pt-40" style="background:linear-gradient(135deg,#0d1b2a 0%,#12294d 55%,#0d2b1f 100%)">
+  <section class="c2i-hero relative overflow-hidden pt-36 text-white c2i-grid-glow md:pt-40" :class="{ 'c2i-headline-exiting': headlineExiting }" style="background:linear-gradient(135deg,#071525 0%,#0d2850 58%,#08251f 100%)">
+    <div class="c2i-hero-network" aria-hidden="true">
+      <span class="c2i-node c2i-node-one"></span><span class="c2i-node c2i-node-two"></span><span class="c2i-node c2i-node-three"></span><span class="c2i-node c2i-node-four"></span><span class="c2i-node c2i-node-five"></span>
+      <span class="c2i-network-line c2i-line-one"></span><span class="c2i-network-line c2i-line-two"></span><span class="c2i-network-line c2i-line-three"></span>
+    </div>
+    <div class="c2i-bubble c2i-bubble-one" aria-hidden="true"><i class="fas fa-code"></i></div>
+    <div class="c2i-bubble c2i-bubble-two" aria-hidden="true"><i class="fas fa-microchip"></i></div>
+    <div class="c2i-bubble c2i-bubble-three" aria-hidden="true"><i class="fas fa-globe-africa"></i></div>
     <div class="pointer-events-none absolute left-0 top-0 h-[500px] w-[500px] -translate-x-1/3 -translate-y-1/4 rounded-full blur-3xl" style="background:radial-gradient(circle,rgba(30,136,229,0.28),transparent 70%)"></div>
     <div class="pointer-events-none absolute right-0 bottom-0 h-[400px] w-[400px] translate-x-1/4 translate-y-1/4 rounded-full blur-3xl" style="background:radial-gradient(circle,rgba(67,160,71,0.22),transparent 70%)"></div>
 
     <div class="container relative mx-auto grid grid-cols-1 items-center gap-12 px-4 pb-20 pt-8 lg:grid-cols-2">
       <!-- Left copy -->
-      <div>
+      <div class="relative z-10">
         <span class="c2i-chip"><i class="fas fa-microchip text-[9px]"></i> Technology Innovation Hub</span>
         <h1 class="mt-5 text-4xl font-bold leading-[1.1] md:text-[3.5rem]">
-          Learn digital skills.<br>
-          <span style="color:#43a047">Build real systems.</span><br>
-          <span style="color:#1e88e5">Create lasting impact.</span>
+          <span v-for="(line, lineIndex) in headlineLines" :key="`${lineIndex}-${headlineCycle}`" class="c2i-word-line">
+            <span v-for="(word, index) in line" :key="`${word}-${headlineCycle}`" class="c2i-word" :class="{ 'c2i-word-accent': lineIndex === 0 && index === 1, 'c2i-word-green': lineIndex === 1 && index === 0, 'c2i-word-blue': (lineIndex === 1 && index > 0) || (lineIndex === 2 && index === 0) }">{{ word }}</span>
+          </span>
         </h1>
+        <div class="c2i-connection-popup" :class="{ 'is-visible': headlineExiting }" aria-live="polite">
+          <span class="c2i-popup-ping"><i class="fas fa-globe-africa"></i></span>
+          <span>
+            <strong>Global connection active</strong>
+            <small>Uganda <b>+</b> East Africa <b>+</b> the world</small>
+          </span>
+        </div>
         <p class="mt-5 max-w-lg text-base c2i-body-light">
           CodeToInnovate Africa equips learners, teams, and institutions across Uganda with practical software skills, product delivery support, and compliance-aware implementation.
         </p>
@@ -37,7 +51,7 @@
 
       <!-- Right image -->
       <div class="relative hidden lg:block">
-        <img :src="heroImage" alt="CodeToInnovate team and learners" class="h-[460px] w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10" />
+        <img :src="heroImage" alt="CodeToInnovate team and learners" class="c2i-hero-image h-[460px] w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10" />
         <!-- Floating badge -->
         <div class="absolute -bottom-4 left-6 rounded-xl px-4 py-3 shadow-2xl" style="background:rgba(13,27,42,0.92);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.12)">
           <p class="text-[10px] font-bold uppercase tracking-widest" style="color:#f9a825">Operating Principle</p>
@@ -51,27 +65,28 @@
     </div>
 
     <!-- Brand stripe -->
+    <div class="c2i-wave" aria-hidden="true"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,55 C180,105 330,5 520,48 C730,95 810,10 1010,48 C1190,83 1300,20 1440,45 L1440,100 L0,100 Z" fill="#f0f4f8"></path></svg></div>
     <div class="w-full" style="height:3px;background:linear-gradient(90deg,#1e88e5 33%,#43a047 33% 66%,#f9a825 66%)"></div>
   </section>
 
   <!-- â”€â”€ Trust strip â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
-  <section class="bg-white py-8">
+  <section class="c2i-dark-strip py-8">
     <div class="container mx-auto px-4">
-      <p class="mb-5 text-center text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">Trusted across education, SMEs &amp; community programs</p>
+      <p class="mb-5 text-center text-[11px] font-bold uppercase tracking-[0.2em] text-blue-200/70">Trusted across education, SMEs &amp; community programs</p>
       <div class="flex flex-wrap items-center justify-center gap-3">
-        <span v-for="partner in partnerTypes" :key="partner" class="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-sm font-semibold text-slate-600 transition hover:border-blue-300 hover:text-blue-600">
+        <span v-for="partner in partnerTypes" :key="partner" class="rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm font-semibold text-slate-200 transition hover:border-blue-300 hover:text-white">
           {{ partner }}
         </span>
       </div>
     </div>
   </section>
 
-  <section class="bg-white py-16">
+  <section class="c2i-dark-surface py-16">
     <div class="container mx-auto px-4">
       <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <p class="c2i-section-label" style="color:#43a047">Latest photos</p>
-          <h2 class="mt-2 text-3xl font-bold text-slate-900 md:text-4xl">What the work looks like on the ground</h2>
+          <h2 class="mt-2 text-3xl font-bold text-white md:text-4xl">What the work looks like on the ground</h2>
         </div>
         <RouterLink to="/gallery" class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:text-blue-600">
           Open gallery <i class="fas fa-arrow-right text-xs"></i>
@@ -79,11 +94,11 @@
       </div>
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-        <div v-for="photo in homePhotos" :key="photo.name" class="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-sm">
+        <div v-for="photo in homePhotos" :key="photo.name" class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-sm">
           <img :src="photoUrl(photo.name)" :alt="photo.alt" class="h-64 w-full object-cover" loading="eager" />
           <div class="p-4">
-            <h3 class="font-semibold text-slate-900">{{ photo.title }}</h3>
-            <p class="mt-1 text-sm text-slate-600">{{ photo.description }}</p>
+            <h3 class="font-semibold text-white">{{ photo.title }}</h3>
+            <p class="mt-1 text-sm text-slate-300">{{ photo.description }}</p>
           </div>
         </div>
       </div>
@@ -291,9 +306,33 @@
 </template>
 
 <script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
 import { RouterLink } from 'vue-router';
 
 const heroImage = '/assets/media/images/2.jpeg';
+
+const headlineLines = [
+  ['Learn', 'digital', 'skills.'],
+  ['Build', 'real', 'systems.'],
+  ['Create', 'lasting', 'impact.'],
+];
+const headlineCycle = ref(0);
+const headlineExiting = ref(false);
+let headlineTimer;
+let headlineExitTimer;
+
+onMounted(() => {
+  headlineTimer = window.setInterval(() => {
+    headlineExiting.value = false;
+    headlineCycle.value += 1;
+  }, 5200);
+  headlineExitTimer = window.setInterval(() => { headlineExiting.value = true; }, 4250);
+});
+
+onUnmounted(() => {
+  window.clearInterval(headlineTimer);
+  window.clearInterval(headlineExitTimer);
+});
 
 const homePhotos = [
   { name: '2.jpeg', title: 'Hands-on training', description: 'Learners and mentors working together in a practical setting.', alt: 'Training session at CodeToInnovate Africa' },
