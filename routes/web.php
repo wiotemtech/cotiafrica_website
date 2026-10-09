@@ -39,10 +39,27 @@ Route::view('/digital-security', 'spa')->name('digital-security');
 Route::view('/digital-skills', 'spa')->name('digital-skills');
 Route::view('/startup-incubator', 'spa')->name('startup-incubator');
 Route::view('/green-tech', 'spa')->name('green-tech');
+Route::view('/it-support', 'spa')->name('it-support');
+Route::view('/our-work', 'spa')->name('our-work');
+Route::view('/events', 'spa')->name('events');
 
 // Legacy backend/auth pages remain server-rendered
 Route::view('/login', 'backend.login')->name('login.show');
-Route::view('/dashboard', 'backend.dashboard')->name('dashboard');
+Route::view('/dashboard', 'backend.dashboard')->middleware('auth')->name('dashboard');
+
+Route::middleware('auth')->prefix('admin/works')->name('works.')->controller(\App\Http\Controllers\WorkController::class)->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::post('/', 'store')->name('store');
+    Route::put('/{work}', 'update')->name('update');
+    Route::delete('/{work}', 'destroy')->name('destroy');
+});
+
+Route::middleware('auth')->prefix('admin/events')->name('events.')->controller(\App\Http\Controllers\EventController::class)->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::post('/', 'store')->name('store');
+    Route::put('/{event}', 'update')->name('update');
+    Route::delete('/{event}', 'destroy')->name('destroy');
+});
 
 Route::controller(BlogController::class)->group(function(){
     Route::get('/admin/blogs', 'index')->name('blogs.index');

@@ -34,6 +34,8 @@
             <li><RouterLink to="/programming" class="text-slate-300 transition hover:text-white">Learn Programming</RouterLink></li>
             <li><RouterLink to="/ict-training" class="text-slate-300 transition hover:text-white">ICT Training</RouterLink></li>
             <li><RouterLink to="/women-in-tech" class="text-slate-300 transition hover:text-white">Women in Tech</RouterLink></li>
+            <li><a href="https://forms.gle/aaAiety8iNyZba4x9" target="_blank" rel="noopener noreferrer" class="text-slate-300 transition hover:text-white">Learning</a></li>
+            <li><RouterLink to="/events" class="text-slate-300 transition hover:text-white">Events</RouterLink></li>
             <li><RouterLink to="/why-us" class="text-slate-300 transition hover:text-white">Why Us</RouterLink></li>
             <li><RouterLink to="/blogs" class="text-slate-300 transition hover:text-white">Blog</RouterLink></li>
           </ul>
@@ -44,6 +46,7 @@
           <ul class="space-y-2.5 text-sm">
             <li><RouterLink to="/softwares" class="text-slate-300 transition hover:text-white">Custom Software & Web Apps</RouterLink></li>
             <li><RouterLink to="/ehealth" class="text-slate-300 transition hover:text-white">E-Health & E-Education</RouterLink></li>
+            <li><RouterLink to="/it-support" class="text-slate-300 transition hover:text-white">IT Support & Networking</RouterLink></li>
             <li><RouterLink to="/digital-security" class="text-slate-300 transition hover:text-white">Digital Security</RouterLink></li>
             <li><RouterLink to="/digital-skills" class="text-slate-300 transition hover:text-white">Digital Skills & Internships</RouterLink></li>
             <li><RouterLink to="/startup-incubator" class="text-slate-300 transition hover:text-white">Startup Incubator</RouterLink></li>

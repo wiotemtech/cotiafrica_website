@@ -445,6 +445,7 @@ const orgBenefits = [
 const services = [
   { name: 'Custom Software & Web Apps',       text: 'Platforms engineered for local workflows, public services, and business growth.',            link: '/softwares',         icon: 'fas fa-code-branch',    color: '#1e88e5' },
   { name: 'E-Health & E-Education Solutions', text: 'Digital health records, LMS, and e-service platforms for schools and clinics.',              link: '/ehealth',           icon: 'fas fa-heartbeat',      color: '#43a047' },
+  { name: 'IT Support, Networking & Security Systems', text: 'Network setup, CCTV and alarm installation, equipment support, repairs, and scheduled maintenance.', link: '/it-support', icon: 'fas fa-network-wired', color: '#1e88e5' },
   { name: 'Digital Security & Infrastructure', text: 'Secure architecture, compliance audits, and infrastructure aligned to Uganda DPPA 2019.',   link: '/digital-security',  icon: 'fas fa-shield-alt',     color: '#f9a825' },
   { name: 'Digital Skills Training & Internships', text: 'Structured programs that turn students into job-ready engineers with real project experience.', link: '/digital-skills', icon: 'fas fa-graduation-cap', color: '#1e88e5' },
   { name: 'Startup Incubator & MVP Support',  text: 'From idea to validated MVP — rapid prototyping, mentorship, and launch support.',           link: '/startup-incubator', icon: 'fas fa-rocket',         color: '#43a047' },

@@ -28,6 +28,17 @@
 
         </a>
 
+        <a href="{{ route('works.index') }}"
+            class="w3-bar-item w3-button w3-padding-large w3-hover-text-primary">
+            <i class="fa fa-fw fa-briefcase"></i>
+            &nbsp;<span>Work &amp; Contracts</span>
+        </a>
+
+        <a href="{{ route('events.index') }}"
+            class="w3-bar-item w3-button w3-padding-large w3-hover-text-primary">
+            <i class="fa fa-fw fa-calendar"></i>
+            &nbsp;<span>Events</span>
+        </a>
 
     </div>
 </nav>

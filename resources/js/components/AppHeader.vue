@@ -35,7 +35,7 @@
           </RouterLink>
 
           <!-- Desktop nav -->
-          <nav class="hidden items-center gap-0.5 lg:flex">
+          <nav class="hidden items-center gap-0.5 xl:flex">
             <RouterLink to="/" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900" active-class="text-blue-600 bg-blue-50">Home</RouterLink>
             <RouterLink to="/about" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900" active-class="text-blue-600 bg-blue-50">About</RouterLink>
             <RouterLink to="/why-us" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900" active-class="text-blue-600 bg-blue-50">Why Us</RouterLink>
@@ -55,6 +55,9 @@
                 <RouterLink to="/women-in-tech" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                   <i class="fas fa-users w-4 text-center text-xs" style="color:#f9a825"></i> Women in Tech
                 </RouterLink>
+                <a href="https://forms.gle/aaAiety8iNyZba4x9" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                  <i class="fas fa-graduation-cap w-4 text-center text-xs" style="color:#1e88e5"></i> Learning
+                </a>
               </div>
             </div>
 
@@ -69,6 +72,9 @@
                 </RouterLink>
                 <RouterLink to="/ehealth" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                   <i class="fas fa-heartbeat w-4 text-center text-xs" style="color:#43a047"></i> E-Health & E-Education
+                </RouterLink>
+                <RouterLink to="/it-support" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                  <i class="fas fa-network-wired w-4 text-center text-xs" style="color:#1e88e5"></i> IT Support & Networking
                 </RouterLink>
                 <RouterLink to="/digital-security" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                   <i class="fas fa-shield-alt w-4 text-center text-xs" style="color:#f9a825"></i> Digital Security & Infrastructure
@@ -85,18 +91,29 @@
               </div>
             </div>
 
-            <RouterLink to="/blogs" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900" active-class="text-blue-600 bg-blue-50">Blog</RouterLink>
-            <RouterLink to="/gallery" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900" active-class="text-blue-600 bg-blue-50">Gallery</RouterLink>
-            <RouterLink to="/partners" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900" active-class="text-blue-600 bg-blue-50">Partners</RouterLink>
+            <a href="https://forms.gle/aaAiety8iNyZba4x9" target="_blank" rel="noopener noreferrer" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900">Learning</a>
+
+            <div class="group relative">
+              <button class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900">
+                Explore <i class="fas fa-chevron-down text-[9px] transition group-hover:rotate-180"></i>
+              </button>
+              <div class="invisible absolute right-0 top-full z-50 mt-1 w-48 origin-top scale-95 rounded-xl border border-slate-100 bg-white py-1.5 opacity-0 shadow-xl transition-all duration-150 group-hover:visible group-hover:scale-100 group-hover:opacity-100">
+                <RouterLink to="/blogs" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Blog</RouterLink>
+                <RouterLink to="/our-work" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Our Work</RouterLink>
+                <RouterLink to="/events" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Events</RouterLink>
+                <RouterLink to="/gallery" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Gallery</RouterLink>
+                <RouterLink to="/partners" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Partners</RouterLink>
+              </div>
+            </div>
           </nav>
 
           <!-- CTA -->
-          <RouterLink to="/contact-us" class="hidden h-9 items-center justify-center rounded-full px-5 text-sm font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg lg:inline-flex" style="background:#1e88e5">
+          <RouterLink to="/contact-us" class="hidden h-9 items-center justify-center rounded-full px-5 text-sm font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg xl:inline-flex" style="background:#1e88e5">
             Work With Us
           </RouterLink>
 
           <!-- Mobile toggle -->
-          <details class="relative lg:hidden">
+          <details class="relative xl:hidden">
             <summary class="list-none cursor-pointer rounded-xl border border-slate-200 p-2.5 text-slate-700 hover:bg-slate-50">
               <i class="fas fa-bars"></i>
             </summary>
@@ -109,15 +126,20 @@
               <RouterLink to="/programming" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-code w-4 text-center text-xs" style="color:#1e88e5"></i> Learn Programming</RouterLink>
               <RouterLink to="/ict-training" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-laptop w-4 text-center text-xs" style="color:#43a047"></i> ICT Training</RouterLink>
               <RouterLink to="/women-in-tech" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-users w-4 text-center text-xs" style="color:#f9a825"></i> Women in Tech</RouterLink>
+              <a href="https://forms.gle/aaAiety8iNyZba4x9" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-graduation-cap w-4 text-xs" style="color:#1e88e5"></i> Learning</a>
               <div class="my-2 border-t border-slate-100"></div>
               <p class="px-3 pb-1 text-[10px] font-bold uppercase tracking-widest text-slate-400">Services</p>
               <RouterLink to="/softwares" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-code-branch w-4 text-xs" style="color:#1e88e5"></i> Custom Software & Web Apps</RouterLink>
               <RouterLink to="/ehealth" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-heartbeat w-4 text-xs" style="color:#43a047"></i> E-Health & E-Education</RouterLink>
+              <RouterLink to="/it-support" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-network-wired w-4 text-xs" style="color:#1e88e5"></i> IT Support & Networking</RouterLink>
               <RouterLink to="/digital-security" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-shield-alt w-4 text-xs" style="color:#f9a825"></i> Digital Security</RouterLink>
               <RouterLink to="/digital-skills" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-graduation-cap w-4 text-xs" style="color:#1e88e5"></i> Digital Skills & Internships</RouterLink>
               <RouterLink to="/startup-incubator" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-rocket w-4 text-xs" style="color:#43a047"></i> Startup Incubator</RouterLink>
               <RouterLink to="/green-tech" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"><i class="fas fa-leaf w-4 text-xs" style="color:#f9a825"></i> Green Tech & Automation</RouterLink>
               <RouterLink to="/blogs" class="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"><i class="fas fa-newspaper w-4 text-xs text-slate-400"></i> Blog</RouterLink>
+              <a href="https://forms.gle/aaAiety8iNyZba4x9" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"><i class="fas fa-graduation-cap w-4 text-xs text-slate-400"></i> Learning</a>
+              <RouterLink to="/our-work" class="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"><i class="fas fa-briefcase w-4 text-xs text-slate-400"></i> Our Work</RouterLink>
+              <RouterLink to="/events" class="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"><i class="fas fa-calendar w-4 text-xs text-slate-400"></i> Events</RouterLink>
               <RouterLink to="/gallery" class="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"><i class="fas fa-images w-4 text-xs text-slate-400"></i> Gallery</RouterLink>
               <RouterLink to="/partners" class="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"><i class="fas fa-handshake w-4 text-xs text-slate-400"></i> Partners</RouterLink>
               <div class="mt-2 pt-2 border-t border-slate-100">

@@ -2,6 +2,8 @@
 
 use App\Models\Blog;
 use App\Models\Contact;
+use App\Models\Event;
+use App\Models\Work;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -66,6 +68,37 @@ Route::get('/blogs/{id}', function (int $id) {
 
         return response()->json([
             'message' => 'Blog article is unavailable right now.',
+        ], 503);
+    }
+});
+
+Route::get('/works', function () {
+    try {
+        return Work::query()
+            ->where('published', true)
+            ->latest()
+            ->get(['id', 'title', 'client_name', 'type', 'status', 'description', 'public_url', 'image', 'created_at']);
+    } catch (\Throwable $e) {
+        report($e);
+
+        return response()->json([
+            'message' => 'Work portfolio is temporarily unavailable.',
+        ], 503);
+    }
+});
+
+Route::get('/events', function () {
+    try {
+        return Event::query()
+            ->where('published', true)
+            ->orderBy('event_date')
+            ->orderBy('start_time')
+            ->get(['id', 'title', 'description', 'event_date', 'start_time', 'location', 'join_url', 'recording_url', 'image']);
+    } catch (\Throwable $e) {
+        report($e);
+
+        return response()->json([
+            'message' => 'Events are temporarily unavailable.',
         ], 503);
     }
 });

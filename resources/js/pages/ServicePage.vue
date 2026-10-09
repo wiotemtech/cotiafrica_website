@@ -45,7 +45,7 @@
         <h2 class="mt-3 text-3xl font-bold text-slate-900">Key capabilities</h2>
       </div>
       <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        <article v-for="item in page.points" :key="item.title" class="c2i-card p-6">
+        <article v-for="item in page.points" :key="item.title" class="c2i-card bg-white p-6">
           <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl" :style="`background:${page.color}18`">
             <i :class="item.icon" :style="`color:${page.color}`"></i>
           </div>
@@ -76,6 +76,7 @@ const route = useRoute();
 const mediaByPage = {
   software: { image: 'IMG_2093.jpg', video: null, alt: 'Learners and mentors in a practical training session', summary: 'We use hands-on delivery and real-world examples to make our work visible and useful for the communities we serve.' },
   ehealth: { image: 'IMG_2094.jpg', video: null, alt: 'Community-focused digital learning environment', summary: 'Our health and education solutions are designed around trusted workflows, user support, and practical adoption.' },
+  'it-support': { image: 'IMG_2098.jpg', video: null, alt: 'Technology team providing IT support', summary: 'We help organisations install, maintain, and troubleshoot the networks and security systems their teams rely on.' },
   'digital-security': { image: 'IMG_2098.jpg', video: null, alt: 'A collaborative technology session in progress', summary: 'Security and infrastructure work becomes much more effective when it is paired with training and clear implementation support.' },
   'digital-skills': { image: 'IMG_2101 (1).jpg', video: null, alt: 'Program participants engaged in a practical session', summary: 'Training programs are strongest when learners can see, use, and build with the tools in real time.' },
   'startup-incubator': { image: 'IMG_2102.jpg', video: null, alt: 'Innovation work and project collaboration in a community setting', summary: 'We help founders move from idea to working solution through rapid prototyping and guided delivery.' },
@@ -123,6 +124,19 @@ const pages = {
       { icon: 'fas fa-server',        title: 'Infrastructure setup',       text: 'Cloud and on-premise infrastructure configuration for reliability, uptime, and disaster recovery.' },
       { icon: 'fas fa-bell',          title: 'Monitoring & alerting',      text: 'Real-time threat detection, log management, and incident response procedures.' },
       { icon: 'fas fa-users-cog',     title: 'Security awareness training', text: 'Practical workshops for staff teams on safe digital practices, phishing, and data handling.' },
+    ],
+  },
+  'it-support': {
+    kicker: 'IT Services', icon: 'fas fa-network-wired', color: '#1e88e5',
+    title: 'IT Support, Networking & Security Systems',
+    description: 'Practical IT services for homes, businesses, and institutions, from network installation and alarm systems to repairs and ongoing maintenance.',
+    points: [
+      { icon: 'fas fa-network-wired', title: 'Network design & installation', text: 'Set up wired and wireless networks, structured cabling, routers, switches, and Wi-Fi access points.' },
+      { icon: 'fas fa-video', title: 'CCTV & alarm systems', text: 'Install and configure CCTV cameras and alarm systems for premises and organisations.' },
+      { icon: 'fas fa-desktop', title: 'IT equipment setup', text: 'Install and configure computers, printers, peripherals, and essential business software.' },
+      { icon: 'fas fa-screwdriver-wrench', title: 'Preventive maintenance', text: 'Schedule system checks, updates, cleaning, diagnostics, and routine equipment servicing.' },
+      { icon: 'fas fa-tools', title: 'Repairs & troubleshooting', text: 'Diagnose and resolve hardware faults, software issues, and network connectivity problems.' },
+      { icon: 'fas fa-headset', title: 'Ongoing technical support', text: 'Get responsive support, practical advice, and maintenance plans suited to your setup.' },
     ],
   },
   'digital-skills': {
