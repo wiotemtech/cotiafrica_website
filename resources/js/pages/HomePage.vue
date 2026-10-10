@@ -51,7 +51,9 @@
 
       <!-- Right image -->
       <div class="relative hidden lg:block">
-        <img :src="heroImage" alt="CodeToInnovate team and learners" class="c2i-hero-image h-[460px] w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10" />
+        <video class="c2i-hero-image c2i-hero-showreel h-[460px] w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10" autoplay muted loop playsinline preload="metadata" :poster="heroPoster" aria-label="Learners and mentors taking part in a practical technology program">
+          <source :src="heroVideo" type="video/mp4">
+        </video>
         <!-- Floating badge -->
         <div class="absolute -bottom-4 left-6 rounded-xl px-4 py-3 shadow-2xl" style="background:rgba(13,27,42,0.92);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.12)">
           <p class="text-[10px] font-bold uppercase tracking-widest" style="color:#f9a825">Operating Principle</p>
@@ -94,8 +96,10 @@
       </div>
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-        <div v-for="photo in homePhotos" :key="photo.name" class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-sm">
-          <img :src="photoUrl(photo.name)" :alt="photo.alt" class="h-64 w-full object-cover" loading="eager" />
+        <div v-for="(photo, index) in homePhotos" :key="photo.name" class="c2i-reveal c2i-activity-card overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-sm" :style="`--reveal-delay:${index * 130}ms`">
+          <div class="c2i-activity-image overflow-hidden">
+            <img :src="photoUrl(photo.name)" :alt="photo.alt" class="h-64 w-full object-cover" loading="eager" />
+          </div>
           <div class="p-4">
             <h3 class="font-semibold text-white">{{ photo.title }}</h3>
             <p class="mt-1 text-sm text-slate-300">{{ photo.description }}</p>
@@ -201,7 +205,7 @@
 
         <!-- Right service grid -->
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <article v-for="service in services" :key="service.name" class="c2i-card group p-5">
+          <article v-for="(service, index) in services" :key="service.name" class="c2i-reveal c2i-card c2i-home-service-card group bg-white p-5" :style="`--reveal-delay:${(index % 3) * 100}ms`">
             <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl transition group-hover:scale-110" :style="`background:${service.color}18`">
               <i :class="service.icon" :style="`color:${service.color}`"></i>
             </div>
@@ -225,7 +229,7 @@
       </div>
 
       <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
-        <article v-for="step in journeySteps" :key="step.number" class="relative rounded-2xl p-6 transition hover:-translate-y-1" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)">
+        <article v-for="(step, index) in journeySteps" :key="step.number" class="c2i-reveal c2i-journey-step relative rounded-2xl p-6 transition hover:-translate-y-1" :style="`--reveal-delay:${index * 110}ms;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)`">
           <p class="text-5xl font-extrabold leading-none" style="color:rgba(255,255,255,0.06)">{{ step.number }}</p>
           <div class="mt-2 inline-flex h-10 w-10 items-center justify-center rounded-xl" :style="`background:${step.color}22`">
             <i :class="step.icon" :style="`color:${step.color}`"></i>
@@ -248,7 +252,7 @@
       </div>
 
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-        <article v-for="partner in partners" :key="partner.name" class="c2i-card overflow-hidden">
+        <article v-for="partner in partners" :key="partner.name" class="c2i-card bg-white overflow-hidden">
           <!-- Coloured top band -->
           <div class="relative px-6 py-5" :style="`background:${partner.color}`">
             <div class="flex items-center gap-4">
@@ -309,7 +313,8 @@
 import { onMounted, onUnmounted, ref } from 'vue';
 import { RouterLink } from 'vue-router';
 
-const heroImage = '/assets/media/images/2.jpeg';
+const heroPoster = '/assets/media/images/2.jpeg';
+const heroVideo = '/assets/media/videos/3.mp4';
 
 const headlineLines = [
   ['Learn', 'digital', 'skills.'],
@@ -320,8 +325,27 @@ const headlineCycle = ref(0);
 const headlineExiting = ref(false);
 let headlineTimer;
 let headlineExitTimer;
+let activityObserver;
 
 onMounted(() => {
+  document.documentElement.classList.add('c2i-motion-ready');
+  const revealItems = document.querySelectorAll('.c2i-reveal');
+
+  if ('IntersectionObserver' in window) {
+    activityObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          activityObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealItems.forEach((item) => activityObserver.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add('is-visible'));
+  }
+
   headlineTimer = window.setInterval(() => {
     headlineExiting.value = false;
     headlineCycle.value += 1;
@@ -332,6 +356,8 @@ onMounted(() => {
 onUnmounted(() => {
   window.clearInterval(headlineTimer);
   window.clearInterval(headlineExitTimer);
+  activityObserver?.disconnect();
+  document.documentElement.classList.remove('c2i-motion-ready');
 });
 
 const homePhotos = [

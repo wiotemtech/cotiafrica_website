@@ -309,6 +309,11 @@ a {
 	transition: opacity 450ms ease, filter 450ms ease, transform 450ms ease;
 }
 
+.c2i-hero-showreel {
+	object-position: 47% center;
+	animation: c2i-showreel-pan 18s ease-in-out infinite alternate;
+}
+
 .c2i-headline-exiting .c2i-hero-image {
 	opacity: 0.12;
 	filter: blur(3px) saturate(0.55);
@@ -327,6 +332,48 @@ a {
 .c2i-wave svg { display: block; width: 100%; height: 100%; }
 .c2i-dark-strip { background: #0d1b2a; }
 .c2i-dark-surface { background: #10243f; }
+
+.c2i-motion-ready .c2i-reveal:not(.is-visible) {
+	opacity: 0;
+	transform: translateY(24px);
+}
+
+.c2i-reveal {
+	transition: opacity 700ms ease var(--reveal-delay, 0ms), transform 700ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+}
+
+.c2i-activity-card {
+	transform-origin: center bottom;
+}
+
+.c2i-activity-image img {
+	animation: c2i-camera-drift 16s ease-in-out infinite alternate;
+	transition: transform 500ms ease;
+}
+
+.c2i-activity-card:hover .c2i-activity-image img {
+	transform: scale(1.07);
+}
+
+.c2i-journey-step {
+	transition: transform 250ms ease, border-color 250ms ease, background-color 250ms ease;
+}
+
+.c2i-journey-step:hover {
+	border-color: rgba(67, 160, 71, 0.55) !important;
+	background-color: rgba(255, 255, 255, 0.11) !important;
+}
+
+.c2i-home-service-card h3 {
+	color: #0d1b2a !important;
+	font-weight: 800;
+}
+
+.c2i-home-service-card p {
+	color: #334155 !important;
+	font-size: 0.9375rem;
+	line-height: 1.65;
+}
 
 @keyframes c2i-word-in {
 	0%, 12% { opacity: 0; transform: translateY(0.35em); filter: blur(4px); }
@@ -368,6 +415,31 @@ a {
 @keyframes c2i-ping {
 	0%, 100% { box-shadow: 0 0 0 0 rgba(249, 168, 37, 0.35); }
 	50% { box-shadow: 0 0 0 8px rgba(249, 168, 37, 0); }
+}
+
+@keyframes c2i-camera-drift {
+	0% { transform: scale(1.01) translate3d(-0.35%, 0, 0); }
+	100% { transform: scale(1.06) translate3d(0.35%, -0.35%, 0); }
+}
+
+@keyframes c2i-showreel-pan {
+	from { object-position: 47% center; }
+	to { object-position: 53% center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.c2i-motion-ready .c2i-reveal:not(.is-visible) {
+		opacity: 1;
+		transform: none;
+	}
+
+	.c2i-reveal,
+	.c2i-activity-image img,
+	.c2i-hero-showreel,
+	.c2i-journey-step {
+		animation: none !important;
+		transition: none !important;
+	}
 }
 
 @media (max-width: 639px) {
